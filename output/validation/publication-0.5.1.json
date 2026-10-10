@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "version": "0.5.1",
+  "repository": "https://github.com/ars123-create/fsp-career",
+  "release": "https://github.com/ars123-create/fsp-career/releases/tag/v0.5.1",
+  "commit": "ea4378c023c35cdd93140fe8a1897525970b8f9e",
+  "tag": "v0.5.1",
+  "published_at": "2026-10-10T18:49:41Z",
+  "assets": [
+    {
+      "name": "FSP_Career_Documentation_0.5.1.docx",
+      "url": "https://github.com/ars123-create/fsp-career/releases/download/v0.5.1/FSP_Career_Documentation_0.5.1.docx",
+      "size": 45890,
+      "sha256": "4c6bfbe5e743011d3ab3a33d38f2c91e4390fb9df91e93ceb6da2c2de7461f4c",
+      "anonymous_http": 206,
+      "verification": "GitHub stored SHA256 equals local; anonymous byte-range download succeeds"
+    },
+    {
+      "name": "FSP_Career_Documentation_0.5.1.pdf",
+      "url": "https://github.com/ars123-create/fsp-career/releases/download/v0.5.1/FSP_Career_Documentation_0.5.1.pdf",
+      "size": 85138,
+      "sha256": "7b73670144d17961c28ae3cef1c38b045f6c7bf2e624a5950170e636c4f22ee9",
+      "anonymous_http": 206,
+      "verification": "GitHub stored SHA256 equals local; anonymous byte-range download succeeds"
+    },
+    {
+      "name": "FSP_Career_Full_Flow_0.5.1.mp4",
+      "url": "https://github.com/ars123-create/fsp-career/releases/download/v0.5.1/FSP_Career_Full_Flow_0.5.1.mp4",
+      "size": 7770696,
+      "sha256": "20ea41b2dd92633e566f4fe5d7dfce22476161108628b1e920728e04d8e7d82d",
+      "anonymous_http": 206,
+      "verification": "GitHub stored SHA256 equals local; anonymous byte-range download succeeds"
+    },
+    {
+      "name": "FSP_Career_Overview_0.5.1.mp4",
+      "url": "https://github.com/ars123-create/fsp-career/releases/download/v0.5.1/FSP_Career_Overview_0.5.1.mp4",
+      "size": 6441806,
+      "sha256": "4256143fa5d1dcd0e66bfa3c2401c4fb3a89afaad18ba6ca0426c1d71858e38f",
+      "anonymous_http": 206,
+      "verification": "GitHub stored SHA256 equals local; anonymous byte-range download succeeds"
+    },
+    {
+      "name": "FSP_Career_Pitch_0.5.1.pdf",
+      "url": "https://github.com/ars123-create/fsp-career/releases/download/v0.5.1/FSP_Career_Pitch_0.5.1.pdf",
+      "size": 3019416,
+      "sha256": "f26a61e4eb8832d0c68034aa8b5cb4916c4a6e65f187918900d3e2f108fa630d",
+      "anonymous_http": 206,
+      "verification": "GitHub stored SHA256 equals local; anonymous byte-range download succeeds"
+    },
+    {
+      "name": "FSP_Career_Pitch_0.5.1.pptx",
+      "url": "https://github.com/ars123-create/fsp-career/releases/download/v0.5.1/FSP_Career_Pitch_0.5.1.pptx",
+      "size": 25181578,
+      "sha256": "6b996df20366e7e80bc251adfcaaf0ec5f8cee63bd9865acc6438384f6dfdbd3",
+      "anonymous_http": 206,
+      "verification": "GitHub stored SHA256 equals local; anonymous byte-range download succeeds"
+    },
+    {
+      "name": "FSP_Career_Research_Rows_0.5.1.zip",
+      "url": "https://github.com/ars123-create/fsp-career/releases/download/v0.5.1/FSP_Career_Research_Rows_0.5.1.zip",
+      "size": 228908522,
+      "sha256": "6b9c991116bd69f16a4f881c22545e5f1beac5591dd59befe34b3db12db582c1",
+      "anonymous_http": 206,
+      "verification": "GitHub stored SHA256 equals local; anonymous byte-range download succeeds"
+    },
+    {
+      "name": "FSP_Career_Source_0.5.1.zip",
+      "url": "https://github.com/ars123-create/fsp-career/releases/download/v0.5.1/FSP_Career_Source_0.5.1.zip",
+      "size": 18651875,
+      "sha256": "e68215c7d76d5bac1a5987323a6055a2765449d464246fcf7e9ee9d23795e2b2",
+      "anonymous_http": 206,
+      "verification": "GitHub stored SHA256 equals local; anonymous byte-range download succeeds"
+    },
+    {
+      "name": "FSP_Career_Start_Here_0.5.1.txt",
+      "url": "https://github.com/ars123-create/fsp-career/releases/download/v0.5.1/FSP_Career_Start_Here_0.5.1.txt",
+      "size": 2067,
+      "sha256": "45e063255454d450b67698689b4c35e85c031e5cd504096cbea18cda81adc41a",
+      "anonymous_http": 206,
+      "verification": "GitHub stored SHA256 equals local; anonymous byte-range download succeeds"
+    },
+    {
+      "name": "FSP_Career_Test_Accounts_0.5.1.txt",
+      "url": "https://github.com/ars123-create/fsp-career/releases/download/v0.5.1/FSP_Career_Test_Accounts_0.5.1.txt",
+      "size": 4334,
+      "sha256": "342d220a3db6f54c97c638c923bc255f2bfae3b37f6e3b041cb30cd3826876ac",
+      "anonymous_http": 206,
+      "verification": "GitHub stored SHA256 equals local; anonymous byte-range download succeeds"
+    },
+    {
+      "name": "SHA256SUMS_PUBLIC.txt",
+      "url": "https://github.com/ars123-create/fsp-career/releases/download/v0.5.1/SHA256SUMS_PUBLIC.txt",
+      "size": 977,
+      "sha256": "58e7280869a36af8ee8960121939ab4fabd9ad6993443c7e1adc6707176aa61d",
+      "anonymous_http": 206,
+      "verification": "GitHub stored SHA256 equals local; anonymous byte-range download succeeds"
+    }
+  ],
+  "source_archive_full_download": "PASS",
+  "source_files_verified": 734,
+  "frozen_runtime_files_verified": 107,
+  "source_sha256": "sha256:e68215c7d76d5bac1a5987323a6055a2765449d464246fcf7e9ee9d23795e2b2",
+  "private_submission_archive_published": false,
+  "organizer_originals_published": false,
+  "contest_submission": "NOT RUN: registered mos.ru login required",
+  "limits": "Only source archive downloaded fully; other assets checked by stored SHA256 and anonymous byte ranges. Public release is not a hosted app or contest submission."
+}
