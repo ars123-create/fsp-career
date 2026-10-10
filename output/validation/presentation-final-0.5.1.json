@@ -1,0 +1,24 @@
+{
+  "revision": "presentation-final-2",
+  "status": "PASS",
+  "source_sha256": "6b996df20366e7e80bc251adfcaaf0ec5f8cee63bd9865acc6438384f6dfdbd3",
+  "pptx_sha256": "a6e9ed7d6eb1956c7e0b6d6f4326ffb6026c3b129f2e43499c364d54dbb915e3",
+  "changes": {
+    "2": "Team wordmark replaces empty photo; correct captain, count and Moscow.",
+    "3": "Initials instead of invented portraits; five-card template retained; two members and three labeled workstreams.",
+    "6": "Version-neutral screen caption; unchanged UI screen provenance retained in notes.",
+    "8": "Clear screen caption; unchanged assessment screenshot.",
+    "9": "Contact revocation copy clarified."
+  },
+  "original_shape_geometry": "PASS: all pre-existing positions and dimensions retained",
+  "original_artwork_and_charts": "PASS: byte-identical",
+  "internal_resources": "PASS",
+  "human_validation": "NOT RUN; claims unchanged",
+  "captain": "Просветов Александр Сергеевич",
+  "team": "Sigma",
+  "pdf_sha256": "a44a97458693657093573d89d3bc00bf0e31e8a35fbccc169100337473b70d5e",
+  "slides": 15,
+  "pdf_pixels": "15/15 identical to inspected final PPTX renders",
+  "visual_review": "All 15 slides independently reviewed by first_slides_review; corrected pages 2,3,8,9 re-reviewed; final explicit paragraph spacing rechecked by root.",
+  "limitations": "UI screenshots support the large external captions; their small interface details are best seen in the supplied video. Native Microsoft PowerPoint was not tested. Contest submission not performed."
+}

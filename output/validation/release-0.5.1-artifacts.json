@@ -18,13 +18,14 @@
       5
     ],
     "package_integrity": "pass",
-    "template_check": "PASS",
-    "visual_review": "All 15 slides reviewed; template photo placeholders intentionally retained because team photos were not provided.",
+    "template_check": "PASS: required sections and all pre-existing shape geometry, layouts, theme and artwork preserved; empty slots filled with initials, team wordmark and explicitly labeled workstreams.",
+    "visual_review": "15/15 reviewed, independent subagent PASS; no photo placeholders or blank team cards; correct captain and Moscow.",
     "native_tables": 3,
     "native_charts": 1,
     "font": "Montserrat",
     "warnings": "Two inherited template geometry warnings, visually checked; no layout findings.",
-    "pdf": "15 raster pages from exact reviewed slide renders; PPTX is editable."
+    "pdf": "15 pages, 1920x1080 images identical to reviewed final PPTX renders.",
+    "revision": "presentation-final-2"
   },
   "documentation": {
     "pages": 5,
@@ -54,14 +55,14 @@
     },
     {
       "path": "FSP_Career_Pitch_0.5.1.pdf",
-      "size": 3019416,
-      "sha256": "f26a61e4eb8832d0c68034aa8b5cb4916c4a6e65f187918900d3e2f108fa630d"
+      "size": 5112175,
+      "sha256": "a44a97458693657093573d89d3bc00bf0e31e8a35fbccc169100337473b70d5e"
     },
     {
       "path": "FSP_Career_Pitch_0.5.1.pptx",
-      "size": 25181578,
-      "sha256": "6b996df20366e7e80bc251adfcaaf0ec5f8cee63bd9865acc6438384f6dfdbd3"
+      "size": 25181987,
+      "sha256": "a6e9ed7d6eb1956c7e0b6d6f4326ffb6026c3b129f2e43499c364d54dbb915e3"
     }
   ],
-  "limitations": "Visual review by same agent; native Microsoft PowerPoint not tested."
+  "limitations": "Native Microsoft PowerPoint not tested. Research and human validation limits unchanged. Submission on contest platform not performed."
 }
