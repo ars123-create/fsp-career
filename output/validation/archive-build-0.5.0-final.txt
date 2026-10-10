@@ -1,0 +1,124 @@
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  4.068MB
+Step 1/20 : FROM node:24-alpine AS frontend
+ ---> ebfe2f904627
+Step 2/20 : WORKDIR /build/frontend
+ ---> Using cache
+ ---> 61aef8b52196
+Step 3/20 : COPY frontend/package.json frontend/package-lock.json ./
+ ---> Using cache
+ ---> 16d229b8613f
+Step 4/20 : RUN npm ci --no-audit --no-fund
+ ---> Using cache
+ ---> 6356288cb658
+Step 5/20 : COPY frontend/ ./
+ ---> Using cache
+ ---> a358410f0f4d
+Step 6/20 : RUN NODE_OPTIONS=--max-old-space-size=256 npm run build
+ ---> Running in 25e80e7b1755
+
+> fsp-career@0.5.0 build
+> tsc -b && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 1797 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                             0.59 kB │ gzip:   0.42 kB
+dist/assets/manrope-vietnamese-800-normal-ClPWri-A.woff2    4.16 kB
+dist/assets/manrope-vietnamese-400-normal-DHb3EETF.woff2    4.46 kB
+dist/assets/manrope-vietnamese-600-normal-C1J5PCl_.woff2    4.47 kB
+dist/assets/manrope-vietnamese-700-normal-CUqMx5-1.woff2    4.55 kB
+dist/assets/manrope-greek-800-normal-CDvU698_.woff2         5.18 kB
+dist/assets/manrope-greek-600-normal-BoRV6lzK.woff2         5.23 kB
+dist/assets/manrope-greek-700-normal-CHUG9PD8.woff2         5.24 kB
+dist/assets/manrope-greek-400-normal-CM4qok81.woff2         5.28 kB
+dist/assets/manrope-vietnamese-400-normal-D7E_mLGF.woff     6.11 kB
+dist/assets/manrope-vietnamese-800-normal-bvg7iBCV.woff     6.13 kB
+dist/assets/manrope-vietnamese-600-normal-lA7a_7Ok.woff     6.14 kB
+dist/assets/manrope-vietnamese-700-normal-pt65Fn2Z.woff     6.36 kB
+dist/assets/manrope-greek-800-normal-Bw-67qu9.woff          6.63 kB
+dist/assets/manrope-greek-600-normal-CF2i9ZRY.woff          6.74 kB
+dist/assets/manrope-greek-700-normal-DyfsrCpP.woff          6.74 kB
+dist/assets/manrope-greek-400-normal-DuX9RsAR.woff          6.77 kB
+dist/assets/manrope-cyrillic-800-normal-AvdZ5mAV.woff2      7.59 kB
+dist/assets/manrope-cyrillic-400-normal-BMzJvInZ.woff2      7.84 kB
+dist/assets/manrope-cyrillic-700-normal-Dw_fZAg2.woff2      7.85 kB
+dist/assets/manrope-cyrillic-600-normal-DvRl3Mj-.woff2      7.87 kB
+dist/assets/manrope-latin-ext-800-normal-DdFx7KEb.woff2     8.03 kB
+dist/assets/manrope-latin-ext-700-normal-DYOwVNan.woff2     8.28 kB
+dist/assets/manrope-latin-ext-400-normal-CMDvPJRp.woff2     8.29 kB
+dist/assets/manrope-latin-ext-600-normal-_gBojHdJ.woff2     8.30 kB
+dist/assets/manrope-cyrillic-800-normal-BuEMjQU-.woff       9.78 kB
+dist/assets/manrope-cyrillic-700-normal-7JNVKxyl.woff      10.00 kB
+dist/assets/manrope-cyrillic-400-normal-Dvx59UGC.woff      10.03 kB
+dist/assets/manrope-cyrillic-600-normal-It4mZcQk.woff      10.06 kB
+dist/assets/manrope-latin-ext-800-normal-BQAQsuQc.woff     11.11 kB
+dist/assets/manrope-latin-ext-600-normal-u5Pl7hTU.woff     11.25 kB
+dist/assets/manrope-latin-ext-400-normal-C-X6QNXX.woff     11.32 kB
+dist/assets/manrope-latin-ext-700-normal-eVCcYqtJ.woff     11.35 kB
+dist/assets/manrope-latin-800-normal-BfWYOv1c.woff2        13.65 kB
+dist/assets/manrope-latin-400-normal-PaqtzbVb.woff2        14.11 kB
+dist/assets/manrope-latin-600-normal-4f0koTD-.woff2        14.17 kB
+dist/assets/manrope-latin-700-normal-BZp_XxE4.woff2        14.21 kB
+dist/assets/manrope-latin-800-normal-uHUdIJgA.woff         17.91 kB
+dist/assets/manrope-latin-400-normal-8tf8FM3T.woff         18.29 kB
+dist/assets/manrope-latin-600-normal-BqgrALkZ.woff         18.38 kB
+dist/assets/manrope-latin-700-normal-DGRFkw-m.woff         18.41 kB
+dist/assets/index-BEChFuiJ.css                             86.40 kB │ gzip:  28.20 kB
+dist/assets/index-QqCLjN0A.js                             608.25 kB │ gzip: 187.90 kB
+[91m
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[0m✓ built in 2.06s
+ ---> Removed intermediate container 25e80e7b1755
+ ---> 5f3dcb46ab34
+Step 7/20 : FROM python:3.14-slim
+ ---> f85c5697265c
+Step 8/20 : WORKDIR /app
+ ---> Using cache
+ ---> 458c452f5caa
+Step 9/20 : ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PYTHONPATH=/app/backend
+ ---> Using cache
+ ---> 3a44a37d1396
+Step 10/20 : COPY backend/requirements.lock.txt /app/backend/requirements.lock.txt
+ ---> Using cache
+ ---> 3caba9c58ae0
+Step 11/20 : RUN pip install --no-cache-dir -r backend/requirements.lock.txt
+ ---> Using cache
+ ---> f42e05da6aae
+Step 12/20 : COPY backend/ /app/backend/
+ ---> Using cache
+ ---> 91888716b2b1
+Step 13/20 : COPY alembic.ini /app/alembic.ini
+ ---> Using cache
+ ---> bc6951c9efdd
+Step 14/20 : COPY licenses/ /app/licenses/
+ ---> Using cache
+ ---> e04657917a9e
+Step 15/20 : COPY --from=frontend /build/frontend/dist /app/frontend/dist
+ ---> Using cache
+ ---> 2b3c0154057f
+Step 16/20 : RUN useradd --create-home --uid 10001 fsp && mkdir /app/data && chown -R fsp:fsp /app/data
+ ---> Using cache
+ ---> e2c94e50eaab
+Step 17/20 : USER fsp
+ ---> Using cache
+ ---> 30aa2512f2e7
+Step 18/20 : ENV OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
+ ---> Using cache
+ ---> 4097e23fb861
+Step 19/20 : EXPOSE 8080
+ ---> Using cache
+ ---> e316290214e2
+Step 20/20 : CMD ["sh", "-c", "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8080 --no-access-log"]
+ ---> Using cache
+ ---> a87db417d1de
+Successfully built a87db417d1de
+Successfully tagged fsp-career:0.5.0-archive

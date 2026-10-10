@@ -1,0 +1,48 @@
+{
+  "version": "0.5.1",
+  "status": "PASS",
+  "environments": {
+    "SQLite macOS": {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "192",
+      "time": "9.847",
+      "timestamp": "2026-10-10T19:47:04.954509+03:00",
+      "hostname": "MacBook-Pro-Arsenij.local",
+      "report": "backend-0.5.1.xml",
+      "sha256": "5110128c521081cd0828dcf2314396f4eb284017f136db504a7ebbe5e894441a"
+    },
+    "SQLite Linux Docker": {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "192",
+      "time": "13.151",
+      "timestamp": "2026-10-10T18:02:01.115716+00:00",
+      "hostname": "3e6655b6943a",
+      "report": "backend-0.5.1-docker.xml",
+      "sha256": "d6498ddd2b824b32de563109aece68d4fbcf83194b710ffe3b9bce25eacef855"
+    },
+    "PostgreSQL Linux Docker": {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "192",
+      "time": "16.679",
+      "timestamp": "2026-10-10T18:03:50.869115+00:00",
+      "hostname": "a4c62270d0e5",
+      "report": "backend-0.5.1-postgres.xml",
+      "sha256": "b2a3ad4ee9896c7f5bbcc03cc60a215ac8377cf992fdb26c52c087c417d592a5"
+    }
+  },
+  "migrations_postgresql": "PASS",
+  "negative_results": [
+    "First Docker build exited137 on busy2GB VM; retry passed after three historical FSP preview containers were temporarily stopped, then restored."
+  ],
+  "isolation": "New temporary PostgreSQL without external network; no working databases mounted; SQLite tmpfs.",
+  "scope": "Same Docker host with cached dependency layers, not independent machine."
+}

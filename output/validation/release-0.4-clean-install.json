@@ -1,0 +1,29 @@
+{
+  "version": "0.4.0-dev",
+  "candidate_archive_sha256": "7c170e1a736f2c63b2d4877ea5a1501213279fcf8c835a4aa5d9f23e631ee013",
+  "candidate_files": 277,
+  "image": "sha256:7f8fddd9448ddcd08ffca4083066baa8a0e6416b133e23bc41b51f54ecd7560d",
+  "docker_build": "PASS from extracted source; dependency and image layers cached on same machine",
+  "clean_start": {
+    "status": "PASS",
+    "version": "0.4.0-dev",
+    "migration": "upgrade and check PASS",
+    "empty_db_seed": "v1 history PASS",
+    "assessment": "v2:12 questions,6 practical",
+    "matching": "decision-evoi-v3,top5,question",
+    "frontend": "index200 and built assets",
+    "network": "none",
+    "rootfs": "readonly",
+    "working_database_mounted": false
+  },
+  "application_source_sha256": "6876682a6360d031c2342d38c1e89ba259d8f314f3a36830e07fb3ac00866ed1",
+  "source_files_verified": 68,
+  "openapi_exact_match": true,
+  "openapi_operations": 45,
+  "final_changes_after_candidate": "documentation, authoring notes, verification artifacts only; application source unchanged",
+  "initial_harness_error": "Incorrect ranking.mode value preference_v3 rejected with422; corrected to documented preference; no application edit",
+  "public_deployment": "NOT RUN",
+  "independent_machine": "NOT RUN",
+  "continuous_ui_registration_to_contact": "NOT RUN",
+  "human_validation": "NOT RUN"
+}

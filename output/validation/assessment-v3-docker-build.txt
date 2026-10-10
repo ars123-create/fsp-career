@@ -1,0 +1,135 @@
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  226.5MB
+Step 1/20 : FROM node:24-alpine AS frontend
+ ---> ebfe2f904627
+Step 2/20 : WORKDIR /build/frontend
+ ---> Using cache
+ ---> cb07d0ef3bec
+Step 3/20 : COPY frontend/package.json frontend/package-lock.json ./
+ ---> b4dec766e08d
+Step 4/20 : RUN npm ci --no-audit --no-fund
+ ---> Running in 12a5c9aa3831
+
+added 141 packages in 9s
+[91mnpm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.25.12 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+[0m[91mnpm notice
+npm notice New major version of npm available! 11.19.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice
+[0m ---> Removed intermediate container 12a5c9aa3831
+ ---> 0a87aa887a11
+Step 5/20 : COPY frontend/ ./
+ ---> b13c1f12aa6f
+Step 6/20 : RUN npm run build
+ ---> Running in cb9c51a3805a
+
+> fsp-career@0.4.5-dev build
+> tsc -b && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 1797 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                             0.59 kB │ gzip:   0.41 kB
+dist/assets/manrope-vietnamese-800-normal-ClPWri-A.woff2    4.16 kB
+dist/assets/manrope-vietnamese-400-normal-DHb3EETF.woff2    4.46 kB
+dist/assets/manrope-vietnamese-600-normal-C1J5PCl_.woff2    4.47 kB
+dist/assets/manrope-vietnamese-700-normal-CUqMx5-1.woff2    4.55 kB
+dist/assets/manrope-greek-800-normal-CDvU698_.woff2         5.18 kB
+dist/assets/manrope-greek-600-normal-BoRV6lzK.woff2         5.23 kB
+dist/assets/manrope-greek-700-normal-CHUG9PD8.woff2         5.24 kB
+dist/assets/manrope-greek-400-normal-CM4qok81.woff2         5.28 kB
+dist/assets/manrope-vietnamese-400-normal-D7E_mLGF.woff     6.11 kB
+dist/assets/manrope-vietnamese-800-normal-bvg7iBCV.woff     6.13 kB
+dist/assets/manrope-vietnamese-600-normal-lA7a_7Ok.woff     6.14 kB
+dist/assets/manrope-vietnamese-700-normal-pt65Fn2Z.woff     6.36 kB
+dist/assets/manrope-greek-800-normal-Bw-67qu9.woff          6.63 kB
+dist/assets/manrope-greek-600-normal-CF2i9ZRY.woff          6.74 kB
+dist/assets/manrope-greek-700-normal-DyfsrCpP.woff          6.74 kB
+dist/assets/manrope-greek-400-normal-DuX9RsAR.woff          6.77 kB
+dist/assets/manrope-cyrillic-800-normal-AvdZ5mAV.woff2      7.59 kB
+dist/assets/manrope-cyrillic-400-normal-BMzJvInZ.woff2      7.84 kB
+dist/assets/manrope-cyrillic-700-normal-Dw_fZAg2.woff2      7.85 kB
+dist/assets/manrope-cyrillic-600-normal-DvRl3Mj-.woff2      7.87 kB
+dist/assets/manrope-latin-ext-800-normal-DdFx7KEb.woff2     8.03 kB
+dist/assets/manrope-latin-ext-700-normal-DYOwVNan.woff2     8.28 kB
+dist/assets/manrope-latin-ext-400-normal-CMDvPJRp.woff2     8.29 kB
+dist/assets/manrope-latin-ext-600-normal-_gBojHdJ.woff2     8.30 kB
+dist/assets/manrope-cyrillic-800-normal-BuEMjQU-.woff       9.78 kB
+dist/assets/manrope-cyrillic-700-normal-7JNVKxyl.woff      10.00 kB
+dist/assets/manrope-cyrillic-400-normal-Dvx59UGC.woff      10.03 kB
+dist/assets/manrope-cyrillic-600-normal-It4mZcQk.woff      10.06 kB
+dist/assets/manrope-latin-ext-800-normal-BQAQsuQc.woff     11.11 kB
+dist/assets/manrope-latin-ext-600-normal-u5Pl7hTU.woff     11.25 kB
+dist/assets/manrope-latin-ext-400-normal-C-X6QNXX.woff     11.32 kB
+dist/assets/manrope-latin-ext-700-normal-eVCcYqtJ.woff     11.35 kB
+dist/assets/manrope-latin-800-normal-BfWYOv1c.woff2        13.65 kB
+dist/assets/manrope-latin-400-normal-PaqtzbVb.woff2        14.11 kB
+dist/assets/manrope-latin-600-normal-4f0koTD-.woff2        14.17 kB
+dist/assets/manrope-latin-700-normal-BZp_XxE4.woff2        14.21 kB
+dist/assets/manrope-latin-800-normal-uHUdIJgA.woff         17.91 kB
+dist/assets/manrope-latin-400-normal-8tf8FM3T.woff         18.29 kB
+dist/assets/manrope-latin-600-normal-BqgrALkZ.woff         18.38 kB
+dist/assets/manrope-latin-700-normal-DGRFkw-m.woff         18.41 kB
+dist/assets/index-BEChFuiJ.css                             86.40 kB │ gzip:  28.20 kB
+dist/assets/index-DO64X-g7.js                             607.94 kB │ gzip: 187.82 kB
+[91m
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[0m✓ built in 2.35s
+ ---> Removed intermediate container cb9c51a3805a
+ ---> 1376bf666356
+Step 7/20 : FROM python:3.14-slim
+ ---> f85c5697265c
+Step 8/20 : WORKDIR /app
+ ---> Using cache
+ ---> 2e6389fe2d0f
+Step 9/20 : ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PYTHONPATH=/app/backend
+ ---> Using cache
+ ---> 053c766fa68a
+Step 10/20 : COPY backend/requirements.lock.txt /app/backend/requirements.lock.txt
+ ---> Using cache
+ ---> b03ab632ea60
+Step 11/20 : RUN pip install --no-cache-dir -r backend/requirements.lock.txt
+ ---> Using cache
+ ---> e187ccf50003
+Step 12/20 : COPY backend/ /app/backend/
+ ---> 8b09d2523316
+Step 13/20 : COPY alembic.ini /app/alembic.ini
+ ---> 08d09825b419
+Step 14/20 : COPY licenses/ /app/licenses/
+ ---> 69c48f938890
+Step 15/20 : COPY --from=frontend /build/frontend/dist /app/frontend/dist
+ ---> a629d566395a
+Step 16/20 : RUN useradd --create-home --uid 10001 fsp && mkdir /app/data && chown -R fsp:fsp /app/data
+ ---> Running in 689bfe5185a3
+ ---> Removed intermediate container 689bfe5185a3
+ ---> bb0aa9d86ca9
+Step 17/20 : USER fsp
+ ---> Running in 71a2a7428750
+ ---> Removed intermediate container 71a2a7428750
+ ---> 500b0c597924
+Step 18/20 : ENV OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
+ ---> Running in df51f6defc1f
+ ---> Removed intermediate container df51f6defc1f
+ ---> e1285cb221a3
+Step 19/20 : EXPOSE 8080
+ ---> Running in 62041ccc27d6
+ ---> Removed intermediate container 62041ccc27d6
+ ---> 6e5fc022d320
+Step 20/20 : CMD ["sh", "-c", "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8080 --no-access-log"]
+ ---> Running in 32cc3979213e
+ ---> Removed intermediate container 32cc3979213e
+ ---> 1b5d11bd5dd4
+Successfully built 1b5d11bd5dd4
+Successfully tagged fsp-career:assessment-v3-0.4.5-20261008

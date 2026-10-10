@@ -1,0 +1,28 @@
+{
+  "status": "MATERIALIZED_NOT_FROZEN",
+  "worlds_generated": 0,
+  "quality_worlds": 91392,
+  "timing_worlds": 448,
+  "method_cases": 551040,
+  "main_execution_arms": 190,
+  "planning_scenarios": [
+    {
+      "proxy_sd": 0.01448538,
+      "normal_n90_per_stratum": 773,
+      "normal_approx_power_at_1024": 0.9755060032873538,
+      "two_sided_mean_halfwidth": 0.0006600121185917153
+    },
+    {
+      "proxy_sd": 0.02749462,
+      "normal_n90_per_stratum": 2783,
+      "normal_approx_power_at_1024": 0.3070761147533254,
+      "two_sided_mean_halfwidth": 0.0012527653672926872
+    }
+  ],
+  "power_scope": "Normal planning proxies from disclosed old models, not a power guarantee for new guards, tails or family gates",
+  "files": {
+    "DOMAIN_ANALYSIS_PLAN.json": "a5a2fba57917322564fb9ca4050fef022c43b6667c25fe8ccbcfe4532e6b1b44",
+    "DOMAIN_QUALITY_PLAN.json": "9bc1703fa9a7940b958e64373a795f71c55a109cad1a17243f3c5c0bd548246c",
+    "DOMAIN_TIMING_PLAN.json": "5e15f7acbdb68d4d04e2bf3f5cdd2820cce0399cf66485eb880b6a130976ac6c"
+  }
+}

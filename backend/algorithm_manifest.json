@@ -1,0 +1,7 @@
+{
+  "algorithm": "guarded-minimax-v2",
+  "engine_sha256": "dfc90f10e208ef2b65a7dbac817e739c7f29e739d8904d0aa2b433db4d03ecf8",
+  "frozen_protocol_sha256": "f1e73256606ed4e0828d6ea08403217fba117aea931075ab41f395e84da588bb",
+  "experiment": "research/robust_topk/results/heldout_v2.json",
+  "limitations": "Observed evidence and declared additive priorities, not hiring success."
+}

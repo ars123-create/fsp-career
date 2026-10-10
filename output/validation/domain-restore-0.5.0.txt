@@ -1,0 +1,2 @@
+{"study": "summary.json", "status": "PASS", "rows": 548352, "source_files": 123}
+{"study": "summary.json", "status": "PASS", "rows": 2688, "source_files": 123}

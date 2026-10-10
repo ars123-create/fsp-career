@@ -1,0 +1,26 @@
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  4.068MB
+Step 1/20 : FROM node:24-alpine AS frontend
+ ---> ebfe2f904627
+Step 2/20 : WORKDIR /build/frontend
+ ---> Using cache
+ ---> 61aef8b52196
+Step 3/20 : COPY frontend/package.json frontend/package-lock.json ./
+ ---> Using cache
+ ---> 16d229b8613f
+Step 4/20 : RUN npm ci --no-audit --no-fund
+ ---> Using cache
+ ---> 6356288cb658
+Step 5/20 : COPY frontend/ ./
+ ---> a358410f0f4d
+Step 6/20 : RUN NODE_OPTIONS=--max-old-space-size=256 npm run build
+ ---> Running in 9f4223458d7a
+
+> fsp-career@0.5.0 build
+> tsc -b && vite build
+
+[91mKilled
+[0mThe command '/bin/sh -c NODE_OPTIONS=--max-old-space-size=256 npm run build' returned a non-zero code: 137

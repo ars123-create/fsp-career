@@ -1,0 +1,62 @@
+{
+  "source_database": "/Users/arsenij/Documents/ChatGPT/hakaton2/data/fsp.db",
+  "backup": "data/backups/pre-direct-weights-0.4.3.sqlite",
+  "tables": {
+    "actiontoken": {
+      "rows": 2,
+      "sha256": "8fa8bec0f470fd902a9d7b915f7c67202242749ba5a706313d65446e2e9061c4"
+    },
+    "alembic_version": {
+      "rows": 1,
+      "sha256": "f717a4df463da058b1f2a97965f284b6d11c54b0005e7dfb15c2a97a22ba1bae"
+    },
+    "application": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "attempt": {
+      "rows": 27,
+      "sha256": "1a056c629029e37cde6e57ed69e5cdeb4f7dfa6c2271401b2513675b752b22d1"
+    },
+    "auditevent": {
+      "rows": 13,
+      "sha256": "cb25dd2817ecd8e864d25276dc7bc1c16a979e04d5b6b8eaa16f73f7ee3a6091"
+    },
+    "candidate": {
+      "rows": 25,
+      "sha256": "a2cfcb04725cc415ba7eb222a46fda078a19dd8fc75ab8adc08e56d6c204dd6f"
+    },
+    "company": {
+      "rows": 3,
+      "sha256": "887e9530a0e4b68f34402ffcb595cdae274a5ea960b80b65de8a78198ac6d41a"
+    },
+    "evidence": {
+      "rows": 174,
+      "sha256": "300d664d957db6c22fb3abba2b9914869d9d672f6702209f6edc1859b7ef9691"
+    },
+    "gradeaward": {
+      "rows": 25,
+      "sha256": "a8667a40e6e2f4c8b5ee06c90fa941030e1f07df2daac4ff506c826c28b26d97"
+    },
+    "invitation": {
+      "rows": 2,
+      "sha256": "d7b33fdc0cf5586501fd7f17ccbb2d51d8554b28a0a5b3664b8d934e600041ca"
+    },
+    "job": {
+      "rows": 2,
+      "sha256": "b1ab6d7eaa0a52d03137cdde2d6a16fe5d48197b6b20fd3f20c521f11a2c71ca"
+    },
+    "localmail": {
+      "rows": 2,
+      "sha256": "6a5627947de2cb8d5ce1c6be0094866b22db2f16aa4a71710895e1478d819875"
+    },
+    "need": {
+      "rows": 3,
+      "sha256": "68f30903daa2a5b78ca801a6a5d0066991ab02c86cca2c45c62190a9b8b8e7f4"
+    },
+    "user": {
+      "rows": 28,
+      "sha256": "8ee818cb4d9b1de68eccf06ae2a4c69a813fcf4360df3cd8f9d116c198d39216"
+    }
+  }
+}

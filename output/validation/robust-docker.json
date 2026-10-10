@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "image_id": "91d64855b300",
+  "build": "docker compose build app",
+  "smoke": "docker run --rm --network none ... analytical 3-candidate example",
+  "numpy": "2.4.4",
+  "scipy": "1.18.1",
+  "regret": 0.25,
+  "selected_index": 2,
+  "main_container_8019": "not updated"
+}

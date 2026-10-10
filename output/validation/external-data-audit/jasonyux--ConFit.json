@@ -1,0 +1,12 @@
+{
+  "repo": "jasonyux/ConFit",
+  "commit": "1187bf4273aa27f2c562a43ec4bb5316876b7198",
+  "license": null,
+  "interesting_paths": [
+    "README.md",
+    "src/evaluation/eval.py",
+    "src/evaluation/metrics.py"
+  ],
+  "tree_truncated": false,
+  "date": "2026-10-07"
+}

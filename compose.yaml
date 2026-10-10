@@ -1,0 +1,45 @@
+name: fsp-career
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: fsp
+      POSTGRES_PASSWORD: ${FSP_POSTGRES_PASSWORD:?Run scripts/setup.py first}
+      POSTGRES_DB: fsp
+    ports:
+      - "127.0.0.1:5434:5432"
+    volumes:
+      - fsp-postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fsp -d fsp"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  mail:
+    image: axllent/mailpit:v1.29
+    ports:
+      - "127.0.0.1:8026:8025"
+      - "127.0.0.1:1026:1025"
+  app:
+    build: .
+    environment:
+      FSP_SECRET_KEY: ${FSP_SECRET_KEY:?Run scripts/setup.py first}
+      FSP_DATABASE_URL: postgresql+psycopg://fsp:${FSP_POSTGRES_PASSWORD}@db:5432/fsp
+      FSP_FRONTEND_URL: http://127.0.0.1:${FSP_PORT:-8019}
+      FSP_DEMO_MODE: "true"
+      FSP_SMTP_HOST: mail
+      FSP_SMTP_PORT: "1025"
+    ports:
+      - "127.0.0.1:${FSP_PORT:-8019}:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+      mail:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/api/health',timeout=3)"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+volumes:
+  fsp-postgres:

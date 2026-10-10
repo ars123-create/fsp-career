@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "rows": 2688,
+  "scope": "Strict unchanged frozen loader on transported timing evidence; original preflights preserved; quality bytes separately restored and hash-verified",
+  "input_hashes": {
+    "protocol.json": "ce7251f68927007324d663a23f5195029f0f786b0f870bad05e59a3e110711c4",
+    "completion.json": "7888709f47255f14dc8bec8c93b5470b450a11a9ac5c22eb0f11878b9e157d91",
+    "rows.jsonl": "9d15eeb03b8fcce9d8448956ed982582f6db7b8ebdbec95dfb64e7cf81f5cf0c",
+    "preflight-000.json": "de43117ff380f9a9bc47d315edd9b18ca72f86841dd46ddbe1770e09389607e8",
+    "completion-000.json": "f5699e9fe02a90d7e7862fdb021bcd0b58743165dd6b59130992467bb1645e25",
+    "rows-000.jsonl": "9d15eeb03b8fcce9d8448956ed982582f6db7b8ebdbec95dfb64e7cf81f5cf0c"
+  }
+}

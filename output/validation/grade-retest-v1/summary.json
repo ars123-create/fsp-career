@@ -1,0 +1,3412 @@
+{
+  "status": "PASS_SIMULATION_EXECUTED",
+  "human_validation": "NOT_RUN",
+  "profiles_pairs": 4320,
+  "forms": 8640,
+  "responses": 103680,
+  "rubric": {
+    "version": "2026-10-v3",
+    "pass_score": 75,
+    "min_skill_score": 50,
+    "min_practical_skill_score": 50,
+    "notice": "Демонстрационная рубрика. Эталоны проверены вычислением; сложность и границы грейдов ещё не откалиброваны на людях."
+  },
+  "summaries": [
+    {
+      "agreement": 0.8555555555555555,
+      "kappa": 0.6648404769577827,
+      "matrix_A_rows_B_columns_fail_pass": [
+        [
+          221,
+          30
+        ],
+        [
+          22,
+          87
+        ]
+      ],
+      "pairs": 360,
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "claimed_grade": "Junior",
+      "mean_absolute_score_difference": 12.130555555555556,
+      "by_ability": {
+        "-2": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-0.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "0": {
+          "agreement": 0.85,
+          "kappa": -0.07142857142857148,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              34,
+              4
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.05,
+          "pass_rate_B": 0.1
+        },
+        "0.5": {
+          "agreement": 0.6,
+          "kappa": 0.1280653950953678,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              19,
+              12
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.225,
+          "pass_rate_B": 0.425
+        },
+        "1": {
+          "agreement": 0.575,
+          "kappa": 0.08108108108108103,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              6,
+              8
+            ],
+            [
+              9,
+              17
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.65,
+          "pass_rate_B": 0.625
+        },
+        "1.5": {
+          "agreement": 0.8,
+          "kappa": 0.2156862745098041,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              2,
+              4
+            ],
+            [
+              4,
+              30
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.85,
+          "pass_rate_B": 0.85
+        },
+        "2": {
+          "agreement": 0.875,
+          "kappa": -0.0638297872340421,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              35
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.95,
+          "pass_rate_B": 0.925
+        }
+      }
+    },
+    {
+      "agreement": 0.8833333333333333,
+      "kappa": 0.5855263157894736,
+      "matrix_A_rows_B_columns_fail_pass": [
+        [
+          278,
+          22
+        ],
+        [
+          20,
+          40
+        ]
+      ],
+      "pairs": 360,
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "claimed_grade": "Middle",
+      "mean_absolute_score_difference": 13.196111111111112,
+      "by_ability": {
+        "-2": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-0.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "0": {
+          "agreement": 0.975,
+          "kappa": 0.0,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              39,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.025,
+          "pass_rate_B": 0.0
+        },
+        "0.5": {
+          "agreement": 0.925,
+          "kappa": -0.03448275862068892,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              37,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.025,
+          "pass_rate_B": 0.05
+        },
+        "1": {
+          "agreement": 0.85,
+          "kappa": 0.41176470588235287,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              31,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.15,
+          "pass_rate_B": 0.15
+        },
+        "1.5": {
+          "agreement": 0.525,
+          "kappa": 0.050000000000000044,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              9,
+              8
+            ],
+            [
+              11,
+              12
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.575,
+          "pass_rate_B": 0.5
+        },
+        "2": {
+          "agreement": 0.675,
+          "kappa": 0.051094890510949106,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              2,
+              9
+            ],
+            [
+              4,
+              25
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.725,
+          "pass_rate_B": 0.85
+        }
+      }
+    },
+    {
+      "agreement": 0.8583333333333333,
+      "kappa": 0.6581005586592178,
+      "matrix_A_rows_B_columns_fail_pass": [
+        [
+          229,
+          25
+        ],
+        [
+          26,
+          80
+        ]
+      ],
+      "pairs": 360,
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "claimed_grade": "Junior",
+      "mean_absolute_score_difference": 13.220277777777776,
+      "by_ability": {
+        "-2": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-0.5": {
+          "agreement": 0.95,
+          "kappa": 0.0,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              38,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.05,
+          "pass_rate_B": 0.0
+        },
+        "0": {
+          "agreement": 0.9,
+          "kappa": 0.2857142857142859,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              35,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.1,
+          "pass_rate_B": 0.05
+        },
+        "0.5": {
+          "agreement": 0.775,
+          "kappa": 0.26829268292682934,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              28,
+              6
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.15,
+          "pass_rate_B": 0.225
+        },
+        "1": {
+          "agreement": 0.5,
+          "kappa": -0.007556675062972355,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              8,
+              9
+            ],
+            [
+              11,
+              12
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.575,
+          "pass_rate_B": 0.525
+        },
+        "1.5": {
+          "agreement": 0.675,
+          "kappa": -0.19266055045871558,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              0,
+              7
+            ],
+            [
+              6,
+              27
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.825,
+          "pass_rate_B": 0.85
+        },
+        "2": {
+          "agreement": 0.925,
+          "kappa": -0.03448275862068892,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              37
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.95,
+          "pass_rate_B": 0.975
+        }
+      }
+    },
+    {
+      "agreement": 0.8805555555555555,
+      "kappa": 0.5729890764647467,
+      "matrix_A_rows_B_columns_fail_pass": [
+        [
+          278,
+          24
+        ],
+        [
+          19,
+          39
+        ]
+      ],
+      "pairs": 360,
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "claimed_grade": "Middle",
+      "mean_absolute_score_difference": 12.755833333333335,
+      "by_ability": {
+        "-2": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-0.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "0": {
+          "agreement": 0.975,
+          "kappa": 0.0,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              39,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.025
+        },
+        "0.5": {
+          "agreement": 0.85,
+          "kappa": 0.0,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              34,
+              6
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.15
+        },
+        "1": {
+          "agreement": 0.825,
+          "kappa": 0.3577981651376144,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              30,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.15,
+          "pass_rate_B": 0.175
+        },
+        "1.5": {
+          "agreement": 0.55,
+          "kappa": 0.10669975186104225,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              12,
+              7
+            ],
+            [
+              11,
+              10
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.525,
+          "pass_rate_B": 0.425
+        },
+        "2": {
+          "agreement": 0.725,
+          "kappa": 0.17910447761194015,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              3,
+              6
+            ],
+            [
+              5,
+              26
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.775,
+          "pass_rate_B": 0.8
+        }
+      }
+    },
+    {
+      "agreement": 0.775,
+      "kappa": 0.48604060913705593,
+      "matrix_A_rows_B_columns_fail_pass": [
+        [
+          203,
+          41
+        ],
+        [
+          40,
+          76
+        ]
+      ],
+      "pairs": 360,
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "claimed_grade": "Junior",
+      "mean_absolute_score_difference": 17.711944444444445,
+      "by_ability": {
+        "-2": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-0.5": {
+          "agreement": 0.9,
+          "kappa": -0.05263157894736848,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              36,
+              2
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.05,
+          "pass_rate_B": 0.05
+        },
+        "0": {
+          "agreement": 0.725,
+          "kappa": 0.10569105691056901,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              27,
+              7
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.15,
+          "pass_rate_B": 0.225
+        },
+        "0.5": {
+          "agreement": 0.45,
+          "kappa": -0.0918114143920596,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              10,
+              13
+            ],
+            [
+              9,
+              8
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.425,
+          "pass_rate_B": 0.525
+        },
+        "1": {
+          "agreement": 0.475,
+          "kappa": -0.06060606060606066,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              7,
+              12
+            ],
+            [
+              9,
+              12
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.525,
+          "pass_rate_B": 0.6
+        },
+        "1.5": {
+          "agreement": 0.675,
+          "kappa": 0.12162162162162173,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              3,
+              4
+            ],
+            [
+              9,
+              24
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.825,
+          "pass_rate_B": 0.7
+        },
+        "2": {
+          "agreement": 0.75,
+          "kappa": -0.11731843575418992,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              0,
+              3
+            ],
+            [
+              7,
+              30
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.925,
+          "pass_rate_B": 0.825
+        }
+      }
+    },
+    {
+      "agreement": 0.8027777777777778,
+      "kappa": 0.3043004899292326,
+      "matrix_A_rows_B_columns_fail_pass": [
+        [
+          263,
+          39
+        ],
+        [
+          32,
+          26
+        ]
+      ],
+      "pairs": 360,
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "claimed_grade": "Middle",
+      "mean_absolute_score_difference": 17.406666666666666,
+      "by_ability": {
+        "-2": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-0.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "0": {
+          "agreement": 0.9,
+          "kappa": -0.05263157894736848,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              36,
+              2
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.05,
+          "pass_rate_B": 0.05
+        },
+        "0.5": {
+          "agreement": 0.775,
+          "kappa": -0.12500000000000014,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              31,
+              5
+            ],
+            [
+              4,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.1,
+          "pass_rate_B": 0.125
+        },
+        "1": {
+          "agreement": 0.7,
+          "kappa": 0.2569659442724458,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              23,
+              8
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.225,
+          "pass_rate_B": 0.325
+        },
+        "1.5": {
+          "agreement": 0.35,
+          "kappa": -0.30000000000000004,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              7,
+              13
+            ],
+            [
+              13,
+              7
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.5,
+          "pass_rate_B": 0.5
+        },
+        "2": {
+          "agreement": 0.5,
+          "kappa": -0.03896103896103906,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              6,
+              11
+            ],
+            [
+              9,
+              14
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.575,
+          "pass_rate_B": 0.625
+        }
+      }
+    },
+    {
+      "agreement": 0.8027777777777778,
+      "kappa": 0.5462614499751475,
+      "matrix_A_rows_B_columns_fail_pass": [
+        [
+          210,
+          28
+        ],
+        [
+          43,
+          79
+        ]
+      ],
+      "pairs": 360,
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "claimed_grade": "Junior",
+      "mean_absolute_score_difference": 18.75138888888889,
+      "by_ability": {
+        "-2": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1.5": {
+          "agreement": 0.975,
+          "kappa": 0.0,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              39,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.025
+        },
+        "-1": {
+          "agreement": 0.975,
+          "kappa": 0.0,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              39,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.025,
+          "pass_rate_B": 0.0
+        },
+        "-0.5": {
+          "agreement": 0.9,
+          "kappa": 0.0,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              36,
+              0
+            ],
+            [
+              4,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.1,
+          "pass_rate_B": 0.0
+        },
+        "0": {
+          "agreement": 0.75,
+          "kappa": 0.02439024390243894,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              29,
+              4
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.175,
+          "pass_rate_B": 0.125
+        },
+        "0.5": {
+          "agreement": 0.55,
+          "kappa": -0.02272727272727275,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              18,
+              10
+            ],
+            [
+              8,
+              4
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.3,
+          "pass_rate_B": 0.35
+        },
+        "1": {
+          "agreement": 0.55,
+          "kappa": 0.12621359223300982,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              9,
+              5
+            ],
+            [
+              13,
+              13
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.65,
+          "pass_rate_B": 0.45
+        },
+        "1.5": {
+          "agreement": 0.625,
+          "kappa": -0.21951219512195125,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              0,
+              6
+            ],
+            [
+              9,
+              25
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.85,
+          "pass_rate_B": 0.775
+        },
+        "2": {
+          "agreement": 0.9,
+          "kappa": -0.05263157894736848,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              36
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.95,
+          "pass_rate_B": 0.95
+        }
+      }
+    },
+    {
+      "agreement": 0.8361111111111111,
+      "kappa": 0.42150561063296665,
+      "matrix_A_rows_B_columns_fail_pass": [
+        [
+          269,
+          30
+        ],
+        [
+          29,
+          32
+        ]
+      ],
+      "pairs": 360,
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "claimed_grade": "Middle",
+      "mean_absolute_score_difference": 17.943333333333335,
+      "by_ability": {
+        "-2": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-0.5": {
+          "agreement": 0.975,
+          "kappa": 0.0,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              39,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.025,
+          "pass_rate_B": 0.0
+        },
+        "0": {
+          "agreement": 0.925,
+          "kappa": -0.03448275862068892,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              37,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.025,
+          "pass_rate_B": 0.05
+        },
+        "0.5": {
+          "agreement": 0.825,
+          "kappa": -0.09375000000000007,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              33,
+              4
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.075,
+          "pass_rate_B": 0.1
+        },
+        "1": {
+          "agreement": 0.675,
+          "kappa": 0.029850746268656747,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              25,
+              7
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.2,
+          "pass_rate_B": 0.225
+        },
+        "1.5": {
+          "agreement": 0.525,
+          "kappa": 0.050000000000000044,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              11,
+              9
+            ],
+            [
+              10,
+              10
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.5,
+          "pass_rate_B": 0.475
+        },
+        "2": {
+          "agreement": 0.6,
+          "kappa": 0.04761904761904766,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              4,
+              8
+            ],
+            [
+              8,
+              20
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.7,
+          "pass_rate_B": 0.7
+        }
+      }
+    },
+    {
+      "agreement": 0.8861111111111111,
+      "kappa": 0.6219262295081966,
+      "matrix_A_rows_B_columns_fail_pass": [
+        [
+          273,
+          22
+        ],
+        [
+          19,
+          46
+        ]
+      ],
+      "pairs": 360,
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "claimed_grade": "Junior",
+      "mean_absolute_score_difference": 12.968888888888888,
+      "by_ability": {
+        "-2": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-0.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "0": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "0.5": {
+          "agreement": 0.95,
+          "kappa": -0.025641025641027392,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              38,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.025,
+          "pass_rate_B": 0.025
+        },
+        "1": {
+          "agreement": 0.725,
+          "kappa": 0.24137931034482762,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              25,
+              6
+            ],
+            [
+              5,
+              4
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.225,
+          "pass_rate_B": 0.25
+        },
+        "1.5": {
+          "agreement": 0.5,
+          "kappa": 0.0,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              9,
+              11
+            ],
+            [
+              9,
+              11
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.5,
+          "pass_rate_B": 0.55
+        },
+        "2": {
+          "agreement": 0.8,
+          "kappa": 0.08571428571428592,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              1,
+              4
+            ],
+            [
+              4,
+              31
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.875,
+          "pass_rate_B": 0.875
+        }
+      }
+    },
+    {
+      "agreement": 0.9333333333333333,
+      "kappa": 0.3333333333333333,
+      "matrix_A_rows_B_columns_fail_pass": [
+        [
+          329,
+          13
+        ],
+        [
+          11,
+          7
+        ]
+      ],
+      "pairs": 360,
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "claimed_grade": "Middle",
+      "mean_absolute_score_difference": 12.641111111111112,
+      "by_ability": {
+        "-2": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-0.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "0": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "0.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "1": {
+          "agreement": 0.95,
+          "kappa": 0.0,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              38,
+              2
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.05
+        },
+        "1.5": {
+          "agreement": 0.825,
+          "kappa": -0.07692307692307734,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              33,
+              2
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.125,
+          "pass_rate_B": 0.05
+        },
+        "2": {
+          "agreement": 0.625,
+          "kappa": 0.19354838709677413,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              18,
+              9
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.325,
+          "pass_rate_B": 0.4
+        }
+      }
+    },
+    {
+      "agreement": 0.8861111111111111,
+      "kappa": 0.5278310940499038,
+      "matrix_A_rows_B_columns_fail_pass": [
+        [
+          289,
+          20
+        ],
+        [
+          21,
+          30
+        ]
+      ],
+      "pairs": 360,
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "claimed_grade": "Junior",
+      "mean_absolute_score_difference": 12.177777777777777,
+      "by_ability": {
+        "-2": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-0.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "0": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "0.5": {
+          "agreement": 0.975,
+          "kappa": 0.0,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              39,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.025,
+          "pass_rate_B": 0.0
+        },
+        "1": {
+          "agreement": 0.8,
+          "kappa": -0.11111111111111056,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              32,
+              4
+            ],
+            [
+              4,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.1,
+          "pass_rate_B": 0.1
+        },
+        "1.5": {
+          "agreement": 0.625,
+          "kappa": 0.23076923076923084,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              16,
+              9
+            ],
+            [
+              6,
+              9
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.375,
+          "pass_rate_B": 0.45
+        },
+        "2": {
+          "agreement": 0.575,
+          "kappa": -0.08974358974358981,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              2,
+              7
+            ],
+            [
+              10,
+              21
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.775,
+          "pass_rate_B": 0.7
+        }
+      }
+    },
+    {
+      "agreement": 0.9055555555555556,
+      "kappa": 0.2104244613598247,
+      "matrix_A_rows_B_columns_fail_pass": [
+        [
+          320,
+          17
+        ],
+        [
+          17,
+          6
+        ]
+      ],
+      "pairs": 360,
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "claimed_grade": "Middle",
+      "mean_absolute_score_difference": 14.168888888888887,
+      "by_ability": {
+        "-2": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-1": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "-0.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "0": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "0.5": {
+          "agreement": 1.0,
+          "kappa": null,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              40,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.0,
+          "pass_rate_B": 0.0
+        },
+        "1": {
+          "agreement": 0.95,
+          "kappa": 0.0,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              38,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.05,
+          "pass_rate_B": 0.0
+        },
+        "1.5": {
+          "agreement": 0.725,
+          "kappa": -0.15789473684210514,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              29,
+              6
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.125,
+          "pass_rate_B": 0.15
+        },
+        "2": {
+          "agreement": 0.475,
+          "kappa": -0.08247422680412379,
+          "matrix_A_rows_B_columns_fail_pass": [
+            [
+              13,
+              11
+            ],
+            [
+              10,
+              6
+            ]
+          ],
+          "pairs": 40,
+          "pass_rate_A": 0.4,
+          "pass_rate_B": 0.425
+        }
+      }
+    }
+  ],
+  "family_discrimination": [
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "api_concurrency",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4666666666666666
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "api_cursor_page",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.7208333333333333
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "api_idempotency",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5041666666666667
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "api_retry_ledger",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.7333333333333334
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "python_collections",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.49999999999999994
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "python_exception_flow",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.75
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "python_iterator_state",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.7833333333333333
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "python_mutability",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.49166666666666664
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "sql_group_report",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.7166666666666667
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "sql_join_cardinality",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5125
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "sql_latest_records",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.7208333333333334
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "sql_null_distinct",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5250000000000001
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "api_concurrency",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4125
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "api_cursor_page",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6749999999999999
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "api_idempotency",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.42083333333333334
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "api_retry_ledger",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6416666666666667
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "python_collections",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4458333333333333
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "python_exception_flow",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.725
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "python_iterator_state",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6916666666666667
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "python_mutability",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.44999999999999996
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "sql_group_report",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5874999999999999
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "sql_join_cardinality",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.44166666666666665
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "sql_latest_records",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.625
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "sql_null_distinct",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.3541666666666667
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "analytics_conversion",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5416666666666667
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "analytics_median",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4833333333333334
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "analytics_standardization",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.725
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "analytics_temporal_features",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.7666666666666666
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "quality_contract",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.7000000000000001
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "quality_dedup",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5083333333333333
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "quality_pipeline",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5249999999999999
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "quality_versioned_events",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.7291666666666666
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "sql_group_report",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.7083333333333334
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "sql_join_cardinality",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.49999999999999994
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "sql_latest_records",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.7166666666666667
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "sql_null_distinct",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.40416666666666673
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "analytics_conversion",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.49583333333333335
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "analytics_median",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.42083333333333334
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "analytics_standardization",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5666666666666667
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "analytics_temporal_features",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.7
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "quality_contract",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4958333333333334
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "quality_dedup",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.47083333333333327
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "quality_pipeline",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5333333333333333
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "quality_versioned_events",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6625
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "sql_group_report",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "sql_join_cardinality",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5291666666666666
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "sql_latest_records",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6000000000000001
+    },
+    {
+      "scenario": "independent_forms",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "sql_null_distinct",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4083333333333333
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "api_concurrency",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.47500000000000003
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "api_cursor_page",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6749999999999999
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "api_idempotency",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4333333333333334
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "api_retry_ledger",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.65
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "python_collections",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.39999999999999997
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "python_exception_flow",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.7291666666666666
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "python_iterator_state",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6791666666666667
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "python_mutability",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4625
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "sql_group_report",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.725
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "sql_join_cardinality",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4708333333333334
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "sql_latest_records",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6625
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "sql_null_distinct",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4833333333333334
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "api_concurrency",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.3458333333333334
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "api_cursor_page",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6166666666666667
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "api_idempotency",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.3541666666666667
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "api_retry_ledger",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5875
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "python_collections",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4583333333333333
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "python_exception_flow",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5708333333333333
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "python_iterator_state",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5750000000000001
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "python_mutability",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.3875
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "sql_group_report",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5708333333333333
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "sql_join_cardinality",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4166666666666667
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "sql_latest_records",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.575
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "sql_null_distinct",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.35
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "analytics_conversion",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.42083333333333334
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "analytics_median",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.47916666666666663
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "analytics_standardization",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.625
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "analytics_temporal_features",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.7041666666666666
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "quality_contract",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.7041666666666667
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "quality_dedup",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.49166666666666664
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "quality_pipeline",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.46249999999999997
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "quality_versioned_events",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.7041666666666666
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "sql_group_report",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6875
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "sql_join_cardinality",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4166666666666667
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "sql_latest_records",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6708333333333334
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "sql_null_distinct",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.42083333333333334
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "analytics_conversion",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.45833333333333337
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "analytics_median",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4666666666666666
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "analytics_standardization",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4833333333333333
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "analytics_temporal_features",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6625
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "quality_contract",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5166666666666666
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "quality_dedup",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4083333333333333
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "quality_pipeline",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.45833333333333326
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "quality_versioned_events",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6541666666666667
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "sql_group_report",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6208333333333332
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "sql_join_cardinality",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4333333333333334
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "sql_latest_records",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5416666666666666
+    },
+    {
+      "scenario": "unequal_form_difficulty",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "sql_null_distinct",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.38333333333333336
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "api_concurrency",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4708333333333333
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "api_cursor_page",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.7666666666666667
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "api_idempotency",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.47500000000000003
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "api_retry_ledger",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.725
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "python_collections",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.41250000000000003
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "python_exception_flow",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4333333333333333
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "python_iterator_state",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5041666666666668
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "python_mutability",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.30000000000000004
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "sql_group_report",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.75
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "sql_join_cardinality",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4916666666666667
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "sql_latest_records",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.7416666666666667
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Junior",
+      "family": "sql_null_distinct",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4291666666666667
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "api_concurrency",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.3833333333333333
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "api_cursor_page",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5916666666666667
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "api_idempotency",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.49166666666666664
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "api_retry_ledger",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6208333333333333
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "python_collections",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.35
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "python_exception_flow",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.25
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "python_iterator_state",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.225
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "python_mutability",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.175
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "sql_group_report",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5791666666666667
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "sql_join_cardinality",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.39583333333333337
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "sql_latest_records",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5916666666666667
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "backend",
+      "grade": "Middle",
+      "family": "sql_null_distinct",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.35416666666666663
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "analytics_conversion",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.44999999999999996
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "analytics_median",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4958333333333333
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "analytics_standardization",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6833333333333333
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "analytics_temporal_features",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.8
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "quality_contract",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6666666666666666
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "quality_dedup",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4916666666666667
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "quality_pipeline",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.49583333333333335
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "quality_versioned_events",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.7208333333333334
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "sql_group_report",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.3541666666666667
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "sql_join_cardinality",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.2833333333333333
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "sql_latest_records",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Junior",
+      "family": "sql_null_distinct",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.325
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "analytics_conversion",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5041666666666667
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "analytics_median",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.4708333333333333
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "analytics_standardization",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5083333333333333
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "analytics_temporal_features",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6583333333333333
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "quality_contract",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.5458333333333333
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "quality_dedup",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.47500000000000003
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "quality_pipeline",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.40833333333333327
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "quality_versioned_events",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.6708333333333334
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "sql_group_report",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.175
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "sql_join_cardinality",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.1916666666666667
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "sql_latest_records",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.23333333333333334
+    },
+    {
+      "scenario": "one_weak_skill",
+      "specialization": "data",
+      "grade": "Middle",
+      "family": "sql_null_distinct",
+      "upper_n": 240,
+      "lower_n": 240,
+      "upper_minus_lower": 0.2041666666666667
+    }
+  ],
+  "limitation": "Report all fixed scenarios; no tuning, no human calibration or psychometric validity claim; positive discrimination is partly stipulated by the response model",
+  "input_sha256": {
+    "validation/grade_retest/run.py": "988784f26565b1074aef077f89d8dfdf3be3ce6bf6b2667583156742c8b1eea3",
+    "validation/grade_retest/protocol.json": "6c444dab618dd4aca9c0e192f725a89b94ef43d270a1f4589aab1891db6121fe",
+    "backend/app/assessment_bank.py": "88bacac108f9ad62e6a5920bd5d1961c3a6cf2654bb3622ec1b17fb62239d257",
+    "backend/app/practical_bank.py": "df72bc22921878d579f8856bd8d03edb32e6117a52e4d19b62848d1493327c9f",
+    "backend/app/practical_bank_v2.py": "83e7637089ecfc8ba63b93950bf187eb893530b58c8afbaeb84b345694a807cc",
+    "backend/app/retry_item.py": "10d82bc40b2bbb14851724c39627a15de4970f3070d5a69b9856ece7664525c8"
+  },
+  "rows_sha256": "77012f59ecf3f5055227ed6def858d20d5b3d6b5b6cd2e84c1ed992bb7c33c0d"
+}

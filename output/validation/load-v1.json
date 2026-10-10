@@ -1,0 +1,4546 @@
+{
+  "status": "PASS",
+  "at": "2026-10-07T09:07:18.445256+00:00",
+  "httpx": "0.28.1",
+  "health": {
+    "status": "ok",
+    "version": "0.1.0",
+    "demo_mode": true,
+    "mail_transport": "smtp"
+  },
+  "protocol": "validation/LOAD_PROTOCOL.md",
+  "virtual_clients": 30,
+  "distinct_sessions": 3,
+  "published_profiles": 24,
+  "elapsed_s": 2.826,
+  "requests_per_s": 318.45,
+  "http_statuses": {
+    "200": 900
+  },
+  "by_route": {
+    "search": {
+      "requests": 300,
+      "p50_ms": 127.619,
+      "p95_ms": 179.831,
+      "max_ms": 262.563
+    },
+    "profile": {
+      "requests": 300,
+      "p50_ms": 73.506,
+      "p95_ms": 126.977,
+      "max_ms": 185.527
+    },
+    "invitations": {
+      "requests": 300,
+      "p50_ms": 69.129,
+      "p95_ms": 128.534,
+      "max_ms": 172.718
+    }
+  },
+  "errors": [],
+  "samples": [
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 57.851
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 62.221
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 66.147
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 67.008
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 72.93
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 72.258
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 71.918
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 76.369
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 78.718
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 77.164
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 85.136
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 84.722
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 41.384
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 28.75
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 100.062
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 103.333
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 106.044
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 114.5
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 125.978
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 126.7
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 21.732
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 133.838
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 136.913
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 138.314
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 139.924
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 142.23
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 143.675
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 80.785
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 150.426
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 160.653
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 89.664
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 84.254
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 84.937
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 84.406
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 168.459
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 168.007
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 76.15
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 96.527
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 172.718
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 77.457
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 124.508
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 84.376
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 80.86
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 90.128
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 52.637
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 226.616
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 86.953
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 58.557
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 92.704
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 84.594
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 160.386
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 73.506
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 149.533
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 84.204
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 133.905
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 90.615
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 120.088
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 137.872
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 177.704
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 94.034
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 94.136
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 78.13
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 142.041
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 53.147
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 52.877
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 117.67
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 127.527
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 64.1
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 57.836
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 164.021
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 127.714
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 68.367
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 127.137
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 79.012
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 74.666
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 80.776
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 185.616
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 83.532
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 82.917
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 95.405
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 147.23
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 71.776
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 88.838
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 93.766
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 96.255
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 151.012
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 69.25
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 75.311
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 71.716
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 111.315
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 52.444
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 66.375
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 121.061
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 30.991
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 63.886
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 59.089
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 124.95
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 30.174
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 71.068
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 64.013
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 24.629
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 30.176
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 66.97
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 63.511
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 62.457
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 66.058
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 101.837
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 29.892
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 70.325
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 131.019
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 101.919
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 69.56
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 76.255
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 190.275
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 144.754
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 114.597
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 88.592
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 67.988
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 70.865
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 113.616
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 79.973
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 75.791
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 85.237
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 141.416
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 112.96
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 77.33
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 140.933
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 142.159
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 70.673
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 117.955
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 60.723
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 78.833
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 64.665
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 57.579
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 132.88
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 98.518
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 42.381
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 63.682
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 76.452
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 84.317
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 72.665
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 138.474
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 111.036
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 71.328
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 118.061
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 115.811
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 103.644
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 39.594
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 88.462
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 182.128
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 77.374
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 83.191
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 70.353
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 81.441
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 48.95
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 71.126
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 38.437
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 145.528
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 88.696
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 181.614
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 139.008
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 140.172
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 73.93
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 95.263
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 75.226
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 146.775
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 82.767
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 147.246
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 143.08
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 37.274
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 143.429
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 121.66
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 30.542
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 35.228
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 154.086
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 94.713
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 32.682
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 43.403
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 117.542
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 85.416
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 77.571
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 33.51
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 27.085
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 172.579
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 78.172
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 119.454
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 39.159
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 63.396
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 78.894
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 126.649
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 85.768
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 110.049
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 84.92
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 102.098
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 129.241
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 72.569
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 75.934
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 31.026
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 196.572
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 160.415
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 185.527
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 80.38
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 128.001
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 67.644
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 83.145
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 124.781
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 126.552
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 185.144
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 174.399
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 125.876
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 128.694
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 84.023
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 39.559
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 82.624
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 96.324
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 70.779
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 118.494
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 131.687
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 73.818
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 87.551
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 132.768
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 29.134
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 33.51
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 144.825
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 157.095
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 139.35
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 95.099
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 43.509
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 77.204
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 89.942
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 36.245
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 91.123
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 28.197
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 58.302
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 152.658
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 87.084
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 41.634
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 129.72
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 129.548
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 132.041
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 83.81
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 153.193
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 115.875
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 30.431
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 91.296
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 68.071
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 144.784
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 135.665
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 89.442
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 172.3
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 84.902
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 79.86
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 67.252
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 72.314
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 226.357
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 72.92
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 137.757
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 138.687
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 70.384
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 82.261
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 80.74
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 120.302
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 85.941
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 128.962
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 90.583
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 90.793
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 204.979
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 66.505
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 72.425
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 78.459
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 76.757
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 81.491
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 83.729
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 133.221
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 154.691
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 39.289
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 101.069
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 212.584
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 72.389
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 75.649
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 80.069
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 87.741
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 34.936
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 95.055
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 129.407
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 85.206
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 74.928
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 121.655
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 38.012
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 84.512
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 149.57
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 114.476
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 66.838
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 90.604
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 137.604
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 74.753
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 136.217
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 29.802
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 71.34
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 72.796
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 34.588
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 130.526
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 69.682
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 146.8
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 37.323
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 74.921
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 127.433
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 87.205
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 46.886
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 106.297
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 73.806
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 94.572
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 177.456
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 91.847
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 122.436
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 71.3
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 122.711
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 80.277
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 42.56
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 152.938
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 27.133
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 32.906
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 120.971
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 72.377
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 36.142
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 116.033
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 27.645
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 93.194
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 63.732
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 77.212
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 131.466
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 225.771
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 77.1
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 23.439
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 162.86
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 141.104
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 121.908
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 75.065
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 97.594
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 70.838
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 109.686
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 74.019
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 79.096
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 57.709
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 150.797
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 159.106
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 76.123
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 124.142
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 262.563
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 107.035
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 78.647
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 76.803
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 79.427
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 124.044
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 83.249
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 127.717
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 139.786
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 112.746
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 122.734
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 36.083
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 152.338
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 83.656
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 81.323
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 86.6
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 120.894
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 72.429
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 86.816
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 91.717
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 70.071
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 69.042
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 76.065
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 122.546
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 124.182
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 73.038
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 40.285
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 61.331
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 66.141
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 31.564
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 28.237
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 78.79
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 69.485
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 130.243
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 60.856
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 57.658
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 18.974
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 60.627
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 131.219
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 114.095
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 77.37
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 182.89
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 67.96
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 128.758
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 164.228
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 57.329
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 66.613
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 67.387
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 23.811
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 61.328
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 56.683
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 33.106
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 114.634
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 67.248
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 61.581
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 110.69
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 120.874
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 101.568
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 150.847
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 77.075
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 108.992
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 122.477
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 76.72
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 86.573
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 88.033
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 70.83
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 97.902
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 71.088
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 100.865
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 28.678
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 115.163
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 89.695
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 59.803
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 111.359
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 146.091
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 123.226
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 84.057
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 77.647
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 64.078
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 65.467
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 150.101
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 68.275
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 104.957
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 84.935
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 88.763
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 40.957
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 34.969
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 35.755
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 70.006
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 70.835
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 120.883
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 63.887
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 79.486
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 82.049
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 31.944
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 77.12
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 87.88
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 71.779
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 121.817
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 160.532
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 145.202
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 123.904
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 71.356
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 61.725
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 74.657
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 142.811
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 179.284
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 118.419
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 32.148
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 64.611
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 135.886
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 67.228
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 75.293
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 104.249
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 80.044
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 33.467
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 75.635
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 91.101
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 121.342
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 132.704
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 79.889
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 98.827
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 132.81
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 108.685
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 105.926
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 88.612
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 71.57
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 86.283
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 78.768
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 95.128
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 44.573
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 57.601
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 89.506
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 49.752
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 99.808
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 35.686
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 72.906
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 71.445
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 81.003
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 30.097
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 143.783
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 129.598
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 136.554
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 144.048
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 72.917
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 85.498
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 93.835
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 142.018
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 179.248
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 138.417
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 158.197
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 89.671
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 91.626
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 135.466
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 129.252
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 130.727
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 78.976
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 67.839
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 36.289
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 40.031
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 150.056
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 131.587
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 63.787
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 77.838
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 67.554
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 138.78
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 158.752
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 82.081
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 137.228
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 87.325
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 131.39
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 128.534
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 206.922
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 78.049
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 142.719
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 93.587
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 91.037
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 121.871
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 129.642
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 82.212
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 25.667
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 96.476
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 135.189
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 91.891
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 73.317
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 60.002
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 83.815
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 84.523
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 61.548
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 59.852
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 69.949
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 62.793
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 84.533
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 76.333
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 172.931
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 126.406
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 42.168
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 108.184
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 31.056
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 73.0
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 66.143
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 50.02
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 29.326
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 67.914
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 157.965
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 60.006
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 33.363
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 35.564
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 41.308
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 67.453
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 101.642
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 123.404
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 94.132
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 56.199
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 89.917
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 170.338
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 123.417
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 113.446
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 71.492
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 69.013
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 67.667
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 75.112
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 69.18
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 25.572
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 71.436
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 103.894
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 107.054
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 98.853
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 63.1
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 56.467
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 87.12
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 67.583
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 121.441
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 150.31
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 80.914
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 106.585
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 65.875
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 72.415
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 125.713
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 106.505
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 82.233
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 80.671
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 120.776
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 133.03
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 124.108
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 110.304
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 154.534
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 124.231
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 28.516
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 99.878
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 86.582
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 85.733
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 91.448
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 116.862
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 114.799
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 83.621
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 67.357
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 75.069
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 72.62
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 67.651
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 54.286
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 132.994
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 74.966
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 73.796
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 69.913
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 71.447
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 62.105
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 141.773
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 71.462
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 139.322
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 72.576
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 131.564
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 30.626
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 144.008
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 73.005
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 71.729
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 65.49
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 179.959
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 179.831
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 81.295
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 27.676
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 67.262
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 113.511
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 36.332
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 91.487
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 26.846
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 120.581
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 60.985
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 39.407
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 52.195
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 50.412
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 100.873
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 118.291
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 62.116
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 37.913
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 53.109
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 102.709
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 60.353
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 105.378
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 130.212
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 29.655
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 24.905
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 69.822
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 87.507
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 122.611
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 64.007
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 34.349
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 56.581
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 66.422
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 85.32
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 137.242
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 144.881
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 63.542
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 63.279
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 80.37
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 112.275
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 132.803
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 133.783
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 138.618
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 126.977
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 99.143
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 97.38
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 127.64
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 102.171
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 80.638
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 128.392
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 127.72
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 94.757
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 167.356
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 138.513
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 113.736
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 169.003
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 98.01
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 107.009
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 97.56
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 173.152
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 147.072
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 132.474
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 88.051
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 97.879
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 89.398
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 66.338
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 27.231
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 54.621
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 60.926
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 60.675
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 63.855
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 69.503
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 159.433
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 147.394
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 70.142
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 80.914
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 69.202
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 134.161
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 69.129
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 152.03
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 64.641
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 25.725
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 107.507
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 80.961
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 33.108
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 69.939
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 57.445
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 153.446
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 64.506
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 69.735
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 99.819
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 81.773
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 31.111
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 67.625
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 66.081
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 74.49
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 141.274
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 89.113
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 60.801
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 124.206
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 72.489
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 76.144
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 121.287
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 120.853
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 35.605
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 144.293
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 63.706
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 55.459
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 69.46
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 76.917
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 113.485
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 31.742
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 90.904
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 114.999
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 36.383
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 38.174
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 22.442
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 68.167
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 27.563
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 48.907
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 58.665
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 68.178
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 103.035
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 123.941
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 34.812
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 74.72
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 73.171
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 112.048
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 140.133
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 140.857
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 71.731
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 127.619
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 69.973
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 70.807
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 139.245
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 35.742
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 106.968
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 131.542
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 143.602
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 85.669
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 33.879
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 147.677
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 54.041
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 63.209
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 68.081
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 148.125
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 37.733
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 119.02
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 63.187
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 137.623
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 116.069
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 130.013
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 125.662
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 170.236
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 128.061
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 87.64
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 119.794
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 80.981
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 89.583
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 115.432
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 90.169
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 100.891
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 92.759
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 161.461
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 120.175
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 100.264
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 70.673
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 84.473
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 171.542
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 62.198
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 82.156
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 137.724
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 141.806
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 92.938
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 138.577
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 78.079
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 108.649
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 72.744
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 70.32
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 67.962
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 33.93
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 58.314
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 73.378
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 72.626
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 60.262
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 60.908
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 70.217
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 131.217
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 61.505
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 54.271
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 22.439
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 60.07
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 58.847
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 102.192
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 46.011
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 49.363
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 47.808
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 124.658
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 52.129
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 53.705
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 52.305
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 55.371
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 64.01
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 103.903
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 65.095
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 48.946
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 59.656
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 115.802
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 70.081
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 54.764
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 57.646
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 107.203
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 58.213
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 57.992
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 75.617
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 39.329
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 143.764
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 69.127
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 100.468
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 118.957
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 57.191
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 145.015
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 62.362
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 63.663
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 66.103
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 95.203
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 95.67
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 97.032
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 98.77
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 114.934
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 125.756
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 49.411
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 40.367
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 111.608
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 99.402
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 87.094
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 49.699
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 43.676
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 97.559
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 46.667
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 42.863
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 44.835
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 47.876
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 147.132
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 29.724
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 53.259
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 103.15
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 41.072
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 45.823
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 36.477
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 37.849
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 38.894
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 39.101
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 128.277
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 36.949
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 46.712
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 45.099
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 40.266
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 96.229
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 121.7
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 31.385
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 112.59
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 29.974
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 69.41
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 67.765
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 21.964
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 25.981
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 14.616
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 56.9
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 62.984
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 50.115
+    },
+    {
+      "case": "search",
+      "status": 200,
+      "ms": 41.712
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 8.748
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 8.667
+    },
+    {
+      "case": "profile",
+      "status": 200,
+      "ms": 7.979
+    },
+    {
+      "case": "invitations",
+      "status": 200,
+      "ms": 5.029
+    }
+  ],
+  "generator_worktree_sha256": "9f88486e604f74bec1796f38f0857582df698a815d758d10f8b93e218d68daf9",
+  "backend_sha256": "f88d4e7cd111f8e116ee81ab2c4faf058b3fa6204c3a6ed6fd06c82b438111f5",
+  "provenance_note": "Container hash read after the run, before rebuilding. Generator worktree already had OpenAPI/validation-error fixes; timing samples are unchanged."
+}

@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "scope": "Minimal upstream/local guarded_topk reuse before new adapter; 1 ULP edge contract, not measurable hiring improvement",
+  "x": [
+    [
+      0.5
+    ],
+    [
+      0.5
+    ],
+    [
+      0.5
+    ],
+    [
+      0.5
+    ],
+    [
+      0.5
+    ],
+    [
+      0.5000000000000001
+    ]
+  ],
+  "outputs": {
+    "Equal": {
+      "original": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "guarded": [
+        5,
+        0,
+        1,
+        2,
+        3
+      ],
+      "query": null
+    },
+    "LinearEVOI": {
+      "original": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "guarded": [
+        5,
+        0,
+        1,
+        2,
+        3
+      ],
+      "query": null
+    }
+  },
+  "sources": {
+    "research/pabbo_topk/core.py": "e0f7fec7670cb44b687a8093cd44338d31ef74cf734d428dd41d017284fa8d88",
+    "research/nonlinear_topk/core.py": "c581ba91ff27ca553243e5d4e236fd6b53b47c2a4676f6c9c5871c998547add9",
+    "research/frontier_2026/components/legacy_controls/adapter.py": "c49cdab20e61b485cf53e74644ce8f5910de840b584e00ad211c0f3c67d2443d"
+  },
+  "license": "AGPL-3.0 inherited combined project; notices retained"
+}

@@ -1,0 +1,17 @@
+{
+  "repo": "coral-lab-asu/job-hunt-AI",
+  "commit": "08447341c46b10716d3fe36c5a3ca1c7c1f90eb3",
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "interesting_paths": [
+    "LICENSE",
+    "README.md"
+  ],
+  "tree_truncated": false,
+  "date": "2026-10-07"
+}

@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-07T09:53:10.945003+00:00",
+  "status": "PASS",
+  "isolation": "fresh source directory; separate Compose project fsp-release-check and fresh PostgreSQL volume; same machine; dependency layers cached",
+  "build": "PASS, frontend rebuilt",
+  "container_image_short_id": "c164ed88bef5",
+  "equal_source_files": 48,
+  "checks": {
+    "health": {
+      "status": "ok",
+      "version": "0.1.0",
+      "demo_mode": true,
+      "mail_transport": "smtp"
+    },
+    "frontend": true,
+    "fresh_candidate_grade": "Junior",
+    "candidate_published": true,
+    "fresh_candidate_count": 24,
+    "invitations_endpoint": 200
+  },
+  "production_host": "NOT RUN"
+}

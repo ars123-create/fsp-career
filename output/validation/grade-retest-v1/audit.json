@@ -1,0 +1,5 @@
+{
+  "status": "PASS_COUNT_AND_HASH_AUDIT",
+  "pairs": 4320,
+  "scope": "Independent matrix counts from raw rows; not human review"
+}

@@ -1,0 +1,18 @@
+{
+  "sha256": {
+    "validation/grade_retest/run.py": "988784f26565b1074aef077f89d8dfdf3be3ce6bf6b2667583156742c8b1eea3",
+    "validation/grade_retest/protocol.json": "6c444dab618dd4aca9c0e192f725a89b94ef43d270a1f4589aab1891db6121fe",
+    "backend/app/assessment_bank.py": "88bacac108f9ad62e6a5920bd5d1961c3a6cf2654bb3622ec1b17fb62239d257",
+    "backend/app/practical_bank.py": "df72bc22921878d579f8856bd8d03edb32e6117a52e4d19b62848d1493327c9f",
+    "backend/app/practical_bank_v2.py": "83e7637089ecfc8ba63b93950bf187eb893530b58c8afbaeb84b345694a807cc",
+    "backend/app/retry_item.py": "10d82bc40b2bbb14851724c39627a15de4970f3070d5a69b9856ece7664525c8"
+  },
+  "rubric": {
+    "version": "2026-10-v3",
+    "pass_score": 75,
+    "min_skill_score": 50,
+    "min_practical_skill_score": 50,
+    "notice": "Демонстрационная рубрика. Эталоны проверены вычислением; сложность и границы грейдов ещё не откалиброваны на людях."
+  },
+  "scope": "FIXED_FULL_SIMULATION"
+}

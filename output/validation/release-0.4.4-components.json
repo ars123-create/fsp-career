@@ -1,0 +1,9 @@
+{
+  "python": "3.12.14",
+  "python_docx": "1.2.0",
+  "license": "MIT",
+  "official_document_roundtrip": "PASS",
+  "zipfile_roundtrip_crc": "PASS",
+  "before_adapter": true,
+  "docx_render": "PASS"
+}

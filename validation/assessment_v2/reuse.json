@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-07",
+  "PrairieLearn": {
+    "commit": "076bf1bf7b4dc67a401ab7b1169c41ddf7d50002",
+    "source": "https://github.com/PrairieLearn/PrairieLearn/blob/076bf1bf7b4dc67a401ab7b1169c41ddf7d50002/apps/prairielearn/elements/pl-number-input/pl-number-input.py",
+    "license": "CE AGPL-3.0; third-party and historical portions have other terms; license header read; no code copied or integrated",
+    "source_sha256": "8d3bb9d4cb235869e74866a9c585193d218d61645ffba16e8021d0b46738a516",
+    "status": "READ, NOT RUN; architecture inspected, full platform not selected"
+  }
+}

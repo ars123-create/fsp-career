@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-08",
+  "version": "0.4.5-dev",
+  "status": "PASS within rendered artifact scope",
+  "pptx": {
+    "path": "output/submission-0.4.5-dev/FSP_Career_Pitch_0.4.5_reviewed_r2.pptx",
+    "sha256": "711fc5409e95db32f15a54bd5cc024d5f00c718d182619edb7a140827c7e26e3",
+    "slides": 15,
+    "native_tables": [
+      7,
+      11,
+      13
+    ],
+    "native_chart": [
+      10
+    ],
+    "template_structure": [
+      {
+        "source_slide": 7,
+        "final_slide": 1,
+        "non_text_structure_equal_to_normalized_source": true
+      },
+      {
+        "source_slide": 8,
+        "final_slide": 2,
+        "non_text_structure_equal_to_normalized_source": true
+      },
+      {
+        "source_slide": 9,
+        "final_slide": 3,
+        "non_text_structure_equal_to_normalized_source": true
+      },
+      {
+        "source_slide": 10,
+        "final_slide": 4,
+        "non_text_structure_equal_to_normalized_source": true
+      },
+      {
+        "source_slide": 11,
+        "final_slide": 5,
+        "non_text_structure_equal_to_normalized_source": true
+      }
+    ],
+    "team_fields": "blank as requested",
+    "visual_review": "15/15 main agent and independent slide_visual_review",
+    "nonblocking_limits": [
+      "small supplementary UI text on slide 8",
+      "source email wraps on slide 9"
+    ],
+    "repair": "blank crop on first slide 6 fixed in r2; other 14 renders identical"
+  },
+  "pitch_pdf": {
+    "pages": 15,
+    "pixels": [
+      {
+        "page": 1,
+        "embedded_pixels_equal_to_reviewed_render": true
+      },
+      {
+        "page": 2,
+        "embedded_pixels_equal_to_reviewed_render": true
+      },
+      {
+        "page": 3,
+        "embedded_pixels_equal_to_reviewed_render": true
+      },
+      {
+        "page": 4,
+        "embedded_pixels_equal_to_reviewed_render": true
+      },
+      {
+        "page": 5,
+        "embedded_pixels_equal_to_reviewed_render": true
+      },
+      {
+        "page": 6,
+        "embedded_pixels_equal_to_reviewed_render": true
+      },
+      {
+        "page": 7,
+        "embedded_pixels_equal_to_reviewed_render": true
+      },
+      {
+        "page": 8,
+        "embedded_pixels_equal_to_reviewed_render": true
+      },
+      {
+        "page": 9,
+        "embedded_pixels_equal_to_reviewed_render": true
+      },
+      {
+        "page": 10,
+        "embedded_pixels_equal_to_reviewed_render": true
+      },
+      {
+        "page": 11,
+        "embedded_pixels_equal_to_reviewed_render": true
+      },
+      {
+        "page": 12,
+        "embedded_pixels_equal_to_reviewed_render": true
+      },
+      {
+        "page": 13,
+        "embedded_pixels_equal_to_reviewed_render": true
+      },
+      {
+        "page": 14,
+        "embedded_pixels_equal_to_reviewed_render": true
+      },
+      {
+        "page": 15,
+        "embedded_pixels_equal_to_reviewed_render": true
+      }
+    ],
+    "visual_review": "15/15 independent review PASS"
+  },
+  "docx_pdf": {
+    "pages": 8,
+    "all_pages_visually_reviewed": true,
+    "docx_sha256": "7f8e6f9b90dc786da161d52aced0d593c64620c5ae3f039508b649445480e242",
+    "pdf_sha256": "aeb747625c3148d0ade51989d35963a2e76e2b5854729359b0b05f76ad525b06"
+  },
+  "video": {
+    "duration_seconds": 112,
+    "audio": false,
+    "format": "montage; not continuous screen recording",
+    "full_decode_exit_code": 0
+  },
+  "native_microsoft_word_powerpoint": "NOT RUN",
+  "prior_verification_tool_errors": [
+    "pdftoppm fallback path absent; bundled override/pdftoppm succeeded",
+    "first inline checker duplicated ppt prefix for absolute relationship targets; corrected"
+  ]
+}

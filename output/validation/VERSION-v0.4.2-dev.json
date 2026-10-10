@@ -1,0 +1,9 @@
+{
+  "version": "0.4.2-dev",
+  "date": "2026-10-07",
+  "application_source_sha256": "23f9afa76128a5aa31434698e7b97475d9d7879d2feddbf4aeb06a1703b9b423",
+  "source_files": 72,
+  "identifier": "SHA256 of sorted relative UTF-8 path + NUL + file bytes + NUL; path list in output/validation/source-v0.4.2-dev.json; no git commit published",
+  "submission_archive_version": "0.4.0-dev (unchanged; predates acceleration and FSP tie-break)",
+  "submission_directory": "output/submission-0.4.0-dev"
+}

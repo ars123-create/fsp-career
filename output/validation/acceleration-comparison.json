@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "app_version": "0.4.1-dev",
+  "fixture_protocol_script_unchanged": true,
+  "paired_requests": 492,
+  "compared_response_fields": [
+    "status",
+    "selected_ids",
+    "question",
+    "answered",
+    "skipped",
+    "violations"
+  ],
+  "response_mismatches": 0,
+  "claim": "Local capacity-development comparison, not a hiring-quality result or production SLA. Max tail exceeds 2 seconds in the varied 30-client run; the predefined gate uses p95.",
+  "comparisons": [
+    {
+      "fixture": "bank-v2",
+      "clients": 1,
+      "requests": 6,
+      "before_p95_ms": 24.759666994214058,
+      "after_p95_ms": 25.033999991137534,
+      "relative_p95_reduction_percent": -1.107983386802358,
+      "before_max_ms": 24.759666994214058,
+      "after_max_ms": 25.033999991137534,
+      "before_status": "PASS",
+      "after_status": "PASS"
+    },
+    {
+      "fixture": "bank-v2",
+      "clients": 10,
+      "requests": 60,
+      "before_p95_ms": 437.6973749604076,
+      "after_p95_ms": 433.50300000747666,
+      "relative_p95_reduction_percent": 0.9582819529841524,
+      "before_max_ms": 443.7517499900423,
+      "after_max_ms": 451.644207991194,
+      "before_status": "PASS",
+      "after_status": "PASS"
+    },
+    {
+      "fixture": "bank-v2",
+      "clients": 30,
+      "requests": 180,
+      "before_p95_ms": 1326.8522910075262,
+      "after_p95_ms": 1272.1710829646327,
+      "relative_p95_reduction_percent": 4.121122480134709,
+      "before_max_ms": 1873.8757920218632,
+      "after_max_ms": 1787.1380420401692,
+      "before_status": "PASS",
+      "after_status": "PASS"
+    },
+    {
+      "fixture": "varied",
+      "clients": 1,
+      "requests": 6,
+      "before_p95_ms": 233.1011249916628,
+      "after_p95_ms": 122.71754199173301,
+      "relative_p95_reduction_percent": 47.354375918982726,
+      "before_max_ms": 233.1011249916628,
+      "after_max_ms": 122.71754199173301,
+      "before_status": "PASS",
+      "after_status": "PASS"
+    },
+    {
+      "fixture": "varied",
+      "clients": 10,
+      "requests": 60,
+      "before_p95_ms": 755.3848330280744,
+      "after_p95_ms": 543.0557919899002,
+      "relative_p95_reduction_percent": 28.108724421566833,
+      "before_max_ms": 769.7932090377435,
+      "after_max_ms": 551.2698750244454,
+      "before_status": "PASS",
+      "after_status": "PASS"
+    },
+    {
+      "fixture": "varied",
+      "clients": 30,
+      "requests": 180,
+      "before_p95_ms": 2329.5185839524493,
+      "after_p95_ms": 1679.975209000986,
+      "relative_p95_reduction_percent": 27.883159182589367,
+      "before_max_ms": 4520.8620830089785,
+      "after_max_ms": 2423.1418750132434,
+      "before_status": "FAIL",
+      "after_status": "PASS"
+    }
+  ]
+}

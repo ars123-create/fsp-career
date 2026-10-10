@@ -1,0 +1,73 @@
+{
+  "schema": "fsp-domain-seeds-v1",
+  "primary_seed_ledger_sha256": "97a2a70502248cdb4ae6c4a6ebe27736d817c6b2ed2ff6d7a0a3b8ff52604fdb",
+  "previous_worlds": {
+    "world_seed_values": [
+      202610199000,
+      202610199001,
+      202610199002,
+      202610199003,
+      202610199004,
+      202610199005,
+      202610199006,
+      202610199007,
+      202610199008,
+      202610199009,
+      202610199010,
+      202610199011,
+      202610199020,
+      202610199021,
+      202610199022,
+      202610199023,
+      202610199024,
+      202610199025,
+      202610199026,
+      202610199027,
+      202610199028,
+      202610199029,
+      202610199030,
+      202610199031,
+      202610199040,
+      202610199041,
+      202610199042,
+      202610199043
+    ],
+    "world_seed_ranges": [
+      {
+        "start": 202610100000,
+        "end_inclusive": 202610114095
+      }
+    ]
+  },
+  "note": "Conservatively excludes all supplemental observed/reserved roots, in addition to original ledger. Design/bootstrap roots are separate streams.",
+  "reserved_quality_ranges": [
+    [
+      202610120000,
+      202610126143
+    ],
+    [
+      202610127000,
+      202610127383
+    ]
+  ],
+  "reserved_timing_range": [
+    202610128000,
+    202610128031
+  ],
+  "design_rng": 202610129001,
+  "bootstrap_rng": 202610129002,
+  "observed_harness_sources": [
+    {
+      "run": "domain-harness-quality-v1",
+      "protocol_sha256": "b30a6ac7c574fb9c6d0d973e64ecdf59c8c3cfb62b68de3851cfa82627855948"
+    },
+    {
+      "run": "domain-harness-timing-v1",
+      "protocol_sha256": "c55f69c4b797417d20b3d2f1d4f7f70b7c68abb528111f2815282fcc0f00b716"
+    }
+  ],
+  "unused_initial_harness_reservations": [
+    202610199990,
+    202610199991
+  ]
+}

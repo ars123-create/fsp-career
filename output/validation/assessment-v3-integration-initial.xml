@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="9" time="0.443" timestamp="2026-10-08T00:49:28.674551+03:00" hostname="MacBook-Pro-Arsenij.local"><testcase classname="backend.tests.test_assessment_v3" name="test_integrated_task_and_legacy_source_match_preintegration_snapshots" time="0.000" /><testcase classname="backend.tests.test_assessment_v3" name="test_only_target_family_changes_and_all_answers_match_sql[backend-Junior]" time="0.004" /><testcase classname="backend.tests.test_assessment_v3" name="test_only_target_family_changes_and_all_answers_match_sql[backend-Middle]" time="0.006" /><testcase classname="backend.tests.test_assessment_v3" name="test_only_target_family_changes_and_all_answers_match_sql[data-Junior]" time="0.004" /><testcase classname="backend.tests.test_assessment_v3" name="test_only_target_family_changes_and_all_answers_match_sql[data-Middle]" time="0.004" /><testcase classname="backend.tests.test_assessment_v3" name="test_v2_active_form_keeps_questions_answers_and_rubric" time="0.091" /><testcase classname="backend.tests.test_assessment_v3" name="test_new_api_rejects_wrong_transaction_answer_and_retains_old_grade" time="0.060" /><testcase classname="backend.tests.test_assessment_v3" name="test_v3_short_does_not_mix_with_v2_portfolio" time="0.063" /><testcase classname="backend.tests.test_assessment_v3" name="test_stale_v2_claim_cannot_replace_newer_v3_portfolio" time="0.055"><failure message="AssertionError: assert 'updated_full' == 'older_assessment_retained'&#10;  &#10;  - older_assessment_retained&#10;  + updated_full">[ephemeral fixture details omitted]
+[ephemeral fixture details omitted]
+
+    def test_stale_v2_claim_cannot_replace_newer_v3_portfolio(environment, actors):
+        c,engine=environment;actor=actors["candidate"];h=actor["headers"]
+        tasks=build_test("backend","Junior",948501,version="2026-10-v2")
+        answers={q["id"]:q["_correct"] for q in tasks}
+        with Session(engine) as db:
+            candidate=db.get(Candidate,actor["id"]);candidate.grade_changed_at=now();db.add(candidate)
+            a=Attempt(candidate_id=actor["id"],specialization="backend",grade="Junior",kind="grade",seed=948501,
+                      rubric_version="2026-10-v2",questions=tasks,answers=answers,status="completed",
+                      created_at=100,finished_at=200,expires_at=300,
+                      result=score_test(tasks,answers,rubric_version="2026-10-v2") | {"grade_outcome":"cooldown"})
+            db.add(a);db.commit();attempt_id=a.id
+        new,_=submit(c,engine,h,wrong_practice=True)
+        before=c.get("/api/profile",headers=h).json()["skills"]
+        assert all(v["score"]==75 for v in before.values())
+        with Session(engine) as db:
+            candidate=db.get(Candidate,actor["id"]);candidate.grade_changed_at=now()-91*86400;db.add(candidate);db.commit()
+        claim=c.post(f"/api/assessments/{attempt_id}/claim-grade",headers=h)
+        assert claim.status_code==200
+&gt;       assert claim.json()["result"]["evidence_outcome"]=="older_assessment_retained"
+E       AssertionError: assert 'updated_full' == 'older_assessment_retained'
+E         
+E         - older_assessment_retained
+E         + updated_full
+
+backend/tests/test_assessment_v3.py:131: AssertionError</failure></testcase></testsuite></testsuites>

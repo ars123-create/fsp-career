@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-10",
+  "license": "MIT, project authors; NumPy/SciPy external notices retained",
+  "configuration": {
+    "prior": "mixed",
+    "policy": "kg",
+    "m": 6,
+    "seed": 2026100802,
+    "temperature": 0.04,
+    "lapse": 0.02,
+    "skip_probability": 0.15,
+    "horizon": 1
+  },
+  "files": {
+    "core": {
+      "source": "research/preference_topk/core.py",
+      "source_sha256": "b3aad5b4ba1dba51226c460c5d38e5e23964e04c44a37f565c3412003e0a6344",
+      "adapted_sha256": "b3aad5b4ba1dba51226c460c5d38e5e23964e04c44a37f565c3412003e0a6344",
+      "changes": "Import relocation only"
+    },
+    "models": {
+      "source": "research/frontier_2026/models.py",
+      "source_sha256": "7c431e5c5a9c8f3f0a171407a71f8cfc619ad8ca26528dd300c335023eab535d",
+      "adapted_sha256": "a0d48d969b9a34929b129cd51389040b15fc190b9128d3dfff746be5b757f343",
+      "changes": "Import relocation only"
+    },
+    "finite": {
+      "source": "research/frontier_2026/finite.py",
+      "source_sha256": "7c5945508371fa095e7c55b3e5d119b37e6813a95874682efc41d6c78277154e",
+      "adapted_sha256": "7b5bfe3f6a3cce38d124da13aaf4d77715672e3a71379248a9ec8e22ae762067",
+      "changes": "Import relocation only"
+    },
+    "constraints": {
+      "source": "research/frontier_2026/constraints.py",
+      "source_sha256": "1bbd23c4cd1be21bf1fe289c915fb8475c04a91dce803459aed9b8ccc87941ad",
+      "adapted_sha256": "1bbd23c4cd1be21bf1fe289c915fb8475c04a91dce803459aed9b8ccc87941ad",
+      "changes": "Import relocation only"
+    },
+    "policies": {
+      "source": "research/frontier_2026/policies.py",
+      "source_sha256": "7e6ed609f6c610ec48acd550bfd6dda2fd80625847168a513ac02cd41ea0037f",
+      "adapted_sha256": "39759e42ed50d0b889ea0ec7de2114c569e747523f716d2fd91321a0fdfd5b9c",
+      "changes": "Import relocation only"
+    }
+  }
+}

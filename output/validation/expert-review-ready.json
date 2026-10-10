@@ -1,0 +1,306 @@
+{
+  "application_integrity": {
+    "application_code_changed": false,
+    "files_checked": 83,
+    "note": "Compared with fixed 0.4.4-dev source manifest; application/API/UI tests were not repeated because these 83 files are unchanged.",
+    "snapshot": {
+      "bytes": 14310,
+      "path": "output/validation/source-v0.4.4-dev.json",
+      "sha256": "6e573193f7e77a376b2a8f5ff540b2c6b6bcd03f09669986995390ab0bdcacdd"
+    },
+    "source_sha256": "b8827928870c9ad3fed719fa40a61f55254c4eedbf656d341035d7961975dfa5",
+    "status": "PASS",
+    "version": {
+      "bytes": 524,
+      "path": "VERSION.json",
+      "sha256": "dca6b176fe7d3c1989319737658ba8390f43e0b9f845c53fbaf6698f15a8298d"
+    }
+  },
+  "application_version": "0.4.4-dev",
+  "artifacts": [
+    {
+      "bytes": 5210,
+      "path": "validation/expert_review/DESIGN.md",
+      "sha256": "27cf80c4606c2d96f28613463ee67a5b5baabc53a82d96b9e2399c7802116351"
+    },
+    {
+      "bytes": 17461,
+      "path": "validation/expert_review/packet.py",
+      "sha256": "0511c420339c8120eaca8871eec37f9e06c21c3a9ec6e4169f6df82af2f841cc"
+    },
+    {
+      "bytes": 7803,
+      "path": "validation/expert_review/test_packet.py",
+      "sha256": "a1d9f71cd3ac169fb334936631c83f8820df4c3d380c0d6e89cbd4cfd4cd8a07"
+    },
+    {
+      "bytes": 3355,
+      "path": "output/validation/expert-review-tests.xml",
+      "sha256": "4e49c2e204c2e3dfc805812b714327a83b3dd006f67269ca11768e3c55c88a6c"
+    },
+    {
+      "bytes": 223,
+      "path": "output/validation/expert-review-component.json",
+      "sha256": "740338e22117aae61ba372dfc265b955b5f7113e1db47902dc9f2ce99fa3d70b"
+    },
+    {
+      "bytes": 83866,
+      "path": "output/expert-review-0.4.4/coordinator-key.json",
+      "sha256": "233888093869edbb8152ba9978ed57d98c63a4539665b714fd450ef0aace5691"
+    },
+    {
+      "bytes": 312,
+      "path": "output/expert-review-0.4.4/collection-status.json",
+      "sha256": "0d326ca8c9a5c7c68ad599a723642db7f309ecadee24f44a84abae6f86109ba5"
+    },
+    {
+      "bytes": 6564,
+      "path": "docs/EXTERNAL_DATA_AUDIT.md",
+      "sha256": "7d304dafc2c1c297560576a560cf1c2621dc613ea10880c2a9e39560abb2feb0"
+    },
+    {
+      "bytes": 6322,
+      "path": "docs/EXPERT_REVIEW_READY.md",
+      "sha256": "80f1c3ea0af2f2d7cf49628023cfc94df50268a977cf8aa22788ee79c6bd666e"
+    },
+    {
+      "bytes": 1129,
+      "path": "licenses/Pydantic-2.13.5-LICENSE.txt",
+      "sha256": "a9e186f3ca16b5eef84318e7a701721351a00cb7b8ae3a4394b67b49e3529ef3"
+    }
+  ],
+  "collection_status": {
+    "complete_declared_blind_reviews": {},
+    "content_review": "NOT RUN",
+    "grade_calibration": "NOT RUN",
+    "human_validation": "NOT RUN",
+    "manual_provenance_and_content_review_required": true,
+    "note": "File declarations are not verified human identity or proof of assessment validity.",
+    "reviews": []
+  },
+  "component_probe": {
+    "before_adapter": true,
+    "component": "pydantic",
+    "license": "MIT",
+    "nullable_strict_forbid_probe": "PASS",
+    "official_strict_example": "PASS",
+    "source_read": "BaseModel.model_validate",
+    "version": "2.13.5"
+  },
+  "distinct_cases": 48,
+  "external_data_audit": {
+    "datasets_downloaded": false,
+    "experiments": "NOT RUN",
+    "note": "Bounded provenance/access audit did not establish an applicable public human-labelled gold set for this task bank. This is not a claim that no such dataset exists.",
+    "primary_metadata_artifacts": [
+      {
+        "bytes": 381,
+        "path": "output/validation/external-data-audit/coral-lab-asu--job-hunt-AI.json",
+        "sha256": "81de9cb06f4af45e903d1ef0e2688dcd49063c768cf0d27208e1ccf1173466de"
+      },
+      {
+        "bytes": 267,
+        "path": "output/validation/external-data-audit/jasonyux--ConFit.json",
+        "sha256": "6d90508871a0e675728d288bc0b99ad27d826053cffcbff293cc09a2e187e820"
+      },
+      {
+        "bytes": 490,
+        "path": "output/validation/external-data-audit/megagonlabs--rjdb.json",
+        "sha256": "251177cf649e690c3069d43fc78dccff70b836fa427046f4a414a613d141907e"
+      },
+      {
+        "bytes": 949,
+        "path": "output/validation/external-data-audit/readme-provenance.json",
+        "sha256": "35cdccdc54f1f0d2c929ee226e8aa20bce6b4302dba26f4c034e0ceeafd6a83f"
+      },
+      {
+        "bytes": 301,
+        "path": "output/validation/external-data-audit/thomaswp--CSEDM2019-Data-Challenge.json",
+        "sha256": "ae413ffe0c824aa11a407203d1bd5e8309aa0dd9e0d5ef31dd10b127a52c3c6c"
+      }
+    ],
+    "sources_reviewed": 7,
+    "status": "READ"
+  },
+  "forms": [
+    {
+      "cases": 12,
+      "grade": "Junior",
+      "specialization": "backend"
+    },
+    {
+      "cases": 12,
+      "grade": "Middle",
+      "specialization": "backend"
+    },
+    {
+      "cases": 12,
+      "grade": "Junior",
+      "specialization": "data"
+    },
+    {
+      "cases": 12,
+      "grade": "Middle",
+      "specialization": "data"
+    }
+  ],
+  "frozen_research_integrity": {
+    "elicitation_archive": {
+      "bytes": 2638129,
+      "path": "output/elicitation-audit-0.4.2/FSP_Elicitation_Audit_0.4.2.zip",
+      "sha256": "f47895985644862684a656302551316f480e9e2dbff835d87fc8faf99f97c5ff"
+    },
+    "files": [
+      {
+        "bytes": 12515,
+        "path": "research/robust_topk/core.py",
+        "sha256": "dfc90f10e208ef2b65a7dbac817e739c7f29e739d8904d0aa2b433db4d03ecf8"
+      },
+      {
+        "bytes": 10675,
+        "path": "research/robust_topk/benchmark.py",
+        "sha256": "931eddd033d1eeb0fce8de7ac9df7296fca96a984d6b2dc48ff7c74d4b31b9a5"
+      },
+      {
+        "bytes": 6596,
+        "path": "research/robust_topk/test_core.py",
+        "sha256": "3bedde3e92cd4b824971a33d0c21cc4eb2fe2f93fe023183de8ebc9e92eaa4f5"
+      },
+      {
+        "bytes": 12007,
+        "path": "research/robust_topk/PROOFS.md",
+        "sha256": "b8c452d860e1bb3811a388c54a227db1cea7ca711d3b671cb54a70bffe1eb3e8"
+      },
+      {
+        "bytes": 41,
+        "path": "research/robust_topk/requirements.txt",
+        "sha256": "15f52ad800df06de43b7ad67eefe0f97db46762d32cbffdc1013aa9e77319d21"
+      },
+      {
+        "bytes": 8843,
+        "path": "research/preference_topk/core.py",
+        "sha256": "b3aad5b4ba1dba51226c460c5d38e5e23964e04c44a37f565c3412003e0a6344"
+      },
+      {
+        "bytes": 10515,
+        "path": "research/preference_topk/benchmark.py",
+        "sha256": "ade23013633c5684162bd65d61212337e7cac8fd5061f9dc83b1061b39ff315b"
+      },
+      {
+        "bytes": 5754,
+        "path": "research/preference_topk/test_core.py",
+        "sha256": "b87e897c589a8b5a2f5f37e30f9d26351474af9480247b81d3065a19a23b869e"
+      },
+      {
+        "bytes": 4942,
+        "path": "research/preference_topk/PROOFS.md",
+        "sha256": "bc8616cb4cfc85811b8459d8c502201455cf949e0a8e9ea0525e55b5e61791bd"
+      },
+      {
+        "bytes": 41,
+        "path": "research/preference_topk/requirements.txt",
+        "sha256": "15f52ad800df06de43b7ad67eefe0f97db46762d32cbffdc1013aa9e77319d21"
+      }
+    ],
+    "files_checked": 10,
+    "status": "PASS"
+  },
+  "generated_at_utc": "2026-10-07T21:04:50.575577+00:00",
+  "limitations": [
+    "Human identity and independence cannot be inferred from a JSON declaration.",
+    "Content validity, candidate grade thresholds, form comparability and real hiring utility remain unvalidated.",
+    "No external messages sent and no reviewers recruited.",
+    "This packet does not establish competitor superiority or a guaranteed hackathon win."
+  ],
+  "named_families": 20,
+  "packets": [
+    {
+      "archive_integrity": "PASS",
+      "bytes": 11376,
+      "cases": 24,
+      "coordinator_key_excluded": true,
+      "files": [
+        "INSTRUCTIONS_RU.txt",
+        "QUESTIONS_RU.txt",
+        "questions.json",
+        "review.json",
+        "review.schema.json"
+      ],
+      "packet_id": "15ca0944df645c3f091e6dc66a7c358822e334801804509b3b9079cf60efda60",
+      "path": "output/expert-review-0.4.4/backend-A.zip",
+      "public_context_matches_bank": "PASS",
+      "review_origin": "unfilled",
+      "sha256": "f1459deaad62bab2e88a4a22717b73da3f76b0250413823c037f3365c4923f67"
+    },
+    {
+      "archive_integrity": "PASS",
+      "bytes": 11322,
+      "cases": 24,
+      "coordinator_key_excluded": true,
+      "files": [
+        "INSTRUCTIONS_RU.txt",
+        "QUESTIONS_RU.txt",
+        "questions.json",
+        "review.json",
+        "review.schema.json"
+      ],
+      "packet_id": "8cb65996156e5823fbb7a14d897892dd3b92dd6d69529d86641d659118e11987",
+      "path": "output/expert-review-0.4.4/backend-B.zip",
+      "public_context_matches_bank": "PASS",
+      "review_origin": "unfilled",
+      "sha256": "e6c7aaa72d787794578beb7ffb843dfa54aee6ac393e04bc9ba8e8c084271b13"
+    },
+    {
+      "archive_integrity": "PASS",
+      "bytes": 12086,
+      "cases": 24,
+      "coordinator_key_excluded": true,
+      "files": [
+        "INSTRUCTIONS_RU.txt",
+        "QUESTIONS_RU.txt",
+        "questions.json",
+        "review.json",
+        "review.schema.json"
+      ],
+      "packet_id": "850b1318af88a48b670ca5912052a8a53bd271eaa573023e37dcccb2356c5de1",
+      "path": "output/expert-review-0.4.4/data-A.zip",
+      "public_context_matches_bank": "PASS",
+      "review_origin": "unfilled",
+      "sha256": "f067567db67b121ab702fa65707d0bb0291beb1efae0fd161cf790cc023e8bb1"
+    },
+    {
+      "archive_integrity": "PASS",
+      "bytes": 12093,
+      "cases": 24,
+      "coordinator_key_excluded": true,
+      "files": [
+        "INSTRUCTIONS_RU.txt",
+        "QUESTIONS_RU.txt",
+        "questions.json",
+        "review.json",
+        "review.schema.json"
+      ],
+      "packet_id": "407f90fef87e52dff455900783c7d4a6171eff2ae02a7ac23dd979b1a6341de5",
+      "path": "output/expert-review-0.4.4/data-B.zip",
+      "public_context_matches_bank": "PASS",
+      "review_origin": "unfilled",
+      "sha256": "c7d8cfbeb7697f5d5b1f371ffc1941aaa36ba95773ec13232064e60ce678d7b9"
+    }
+  ],
+  "preparation_status": "PASS",
+  "received_human_reviews": 0,
+  "same_cases_different_order_per_specialization": "PASS",
+  "scope": "Offline preparation of independent content review; no received human observations, no grade calibration, no application integration.",
+  "technical_tests": {
+    "errors": 0,
+    "execution_timestamp": [
+      "2026-10-07T23:57:20.120035+03:00"
+    ],
+    "failures": 0,
+    "note": "Existing completed run inspected; not a new backend test run. All responses in these tests are artificial fixtures.",
+    "skipped": 0,
+    "status": "PASS",
+    "tests": 23,
+    "xml_sha256": "4e49c2e204c2e3dfc805812b714327a83b3dd006f67269ca11768e3c55c88a6c"
+  }
+}

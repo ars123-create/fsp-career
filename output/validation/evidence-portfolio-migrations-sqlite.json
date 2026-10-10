@@ -1,0 +1,19 @@
+{
+  "backend": "sqlite",
+  "results": [
+    {
+      "populated": false,
+      "old_rows_and_columns_preserved": true,
+      "empty_portfolios": 0,
+      "revision": "20261007_03",
+      "alembic_check": "PASS"
+    },
+    {
+      "populated": true,
+      "old_rows_and_columns_preserved": true,
+      "empty_portfolios": 1,
+      "revision": "20261007_03",
+      "alembic_check": "PASS"
+    }
+  ]
+}

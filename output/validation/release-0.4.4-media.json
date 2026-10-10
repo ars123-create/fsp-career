@@ -1,0 +1,67 @@
+{
+  "version": "0.4.4-dev",
+  "format": "silent montage of final slides and actual UI captures",
+  "continuous_screen_recording": false,
+  "audio": false,
+  "duration_seconds": 112,
+  "frames": [
+    {
+      "slide": 6,
+      "seconds": 8,
+      "sha256": "78e879e3d78489d4ab80a4bbd8996975cf37a1b8ef05f493840b7280b580ec8f"
+    },
+    {
+      "slide": 7,
+      "seconds": 12,
+      "sha256": "16a8974d83203850bc62ca9ae493f3808ad812756121d74fea69b7dbdb701e52"
+    },
+    {
+      "slide": 8,
+      "seconds": 12,
+      "sha256": "48b207a47e781fc5727c6142179d54889ef417f2365830b74ac40a119ab21229"
+    },
+    {
+      "slide": 9,
+      "seconds": 10,
+      "sha256": "ea75906f62de12624ff1a0344cca49e20ce47914e38813f4fb5024bf60ab4d4c"
+    },
+    {
+      "slide": 10,
+      "seconds": 12,
+      "sha256": "ee66f1383eef14d2bd08fc59b6ac0ae03aea51886eefec36f6f7c6eec2c5095a"
+    },
+    {
+      "slide": 11,
+      "seconds": 12,
+      "sha256": "9c496f8ad561657fddce474897290ac4c39ebfb187ca14d76030691502798869"
+    },
+    {
+      "slide": 12,
+      "seconds": 12,
+      "sha256": "ee956119706c1e5cabffa592b3e99c791e27fac14c07d379e01a71077de26dbe"
+    },
+    {
+      "slide": 13,
+      "seconds": 12,
+      "sha256": "977a9fdaa67f4bb9586db135a87dd6f07ecdc00c55cab78f68e7c078210d8827"
+    },
+    {
+      "slide": 14,
+      "seconds": 10,
+      "sha256": "01164d3700435d2c283b1e179119675f9bad1a7b7de9d66c0bc6c5024545ae47"
+    },
+    {
+      "slide": 15,
+      "seconds": 12,
+      "sha256": "53d8a205df055b7f1344d4dc3520fca70dc81f8033d2576f6493464e6f55228b"
+    }
+  ],
+  "pptx_sha256": "ac8178558e4f6c33fb198edad1f42f2c4d15a29dfe802cb4e760fe654faf8aff",
+  "video_sha256": "92b5af145990fce954e0ad08453d38d1ccec2512fe4fe7da718d087724649ab8",
+  "pdf_sha256": "d073f402e8e86fa8423aaee673cf9bd334fac82fd72a7dbee5f9f5ee1a97c73d",
+  "technical_probe": "PASS",
+  "pdf_pages": 15,
+  "pdf_images_match_final_render": "PASS",
+  "full_video_decode": "PASS",
+  "note": "Frame images and PDF match the reviewed deck. Video is a silent montage, not a new continuous UI run."
+}

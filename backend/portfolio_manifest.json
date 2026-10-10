@@ -1,0 +1,6 @@
+{
+  "method": "family-latest-v1",
+  "prototype": "validation/evidence_portfolio/prototype.py",
+  "sha256": "c813204145393b37da3f3af068b46d3699f2892c573f62db3570bf8954ceb805",
+  "scope": "fixed-family evidence retention; no skill calibration"
+}

@@ -1,0 +1,206 @@
+{
+  "version": {
+    "version": "0.4.4-dev",
+    "date": "2026-10-07",
+    "application_source_sha256": "b8827928870c9ad3fed719fa40a61f55254c4eedbf656d341035d7961975dfa5",
+    "source_files": 83,
+    "identifier": "SHA256 of sorted relative UTF-8 path + NUL + file bytes + NUL; path list in output/validation/source-v0.4.4-dev.json; no git commit published",
+    "submission_archive_version": "0.4.0-dev (unchanged; predates acceleration, FSP tie-break, direct weights and family retention)",
+    "submission_directory": "output/submission-0.4.0-dev"
+  },
+  "checks": {
+    "sqlite": {
+      "tests": "171",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "9.014"
+    },
+    "postgresql": {
+      "tests": "171",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "20.494"
+    },
+    "docker": {
+      "tests": "171",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "10.599"
+    },
+    "prototype": {
+      "tests": "16",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.019"
+    },
+    "new_api": {
+      "tests": "11",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.674"
+    }
+  },
+  "migrations": {
+    "sqlite": {
+      "backend": "sqlite",
+      "results": [
+        {
+          "populated": false,
+          "old_rows_and_columns_preserved": true,
+          "empty_portfolios": 0,
+          "revision": "20261007_03",
+          "alembic_check": "PASS"
+        },
+        {
+          "populated": true,
+          "old_rows_and_columns_preserved": true,
+          "empty_portfolios": 1,
+          "revision": "20261007_03",
+          "alembic_check": "PASS"
+        }
+      ]
+    },
+    "postgresql": {
+      "backend": "postgresql",
+      "results": [
+        {
+          "populated": false,
+          "old_rows_and_columns_preserved": true,
+          "empty_portfolios": 0,
+          "revision": "20261007_03",
+          "alembic_check": "PASS"
+        },
+        {
+          "populated": true,
+          "old_rows_and_columns_preserved": true,
+          "empty_portfolios": 1,
+          "revision": "20261007_03",
+          "alembic_check": "PASS"
+        }
+      ]
+    }
+  },
+  "runtime": {
+    "all_old_columns_and_rows_preserved": true,
+    "tables": {
+      "user": true,
+      "auditevent": true,
+      "localmail": true,
+      "actiontoken": true,
+      "candidate": true,
+      "company": true,
+      "attempt": true,
+      "need": true,
+      "job": true,
+      "evidence": true,
+      "gradeaward": true,
+      "invitation": true,
+      "application": true
+    },
+    "counts": {
+      "user": {
+        "before": 28,
+        "after": 28
+      },
+      "auditevent": {
+        "before": 13,
+        "after": 13
+      },
+      "localmail": {
+        "before": 2,
+        "after": 2
+      },
+      "actiontoken": {
+        "before": 2,
+        "after": 2
+      },
+      "candidate": {
+        "before": 25,
+        "after": 25
+      },
+      "company": {
+        "before": 3,
+        "after": 3
+      },
+      "attempt": {
+        "before": 27,
+        "after": 27
+      },
+      "need": {
+        "before": 4,
+        "after": 4
+      },
+      "job": {
+        "before": 2,
+        "after": 2
+      },
+      "evidence": {
+        "before": 174,
+        "after": 174
+      },
+      "gradeaward": {
+        "before": 25,
+        "after": 25
+      },
+      "invitation": {
+        "before": 2,
+        "after": 2
+      },
+      "application": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    "new_column_empty_for_all": true,
+    "revision": "20261007_03",
+    "alembic_check": "PASS"
+  },
+  "health_and_openapi": {
+    "health": {
+      "status": "ok",
+      "version": "0.4.4-dev",
+      "demo_mode": true,
+      "mail_transport": "local_demo"
+    },
+    "openapi_version": "0.4.4-dev",
+    "operations": 45
+  },
+  "docker": {
+    "tag": "fsp-career:0.4.4-dev",
+    "image_id": "sha256:5e7b41a52c8a2a1a1c159d4acf9f2521dbcbfbfe50d841d0f4987133b26784d5",
+    "architecture": "arm64",
+    "os": "linux",
+    "test_exit_code": 0,
+    "network": "none",
+    "root_read_only": true,
+    "working_stack_replaced": false
+  },
+  "frozen_files": {
+    "robust_topk/core.py": true,
+    "robust_topk/benchmark.py": true,
+    "robust_topk/test_core.py": true,
+    "robust_topk/PROOFS.md": true,
+    "robust_topk/requirements.txt": true,
+    "preference_topk/core.py": true,
+    "preference_topk/benchmark.py": true,
+    "preference_topk/test_core.py": true,
+    "preference_topk/PROOFS.md": true,
+    "preference_topk/requirements.txt": true
+  },
+  "frozen_audit_zip_unchanged": true,
+  "assessment_banks_unchanged": {
+    "backend/app/assessment_bank.py": true,
+    "backend/app/practical_bank.py": true
+  },
+  "prototype_matches_application": true,
+  "ui_report": "output/validation/evidence-portfolio-ui.json",
+  "frontend_build_format": "PASS (local TypeScript/Vite/Prettier and image build; no frontend changes afterward)",
+  "human_validation": "NOT RUN",
+  "new_write_load_test": "NOT RUN",
+  "full_submission_0_4_4": "NOT RUN"
+}

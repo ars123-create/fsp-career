@@ -1,0 +1,7 @@
+{
+  "name": "fsp-live-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Real browser walkthrough of FSP Career with captions and click markers",
+  "dependencies": {"playwright-core": "1.64.0-alpha-1790635538000"}
+}

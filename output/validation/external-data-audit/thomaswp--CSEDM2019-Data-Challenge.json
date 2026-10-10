@@ -1,0 +1,12 @@
+{
+  "repo": "thomaswp/CSEDM2019-Data-Challenge",
+  "commit": "6e7a1f6463d6343bd0c063fdeacf9cf9147e5073",
+  "license": null,
+  "interesting_paths": [
+    "Example/evaluation_by_problem.csv",
+    "Example/evaluation_overall.csv",
+    "README.md"
+  ],
+  "tree_truncated": false,
+  "date": "2026-10-07"
+}

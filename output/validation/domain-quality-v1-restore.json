@@ -1,0 +1,26 @@
+{
+  "scope": "TRANSPORT_RELOCATION_ONLY",
+  "source": "/Users/arsenij/Documents/ChatGPT/hakaton2/delivery/0.5.0/fsp-career/research/frontier_2026/evidence/domain-quality-v1",
+  "protocol_sha256": "8250603cb3f7db0be882020e7c7a8f5ef2307b49b6e24ef3dbdf47b04ea425b8",
+  "workers": [
+    {
+      "worker": 0,
+      "original_workspace": "/Users/arsenij/Documents/ChatGPT/hakaton2/research/frontier_2026/evidence/domain-quality-v1/snapshot",
+      "original_sha256": "9bbd40b131be794683bbf6e50b04e829853a827ee8468cf1303f5a6ad867e0de",
+      "relocated_sha256": "88fcb107d83b6e1576e4cfeaa11e8efc61d4833b96b6acca0ce91b36cae3beed",
+      "rows_sha256": "306df3cc94111c72d6bf65118378eca03d8c18768a6421df967f44b8d67150a2"
+    },
+    {
+      "worker": 1,
+      "original_workspace": "/Users/arsenij/Documents/ChatGPT/hakaton2/research/frontier_2026/evidence/domain-quality-v1/snapshot",
+      "original_sha256": "9bbd40b131be794683bbf6e50b04e829853a827ee8468cf1303f5a6ad867e0de",
+      "relocated_sha256": "88fcb107d83b6e1576e4cfeaa11e8efc61d4833b96b6acca0ce91b36cae3beed",
+      "rows_sha256": "c4335c6cdbd6f75a6aa97402415d7c789a717e58fe0415b04c0490524df7e5c8"
+    }
+  ],
+  "status": "PASS",
+  "rows": 548352,
+  "bytes": 2197925303,
+  "rows_sha256": "2ff5500350581c08eead8cf4abe064b7b5a592657e2e5219d7b0d5ac7f854ec6",
+  "source_files": 123
+}

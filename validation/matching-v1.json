@@ -1,0 +1,342 @@
+{
+  "version": 1,
+  "kind": "authored_synthetic_scenarios",
+  "as_of": 1791331200,
+  "columns": [
+    "id",
+    "specialization",
+    "grade",
+    "work_format",
+    "salary_min_thousand",
+    "salary_max_thousand",
+    "test_score",
+    "families",
+    "age_days",
+    "fsp_achievements",
+    "stack"
+  ],
+  "profiles": [
+    [
+      "b1",
+      "backend",
+      "Middle",
+      "remote",
+      180,
+      240,
+      90,
+      2,
+      20,
+      0,
+      [
+        "Python",
+        "SQL",
+        "API"
+      ]
+    ],
+    [
+      "b2",
+      "backend",
+      "Middle",
+      "remote",
+      170,
+      230,
+      95,
+      1,
+      120,
+      0,
+      [
+        "Python",
+        "SQL",
+        "API"
+      ]
+    ],
+    [
+      "b3",
+      "backend",
+      "Middle",
+      "office",
+      180,
+      230,
+      100,
+      2,
+      5,
+      2,
+      [
+        "Python",
+        "SQL",
+        "API"
+      ]
+    ],
+    [
+      "b4",
+      "backend",
+      "Junior",
+      "remote",
+      90,
+      140,
+      100,
+      2,
+      5,
+      0,
+      [
+        "Python",
+        "SQL",
+        "API"
+      ]
+    ],
+    [
+      "b5",
+      "backend",
+      "Middle",
+      "remote",
+      280,
+      360,
+      100,
+      2,
+      5,
+      2,
+      [
+        "Python",
+        "SQL",
+        "API"
+      ]
+    ],
+    [
+      "b6",
+      "backend",
+      "Junior",
+      "hybrid",
+      110,
+      150,
+      80,
+      2,
+      10,
+      1,
+      [
+        "Python",
+        "SQL",
+        "API"
+      ]
+    ],
+    [
+      "d1",
+      "data",
+      "Middle",
+      "remote",
+      160,
+      220,
+      90,
+      2,
+      15,
+      0,
+      [
+        "SQL",
+        "Аналитика",
+        "Качество данных"
+      ]
+    ],
+    [
+      "d2",
+      "data",
+      "Middle",
+      "remote",
+      160,
+      220,
+      95,
+      1,
+      130,
+      0,
+      [
+        "SQL",
+        "Аналитика",
+        "Качество данных"
+      ]
+    ],
+    [
+      "d3",
+      "data",
+      "Junior",
+      "remote",
+      80,
+      130,
+      80,
+      2,
+      10,
+      1,
+      [
+        "SQL",
+        "Аналитика",
+        "Качество данных"
+      ]
+    ],
+    [
+      "d4",
+      "data",
+      "Middle",
+      "office",
+      150,
+      210,
+      100,
+      2,
+      5,
+      1,
+      [
+        "SQL",
+        "Аналитика",
+        "Качество данных"
+      ]
+    ],
+    [
+      "d5",
+      "data",
+      "Middle",
+      "remote",
+      280,
+      350,
+      100,
+      2,
+      5,
+      2,
+      [
+        "SQL",
+        "Аналитика",
+        "Качество данных"
+      ]
+    ],
+    [
+      "d6",
+      "data",
+      "Junior",
+      "hybrid",
+      90,
+      150,
+      75,
+      2,
+      90,
+      0,
+      [
+        "SQL",
+        "Аналитика",
+        "Качество данных"
+      ]
+    ]
+  ],
+  "queries": [
+    {
+      "id": "q1",
+      "specialization": "backend",
+      "grade": "Middle",
+      "work_format": "remote",
+      "salary_min": 180000,
+      "salary_max": 250000,
+      "skills": [
+        "Python",
+        "SQL"
+      ],
+      "labels": {
+        "b1": 1,
+        "b2": 2
+      }
+    },
+    {
+      "id": "q2",
+      "specialization": "backend",
+      "grade": "Junior",
+      "work_format": "remote",
+      "salary_min": 90000,
+      "salary_max": 150000,
+      "skills": [
+        "Python"
+      ],
+      "labels": {
+        "b4": 2
+      }
+    },
+    {
+      "id": "q3",
+      "specialization": "backend",
+      "grade": "Middle",
+      "work_format": "office",
+      "salary_min": 180000,
+      "salary_max": 240000,
+      "skills": [
+        "API"
+      ],
+      "labels": {
+        "b3": 2
+      }
+    },
+    {
+      "id": "q4",
+      "specialization": "backend",
+      "grade": "Junior",
+      "work_format": "hybrid",
+      "salary_min": 110000,
+      "salary_max": 160000,
+      "skills": [
+        "SQL"
+      ],
+      "labels": {
+        "b6": 2
+      }
+    },
+    {
+      "id": "q5",
+      "specialization": "data",
+      "grade": "Middle",
+      "work_format": "remote",
+      "salary_min": 160000,
+      "salary_max": 230000,
+      "skills": [
+        "SQL",
+        "Аналитика"
+      ],
+      "labels": {
+        "d1": 1,
+        "d2": 2
+      }
+    },
+    {
+      "id": "q6",
+      "specialization": "data",
+      "grade": "Junior",
+      "work_format": "remote",
+      "salary_min": 90000,
+      "salary_max": 140000,
+      "skills": [
+        "SQL"
+      ],
+      "labels": {
+        "d3": 2
+      }
+    },
+    {
+      "id": "q7",
+      "specialization": "data",
+      "grade": "Middle",
+      "work_format": "office",
+      "salary_min": 150000,
+      "salary_max": 220000,
+      "skills": [
+        "Качество данных"
+      ],
+      "labels": {
+        "d4": 2
+      }
+    },
+    {
+      "id": "q8",
+      "specialization": "data",
+      "grade": "Junior",
+      "work_format": "hybrid",
+      "salary_min": 100000,
+      "salary_max": 150000,
+      "skills": [
+        "Аналитика"
+      ],
+      "labels": {
+        "d6": 2
+      }
+    }
+  ]
+}

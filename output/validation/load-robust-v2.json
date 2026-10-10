@@ -1,0 +1,2711 @@
+{
+  "scenario": "30 concurrent clients, 2 local demo employer sessions, 10 searches/client; no database writes",
+  "platform": "local macOS, SQLite, local uvicorn; not the earlier Docker/2CPU benchmark",
+  "requests": 300,
+  "sessions": 2,
+  "http_200": 300,
+  "p95_ms": 892.4613809358561,
+  "solver_nonoptimal": 0,
+  "rows": [
+    {
+      "client": 1,
+      "step": 0,
+      "seconds": 0.357155125006102,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 7,
+      "step": 0,
+      "seconds": 0.35719975002575666,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 11,
+      "step": 0,
+      "seconds": 0.35820266604423523,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 13,
+      "step": 0,
+      "seconds": 0.3593770419829525,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 4,
+      "step": 0,
+      "seconds": 0.36104774998966604,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 8,
+      "step": 0,
+      "seconds": 0.36507595801958814,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 12,
+      "step": 0,
+      "seconds": 0.36830874998122454,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 0,
+      "step": 0,
+      "seconds": 0.37963574996683747,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 9,
+      "step": 0,
+      "seconds": 0.3718422499950975,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 3,
+      "step": 0,
+      "seconds": 0.37300120800500736,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 6,
+      "step": 0,
+      "seconds": 0.37282158399466425,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 15,
+      "step": 0,
+      "seconds": 0.37447020795661956,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 5,
+      "step": 0,
+      "seconds": 0.3766182079561986,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 2,
+      "step": 0,
+      "seconds": 0.37932054104749113,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 10,
+      "step": 0,
+      "seconds": 0.38000916701275855,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 6,
+      "step": 1,
+      "seconds": 0.29610587505158037,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 16,
+      "step": 0,
+      "seconds": 0.669041917019058,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 14,
+      "step": 0,
+      "seconds": 0.6701602499815635,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 17,
+      "step": 0,
+      "seconds": 0.6735390829853714,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 25,
+      "step": 0,
+      "seconds": 0.6726721249870025,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 26,
+      "step": 0,
+      "seconds": 0.6729437499889173,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 19,
+      "step": 0,
+      "seconds": 0.6765679580275901,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 8,
+      "step": 1,
+      "seconds": 0.31363041704753414,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 12,
+      "step": 1,
+      "seconds": 0.3102039579534903,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 4,
+      "step": 1,
+      "seconds": 0.32167833304265514,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 24,
+      "step": 0,
+      "seconds": 0.6806981249828823,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 18,
+      "step": 0,
+      "seconds": 0.6848204160341993,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 15,
+      "step": 1,
+      "seconds": 0.31105383404064924,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 22,
+      "step": 0,
+      "seconds": 0.6902080829604529,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 21,
+      "step": 0,
+      "seconds": 0.710389917017892,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 25,
+      "step": 1,
+      "seconds": 0.26878987497184426,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 3,
+      "step": 1,
+      "seconds": 0.5746438329806551,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 1,
+      "step": 1,
+      "seconds": 0.5948962919646874,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 13,
+      "step": 1,
+      "seconds": 0.5930832920130342,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 11,
+      "step": 1,
+      "seconds": 0.5957324170158245,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 7,
+      "step": 1,
+      "seconds": 0.6044054579688236,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 0,
+      "step": 1,
+      "seconds": 0.5931229160050862,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 9,
+      "step": 1,
+      "seconds": 0.5906277080066502,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 16,
+      "step": 1,
+      "seconds": 0.2979017079924233,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 14,
+      "step": 1,
+      "seconds": 0.2995938330423087,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 19,
+      "step": 1,
+      "seconds": 0.29988670797320083,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 29,
+      "step": 0,
+      "seconds": 0.9746042499900796,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 2,
+      "step": 1,
+      "seconds": 0.6046223340090364,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 10,
+      "step": 1,
+      "seconds": 0.6151184579939581,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 27,
+      "step": 0,
+      "seconds": 1.0284749169950373,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 26,
+      "step": 1,
+      "seconds": 0.5688385829562321,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 17,
+      "step": 1,
+      "seconds": 0.5883566249976866,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 5,
+      "step": 1,
+      "seconds": 0.8922355829854496,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 3,
+      "step": 2,
+      "seconds": 0.3232562500052154,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 11,
+      "step": 2,
+      "seconds": 0.316092082997784,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 7,
+      "step": 2,
+      "seconds": 0.31002608296694234,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 28,
+      "step": 0,
+      "seconds": 1.2692327499971725,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 18,
+      "step": 1,
+      "seconds": 0.5906868749880232,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 20,
+      "step": 0,
+      "seconds": 1.2811318750027567,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 8,
+      "step": 2,
+      "seconds": 0.6044202499906532,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 6,
+      "step": 2,
+      "seconds": 0.6149934999994002,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 4,
+      "step": 2,
+      "seconds": 0.6069028329802677,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 22,
+      "step": 1,
+      "seconds": 0.6089670830406249,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 15,
+      "step": 2,
+      "seconds": 0.6205339159932919,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 21,
+      "step": 1,
+      "seconds": 0.7582300410140306,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 1,
+      "step": 2,
+      "seconds": 0.6161835420061834,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 13,
+      "step": 2,
+      "seconds": 0.6176010000053793,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 25,
+      "step": 2,
+      "seconds": 0.6311712919850834,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 23,
+      "step": 0,
+      "seconds": 1.5755148750031367,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 24,
+      "step": 1,
+      "seconds": 0.8967515419935808,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.475586568020162e-15,
+      "considered": 8
+    },
+    {
+      "client": 18,
+      "step": 2,
+      "seconds": 0.3071613750071265,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 12,
+      "step": 2,
+      "seconds": 0.912084249954205,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 19,
+      "step": 2,
+      "seconds": 0.6170865829917602,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 2,
+      "step": 2,
+      "seconds": 0.6125702500576153,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 0,
+      "step": 2,
+      "seconds": 0.6372958329739049,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 9,
+      "step": 2,
+      "seconds": 0.6410669580218382,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 6,
+      "step": 3,
+      "seconds": 0.32625145895872265,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 14,
+      "step": 2,
+      "seconds": 0.6485676669981331,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 10,
+      "step": 2,
+      "seconds": 0.6361019169562496,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 11,
+      "step": 3,
+      "seconds": 0.5289298749994487,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 27,
+      "step": 1,
+      "seconds": 0.8099988750182092,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 7,
+      "step": 3,
+      "seconds": 0.5766088750096969,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 3,
+      "step": 3,
+      "seconds": 0.5919840419664979,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 17,
+      "step": 2,
+      "seconds": 0.6224486670107581,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 5,
+      "step": 2,
+      "seconds": 0.6273318330058828,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 26,
+      "step": 2,
+      "seconds": 0.6499477910110727,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 23,
+      "step": 1,
+      "seconds": 0.31906845897901803,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 29,
+      "step": 1,
+      "seconds": 0.926626792002935,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 8,
+      "step": 3,
+      "seconds": 0.6368381250067614,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 20,
+      "step": 1,
+      "seconds": 0.6379426659550518,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 4,
+      "step": 3,
+      "seconds": 0.6457776250317693,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 16,
+      "step": 2,
+      "seconds": 0.9808375419816002,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 22,
+      "step": 2,
+      "seconds": 0.7084418750018813,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 15,
+      "step": 3,
+      "seconds": 0.7432662500068545,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 21,
+      "step": 2,
+      "seconds": 0.6734078329754993,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 13,
+      "step": 3,
+      "seconds": 0.5923311249935068,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 19,
+      "step": 3,
+      "seconds": 0.5724891250138171,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 1,
+      "step": 3,
+      "seconds": 0.6045156250474975,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 25,
+      "step": 3,
+      "seconds": 0.5957946669659577,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 28,
+      "step": 1,
+      "seconds": 0.907481333008036,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 18,
+      "step": 3,
+      "seconds": 0.5998073329683393,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 24,
+      "step": 2,
+      "seconds": 0.6047730419668369,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 12,
+      "step": 3,
+      "seconds": 0.5992283750092611,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 0,
+      "step": 3,
+      "seconds": 0.6038915829849429,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 23,
+      "step": 2,
+      "seconds": 0.32607562496559694,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 10,
+      "step": 3,
+      "seconds": 0.6081825000001118,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 9,
+      "step": 3,
+      "seconds": 0.6492191659635864,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 6,
+      "step": 4,
+      "seconds": 0.7055592920514755,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 14,
+      "step": 3,
+      "seconds": 0.7351034160237759,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 11,
+      "step": 4,
+      "seconds": 0.6418831250048243,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 13,
+      "step": 4,
+      "seconds": 0.29530470800818875,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 27,
+      "step": 2,
+      "seconds": 0.6200001249671914,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 7,
+      "step": 4,
+      "seconds": 0.620470917026978,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 17,
+      "step": 3,
+      "seconds": 0.5836330829770304,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 26,
+      "step": 3,
+      "seconds": 0.5811960410210304,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 2,
+      "step": 3,
+      "seconds": 0.8824349169735797,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 5,
+      "step": 3,
+      "seconds": 0.5844633750384673,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.5612511283791264e-14,
+      "considered": 8
+    },
+    {
+      "client": 29,
+      "step": 2,
+      "seconds": 0.578148832952138,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 8,
+      "step": 4,
+      "seconds": 0.6026912089437246,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 20,
+      "step": 2,
+      "seconds": 0.6950685839983635,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 9,
+      "step": 4,
+      "seconds": 0.365151583973784,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 16,
+      "step": 3,
+      "seconds": 0.6762985830428079,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 4,
+      "step": 4,
+      "seconds": 0.7119742920040153,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 15,
+      "step": 4,
+      "seconds": 0.6250316249788739,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 19,
+      "step": 4,
+      "seconds": 0.5524943330092356,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 11,
+      "step": 5,
+      "seconds": 0.298240666044876,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 21,
+      "step": 3,
+      "seconds": 0.6076028340030462,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 1,
+      "step": 4,
+      "seconds": 0.5823789580026641,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 24,
+      "step": 3,
+      "seconds": 0.5797085409867577,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 25,
+      "step": 4,
+      "seconds": 0.5970141660072841,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 18,
+      "step": 4,
+      "seconds": 0.5961065000155941,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 12,
+      "step": 4,
+      "seconds": 0.5985500420210883,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 28,
+      "step": 2,
+      "seconds": 0.6397462910390459,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 22,
+      "step": 3,
+      "seconds": 0.8683553750161082,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 23,
+      "step": 3,
+      "seconds": 0.6698732500080951,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 10,
+      "step": 4,
+      "seconds": 0.6748315410222858,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 0,
+      "step": 4,
+      "seconds": 0.7124917499604635,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 6,
+      "step": 5,
+      "seconds": 0.6217812499962747,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 14,
+      "step": 4,
+      "seconds": 0.630715292005334,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 27,
+      "step": 3,
+      "seconds": 0.5518458749866113,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 3,
+      "step": 4,
+      "seconds": 1.1588052500155754,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 13,
+      "step": 5,
+      "seconds": 0.5628951670369133,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 7,
+      "step": 5,
+      "seconds": 0.5533613749430515,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 1,
+      "step": 5,
+      "seconds": 0.28357670799596235,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 2,
+      "step": 4,
+      "seconds": 0.5875789590063505,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 26,
+      "step": 4,
+      "seconds": 0.5972188749583438,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 5,
+      "step": 4,
+      "seconds": 0.600889166991692,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 29,
+      "step": 3,
+      "seconds": 0.6806109999888577,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 9,
+      "step": 5,
+      "seconds": 0.5630840419908054,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 8,
+      "step": 5,
+      "seconds": 0.6650122090359218,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 20,
+      "step": 3,
+      "seconds": 0.5774347499827854,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 16,
+      "step": 4,
+      "seconds": 0.5945777089800686,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 4,
+      "step": 5,
+      "seconds": 0.5742787079652771,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 15,
+      "step": 5,
+      "seconds": 0.5993972500436939,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 19,
+      "step": 5,
+      "seconds": 0.5600558330188505,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 17,
+      "step": 4,
+      "seconds": 0.8273612080374733,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 11,
+      "step": 6,
+      "seconds": 0.5794876659638248,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 21,
+      "step": 4,
+      "seconds": 0.5976054579950869,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 7,
+      "step": 6,
+      "seconds": 0.3281664159731008,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 25,
+      "step": 5,
+      "seconds": 0.5891024169977754,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 12,
+      "step": 5,
+      "seconds": 0.5767939579673111,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 18,
+      "step": 5,
+      "seconds": 0.6230954999919049,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 28,
+      "step": 3,
+      "seconds": 0.6204954999848269,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 10,
+      "step": 5,
+      "seconds": 0.5598134999745525,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 6,
+      "step": 6,
+      "seconds": 0.5554997499566525,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 22,
+      "step": 4,
+      "seconds": 0.6250725840218365,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 23,
+      "step": 4,
+      "seconds": 0.6176623339997604,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 0,
+      "step": 5,
+      "seconds": 0.5959596249740571,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 14,
+      "step": 5,
+      "seconds": 0.5745944169466384,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 3,
+      "step": 5,
+      "seconds": 0.5815977909951471,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 27,
+      "step": 4,
+      "seconds": 0.6114883749978617,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 26,
+      "step": 5,
+      "seconds": 0.5590435000485741,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 24,
+      "step": 4,
+      "seconds": 0.869973583961837,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 2,
+      "step": 5,
+      "seconds": 0.572262083995156,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 13,
+      "step": 6,
+      "seconds": 0.6357875419780612,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 1,
+      "step": 6,
+      "seconds": 0.6222157499869354,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 5,
+      "step": 5,
+      "seconds": 0.6077643749886192,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 29,
+      "step": 4,
+      "seconds": 0.615905666956678,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 16,
+      "step": 5,
+      "seconds": 0.5723937909933738,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 9,
+      "step": 6,
+      "seconds": 0.6175988329923712,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 8,
+      "step": 6,
+      "seconds": 0.6206299589830451,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 4,
+      "step": 6,
+      "seconds": 0.5877065830281936,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 20,
+      "step": 4,
+      "seconds": 0.6270429589785635,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 17,
+      "step": 5,
+      "seconds": 0.6198403750313446,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 27,
+      "step": 5,
+      "seconds": 0.29111179197207093,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 15,
+      "step": 6,
+      "seconds": 0.653641915996559,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 7,
+      "step": 7,
+      "seconds": 0.5807152920169756,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 19,
+      "step": 6,
+      "seconds": 0.6512819579802454,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 11,
+      "step": 7,
+      "seconds": 0.6129857909982093,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 25,
+      "step": 6,
+      "seconds": 0.6128636660287157,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 12,
+      "step": 6,
+      "seconds": 0.6244225829723291,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 18,
+      "step": 6,
+      "seconds": 0.6493710000067949,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 23,
+      "step": 5,
+      "seconds": 0.5644252909696661,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 10,
+      "step": 6,
+      "seconds": 0.6084912500227802,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 6,
+      "step": 7,
+      "seconds": 0.5929154999903403,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 28,
+      "step": 4,
+      "seconds": 0.6551150839659385,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 22,
+      "step": 5,
+      "seconds": 0.6051077920128591,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 0,
+      "step": 6,
+      "seconds": 0.6275478749885224,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 24,
+      "step": 5,
+      "seconds": 0.5566032500355504,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 3,
+      "step": 6,
+      "seconds": 0.6135216249967925,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 21,
+      "step": 5,
+      "seconds": 0.880157791019883,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 26,
+      "step": 6,
+      "seconds": 0.6095188749604858,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 2,
+      "step": 6,
+      "seconds": 0.6124009169870988,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 14,
+      "step": 6,
+      "seconds": 0.7039346670499071,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 1,
+      "step": 7,
+      "seconds": 0.6466291249962524,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 13,
+      "step": 7,
+      "seconds": 0.659506666008383,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 5,
+      "step": 6,
+      "seconds": 0.6631465409882367,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 29,
+      "step": 5,
+      "seconds": 0.5726970420219004,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 9,
+      "step": 7,
+      "seconds": 0.5663496669731103,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 8,
+      "step": 7,
+      "seconds": 0.5787600000039674,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 4,
+      "step": 7,
+      "seconds": 0.6036668750457466,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 16,
+      "step": 6,
+      "seconds": 0.6273591659846716,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 20,
+      "step": 5,
+      "seconds": 0.664167125010863,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 27,
+      "step": 6,
+      "seconds": 0.6027772499946877,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 19,
+      "step": 7,
+      "seconds": 0.5906950839562342,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 24,
+      "step": 6,
+      "seconds": 0.34176824998576194,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 17,
+      "step": 6,
+      "seconds": 0.6170522500178777,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 26,
+      "step": 7,
+      "seconds": 0.3044531249906868,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 3.112093915902392e-14,
+      "considered": 8
+    },
+    {
+      "client": 11,
+      "step": 8,
+      "seconds": 0.6415619170293212,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 25,
+      "step": 7,
+      "seconds": 0.6263912910362706,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 12,
+      "step": 7,
+      "seconds": 0.6299120420007966,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 18,
+      "step": 7,
+      "seconds": 0.590318207978271,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 10,
+      "step": 7,
+      "seconds": 0.5736437919549644,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 23,
+      "step": 6,
+      "seconds": 0.5973427090211771,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 6,
+      "step": 8,
+      "seconds": 0.6044258329784498,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 28,
+      "step": 5,
+      "seconds": 0.6036221670219675,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 0,
+      "step": 7,
+      "seconds": 0.5928382499841973,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 22,
+      "step": 6,
+      "seconds": 0.6376477919984609,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 3,
+      "step": 7,
+      "seconds": 0.5985166659811512,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 15,
+      "step": 7,
+      "seconds": 0.8975193330552429,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 2,
+      "step": 7,
+      "seconds": 0.6051032909890637,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 21,
+      "step": 6,
+      "seconds": 0.6468544590170495,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 14,
+      "step": 7,
+      "seconds": 0.6189237079815939,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 19,
+      "step": 8,
+      "seconds": 0.3925637500360608,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 1,
+      "step": 8,
+      "seconds": 0.6231869590119459,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 5,
+      "step": 7,
+      "seconds": 0.5935622910037637,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 13,
+      "step": 8,
+      "seconds": 0.6292223340133205,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 29,
+      "step": 6,
+      "seconds": 0.6164364999858662,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 9,
+      "step": 8,
+      "seconds": 0.6287567500257865,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 4,
+      "step": 8,
+      "seconds": 0.6176482500159182,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 8,
+      "step": 8,
+      "seconds": 0.6435957089997828,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 16,
+      "step": 7,
+      "seconds": 0.6610162080032751,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 0,
+      "step": 8,
+      "seconds": 0.3638778750319034,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 27,
+      "step": 7,
+      "seconds": 0.6329135410487652,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 7,
+      "step": 8,
+      "seconds": 1.2241824170341715,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 17,
+      "step": 7,
+      "seconds": 0.6503655419801362,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 24,
+      "step": 7,
+      "seconds": 0.6805643750121817,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 26,
+      "step": 8,
+      "seconds": 0.697600124985911,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 25,
+      "step": 8,
+      "seconds": 0.6574339999933727,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 11,
+      "step": 9,
+      "seconds": 0.6826447080238722,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 18,
+      "step": 8,
+      "seconds": 0.6195648749708198,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 12,
+      "step": 8,
+      "seconds": 0.6648277079802938,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 10,
+      "step": 8,
+      "seconds": 0.6454819170176052,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 23,
+      "step": 7,
+      "seconds": 0.635120042017661,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 6,
+      "step": 9,
+      "seconds": 0.650795457942877,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 28,
+      "step": 6,
+      "seconds": 0.6648793329950422,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 22,
+      "step": 7,
+      "seconds": 0.6844214159646071,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 20,
+      "step": 6,
+      "seconds": 0.973666041973047,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 15,
+      "step": 8,
+      "seconds": 0.6639056660351343,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 21,
+      "step": 7,
+      "seconds": 0.6251804580097087,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 3,
+      "step": 8,
+      "seconds": 0.6882805419736542,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 1,
+      "step": 9,
+      "seconds": 0.5923982910462655,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 14,
+      "step": 8,
+      "seconds": 0.6425634170300327,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 2,
+      "step": 8,
+      "seconds": 0.6797049589804374,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 4.440892098500626e-15,
+      "considered": 8
+    },
+    {
+      "client": 19,
+      "step": 9,
+      "seconds": 0.622131249983795,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 5,
+      "step": 8,
+      "seconds": 0.6305881250300445,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 25,
+      "step": 9,
+      "seconds": 0.33034108398715034,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 9,
+      "step": 9,
+      "seconds": 0.5993859159643762,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 12,
+      "step": 9,
+      "seconds": 0.3348583749611862,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 4,
+      "step": 9,
+      "seconds": 0.6438967079739086,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 8,
+      "step": 9,
+      "seconds": 0.6676048340159468,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 0,
+      "step": 9,
+      "seconds": 0.6414717090083286,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 7,
+      "step": 9,
+      "seconds": 0.6126162920263596,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 16,
+      "step": 8,
+      "seconds": 0.6887693750322796,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 17,
+      "step": 8,
+      "seconds": 0.6006190000334755,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 27,
+      "step": 8,
+      "seconds": 0.6467921659932472,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 26,
+      "step": 9,
+      "seconds": 0.5585105000063777,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 13,
+      "step": 9,
+      "seconds": 0.8767896250355989,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 18,
+      "step": 9,
+      "seconds": 0.5616704159765504,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 24,
+      "step": 8,
+      "seconds": 0.6208617089432664,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 10,
+      "step": 9,
+      "seconds": 0.5611959169618785,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 23,
+      "step": 8,
+      "seconds": 0.5955087919719517,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 28,
+      "step": 7,
+      "seconds": 0.5386617080075666,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 29,
+      "step": 7,
+      "seconds": 0.964881666994188,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 20,
+      "step": 7,
+      "seconds": 0.5552463749772869,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 22,
+      "step": 8,
+      "seconds": 0.5962571249692701,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 15,
+      "step": 9,
+      "seconds": 0.549903874984011,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 14,
+      "step": 9,
+      "seconds": 0.5395855410024524,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 21,
+      "step": 8,
+      "seconds": 0.5685885419952683,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 3,
+      "step": 9,
+      "seconds": 0.5678723329911008,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 5,
+      "step": 9,
+      "seconds": 0.49785166699439287,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 17,
+      "step": 9,
+      "seconds": 0.31641558301635087,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 2,
+      "step": 9,
+      "seconds": 0.567120874999091,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 16,
+      "step": 9,
+      "seconds": 0.33356533298501745,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 27,
+      "step": 9,
+      "seconds": 0.32288591598626226,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 24,
+      "step": 9,
+      "seconds": 0.2916152499965392,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 23,
+      "step": 9,
+      "seconds": 0.2301885000197217,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 28,
+      "step": 8,
+      "seconds": 0.23323983297450468,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 29,
+      "step": 8,
+      "seconds": 0.20397087500896305,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 22,
+      "step": 9,
+      "seconds": 0.1481360420002602,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 20,
+      "step": 8,
+      "seconds": 0.1628533749608323,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 0.0,
+      "considered": 8
+    },
+    {
+      "client": 21,
+      "step": 9,
+      "seconds": 0.10835087503073737,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 28,
+      "step": 9,
+      "seconds": 0.06834279099712148,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 29,
+      "step": 9,
+      "seconds": 0.06709808303276077,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    },
+    {
+      "client": 20,
+      "step": 9,
+      "seconds": 0.051771209051366895,
+      "status": 200,
+      "solver": "optimal",
+      "gap": 1.3426759704060487e-14,
+      "considered": 8
+    }
+  ]
+}

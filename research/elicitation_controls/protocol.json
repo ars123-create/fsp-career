@@ -1,0 +1,54 @@
+{
+  "created_at": "2026-10-07T19:29:03.821814+00:00",
+  "hashes": {
+    "research/elicitation_controls/DESIGN.md": "9f84ac946f72d51a759c329da90a035daf30012914a6cb3a52302406e3576532",
+    "research/elicitation_controls/controls.py": "17fc5477fa26c52ad3d6938d411d9c9c753509b343703b1917a5bea0aafc6a51",
+    "research/elicitation_controls/benchmark.py": "1c4b7a683882573988b6f6e3ccf60b0e2cc23d805a986df0f86e1d43d2353b8a",
+    "research/elicitation_controls/test_controls.py": "e337e116c57bf0512ce9933efc203a4a24c327b3757308c4f17684b84531c26f",
+    "research/elicitation_controls/report.py": "15290e32e091b5bd311e4005cb4655f2519fff94b9cddfe06c6e833ac78161c3",
+    "backend/app/preference_engine.py": "b3aad5b4ba1dba51226c460c5d38e5e23964e04c44a37f565c3412003e0a6344",
+    "backend/app/preference_acceleration.py": "85bc336f092f97109ab4b2f8ac0e10629d37246c2fb61bf26199a7048c0808a7",
+    "backend/app/preference_matching.py": "4bad645bffc1054fd388db2d06f34c81face7fdbb46b9e2495276d3e698f8f35",
+    "backend/app/ranking_ties.py": "1ef03774aaa238624c71204535e0acdf9a24d96c3fa9683a0f389e40f4c1c969",
+    "backend/app/schemas.py": "70d379efb8a9bd3bd45d537d1115c92bcfe5ce7c0de449530d243f64536922a1",
+    "VERSION.json": "9a3cb060a1b23c2116f2ae3529597946eba828123fac38912b2852c7894528e7"
+  },
+  "versions": {
+    "python": "3.14.7",
+    "numpy": "2.4.4",
+    "scipy": "1.18.1"
+  },
+  "seeds": {
+    "dev": [
+      945000,
+      945007
+    ],
+    "heldout": [
+      946000,
+      946199
+    ]
+  },
+  "scenarios": [
+    "linear",
+    "rubric_grid",
+    "polarized",
+    "score_noise",
+    "geometric",
+    "answer_noise"
+  ],
+  "policies": [
+    "equal",
+    "app_evoi",
+    "fixed_swing",
+    "direct_exact",
+    "direct_round_5pp",
+    "direct_sigma_005",
+    "direct_sigma_015",
+    "direct_sigma_030"
+  ],
+  "n": 24,
+  "d": 3,
+  "k": 5,
+  "max_binary_answers": 3,
+  "scope": "Sensitivity audit, not calibrated human behavior or equal cognitive effort. All scenarios reported separately."
+}

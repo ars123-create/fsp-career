@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "protocol": "research/preference_topk/protocol.json",
+      "current_frozen_files_verified": 5
+    },
+    {
+      "protocol": "research/robust_topk/protocol.json",
+      "current_frozen_files_verified": 5
+    },
+    {
+      "protocol": "validation/assessment_v3/protocol.json",
+      "current_frozen_files_verified": 5
+    },
+    {
+      "protocol": "research/elicitation_controls/protocol.json",
+      "frozen_archive_files_verified": 11,
+      "current_research_files_verified": 5,
+      "archive_sha256": "f47895985644862684a656302551316f480e9e2dbff835d87fc8faf99f97c5ff",
+      "current_application_schema_and_version": "not required to match historical 0.4.2; frozen archive verified"
+    }
+  ]
+}

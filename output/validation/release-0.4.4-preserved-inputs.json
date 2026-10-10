@@ -1,0 +1,64 @@
+{
+  "files": [
+    {
+      "path": "materials/ФСП спец. трек ТЗ.pdf",
+      "sha256": "a39ec8ccb300f4d06c7408b7ab13eff6f71610e86cc0e6d6650bc664f656eba1"
+    },
+    {
+      "path": "materials/ЛЦТ_2026_Шаблон презентации ФСП.pptx",
+      "sha256": "d2506c0aeb4fca12b6febb242e7d4e7fafc6c4c50434d3b671fc9d7251eb7345"
+    },
+    {
+      "path": "materials/fsp_spec_extracted.txt",
+      "sha256": "46eff13fe41fea0fbc7f8e2453388927c6567a48b44add7d059d17db70cbe59c"
+    },
+    {
+      "path": "materials/presentation_template_extracted.txt",
+      "sha256": "379a3c1783b5ff5dc9312898c7bff762e610cf1d5b0b93a7d39b562f768fa247"
+    },
+    {
+      "path": "output/submission-0.4.0-dev/FSP_Career_E2E_0.4_addendum.zip",
+      "sha256": "14ca9c44b5fe180eb7958665ba2e1eb87f033c3ca252e4c932c6c09792cccf3f"
+    },
+    {
+      "path": "output/submission-0.4.0-dev/FSP_Career_Submission_0.4.zip",
+      "sha256": "8e34cb43d0767b95977c61cc382ae39dd469fddb9b05c5156a573f6e5840a54d"
+    },
+    {
+      "path": "output/submission-0.4.0-dev/E2E_ADDENDUM_VERIFICATION.json",
+      "sha256": "519bd37c8b11b0a942a3763ad1688386f4c81065ce552f3cbf6da6532b443118"
+    },
+    {
+      "path": "output/submission-0.4.0-dev/FSP_Career_Pitch_0.4_final.pptx",
+      "sha256": "1eaf703bdb39fb910c2ba37621d242d922620f1ea3fa38e491768ab27c92e6b7"
+    },
+    {
+      "path": "output/submission-0.4.0-dev/FSP_Career_Walkthrough.mp4",
+      "sha256": "511806d65130ae83e2def8f080fef9b6fc4861206a0b532758a1576c15dc2f9d"
+    },
+    {
+      "path": "output/submission-0.4.0-dev/MANIFEST.json",
+      "sha256": "7e34f43ca48737ce5a0a1b56e5f478a553bf2ae56fb6c60dbb7a920e9a88dc2e"
+    },
+    {
+      "path": "output/submission-0.4.0-dev/FSP_Career_Documentation.pdf",
+      "sha256": "fe61df14f91c6c6900efaaee908cecc369ba473550cbddfe948d77a220354fd8"
+    },
+    {
+      "path": "output/submission-0.4.0-dev/FSP_Career_Pitch.pdf",
+      "sha256": "aa9face880f36237905dd50134fe5c49d40f42b2a25d4d45b8639eeb46b24a79"
+    },
+    {
+      "path": "output/submission-0.4.0-dev/FSP_Career_E2E_0.4_addendum.sha256",
+      "sha256": "a483111c351be6959392ed5c58cbc33bde2a4f391db1ebeb4f7e57aed2c3b831"
+    },
+    {
+      "path": "output/submission-0.4.0-dev/SHA256SUMS.txt",
+      "sha256": "b23cfb1d84954103a92836c535ea283ee7ae5a7900b657729602cddf0d569eb2"
+    },
+    {
+      "path": "output/submission-0.4.0-dev/ARCHIVE_VERIFICATION.json",
+      "sha256": "40e7963c1be870442e34230f12b9828caaec58b2adf203559220f897a3c3715e"
+    }
+  ]
+}

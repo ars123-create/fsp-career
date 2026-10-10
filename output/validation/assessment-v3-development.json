@@ -1,0 +1,4183 @@
+{
+  "split": "development",
+  "cases_per_version": 20,
+  "oracle_agreement": "PASS",
+  "wrong_rules_accepted": {
+    "v2": {
+      "ignore_stage": 20,
+      "lost_response_rolls_back": 20,
+      "no_deduplication": 0
+    },
+    "v3": {
+      "ignore_stage": 0,
+      "lost_response_rolls_back": 0,
+      "no_deduplication": 0
+    }
+  },
+  "human_discrimination": "NOT RUN",
+  "grade_calibration": "NOT RUN",
+  "python": "3.14.7",
+  "sqlite": "3.53.4",
+  "records": [
+    {
+      "seed": 948500,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 389. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                18,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                2,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                18,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                7,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                2,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                7,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                18,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "362",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 362,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 362,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 362,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 342,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948500,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 242. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "G",
+                13,
+                "before_commit"
+              ],
+              [
+                2,
+                "E",
+                19,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                16,
+                "ok"
+              ],
+              [
+                4,
+                "A",
+                16,
+                "ok"
+              ],
+              [
+                5,
+                "H",
+                9,
+                "before_commit"
+              ],
+              [
+                6,
+                "E",
+                19,
+                "after_commit"
+              ],
+              [
+                7,
+                "H",
+                9,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "198",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 198,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 185,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 217,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 163,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948501,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 313. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                20,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                13,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                20,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                19,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                13,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                19,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                20,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "261",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 261,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 261,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 261,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 228,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948501,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 286. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "B",
+                15,
+                "before_commit"
+              ],
+              [
+                2,
+                "A",
+                19,
+                "ok"
+              ],
+              [
+                3,
+                "A",
+                19,
+                "ok"
+              ],
+              [
+                4,
+                "D",
+                7,
+                "after_commit"
+              ],
+              [
+                5,
+                "H",
+                8,
+                "before_commit"
+              ],
+              [
+                6,
+                "D",
+                7,
+                "after_commit"
+              ],
+              [
+                7,
+                "H",
+                8,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "252",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 252,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 237,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 259,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 226,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948502,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 208. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                6,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                19,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                6,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                20,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                19,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                20,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                6,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "163",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 163,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 163,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 163,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 138,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948502,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 334. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                6,
+                "after_commit"
+              ],
+              [
+                2,
+                "F",
+                2,
+                "ok"
+              ],
+              [
+                3,
+                "C",
+                16,
+                "before_commit"
+              ],
+              [
+                4,
+                "C",
+                16,
+                "ok"
+              ],
+              [
+                5,
+                "G",
+                12,
+                "before_commit"
+              ],
+              [
+                6,
+                "A",
+                6,
+                "after_commit"
+              ],
+              [
+                7,
+                "F",
+                2,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "310",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 310,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 298,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 316,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 302,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948503,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 275. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                12,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                13,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                12,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                18,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                13,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                18,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                12,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "232",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 232,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 232,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 232,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 207,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948503,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 241. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "C",
+                4,
+                "ok"
+              ],
+              [
+                2,
+                "G",
+                7,
+                "before_commit"
+              ],
+              [
+                3,
+                "H",
+                15,
+                "after_commit"
+              ],
+              [
+                4,
+                "D",
+                10,
+                "before_commit"
+              ],
+              [
+                5,
+                "H",
+                15,
+                "after_commit"
+              ],
+              [
+                6,
+                "D",
+                10,
+                "ok"
+              ],
+              [
+                7,
+                "C",
+                4,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "212",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 212,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 205,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 227,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 193,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948504,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 230. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                5,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                4,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                5,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                3,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                4,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                3,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                5,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "218",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 218,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 218,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 218,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 209,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948504,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 209. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "H",
+                6,
+                "before_commit"
+              ],
+              [
+                2,
+                "G",
+                18,
+                "ok"
+              ],
+              [
+                3,
+                "A",
+                12,
+                "after_commit"
+              ],
+              [
+                4,
+                "E",
+                17,
+                "before_commit"
+              ],
+              [
+                5,
+                "A",
+                12,
+                "after_commit"
+              ],
+              [
+                6,
+                "E",
+                17,
+                "ok"
+              ],
+              [
+                7,
+                "G",
+                18,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "162",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 162,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 156,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 174,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 132,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948505,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 276. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                19,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                10,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                19,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                11,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                10,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                11,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                19,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "236",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 236,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 236,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 236,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 207,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948505,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 207. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "D",
+                7,
+                "ok"
+              ],
+              [
+                2,
+                "G",
+                9,
+                "after_commit"
+              ],
+              [
+                3,
+                "G",
+                9,
+                "after_commit"
+              ],
+              [
+                4,
+                "D",
+                7,
+                "ok"
+              ],
+              [
+                5,
+                "F",
+                12,
+                "before_commit"
+              ],
+              [
+                6,
+                "F",
+                12,
+                "ok"
+              ],
+              [
+                7,
+                "E",
+                10,
+                "before_commit"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "179",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 179,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 169,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 188,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 163,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948506,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 278. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                6,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                19,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                6,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                20,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                19,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                20,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                6,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "233",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 233,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 233,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 233,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 208,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948506,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 271. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "G",
+                4,
+                "ok"
+              ],
+              [
+                2,
+                "B",
+                14,
+                "before_commit"
+              ],
+              [
+                3,
+                "C",
+                2,
+                "before_commit"
+              ],
+              [
+                4,
+                "H",
+                11,
+                "after_commit"
+              ],
+              [
+                5,
+                "G",
+                4,
+                "ok"
+              ],
+              [
+                6,
+                "H",
+                11,
+                "after_commit"
+              ],
+              [
+                7,
+                "C",
+                2,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "254",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 254,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 240,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 265,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 239,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948507,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 236. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                12,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                5,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                12,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                4,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                5,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                4,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                12,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "215",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 215,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 215,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 215,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 198,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948507,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 387. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "C",
+                4,
+                "ok"
+              ],
+              [
+                2,
+                "A",
+                9,
+                "before_commit"
+              ],
+              [
+                3,
+                "B",
+                3,
+                "before_commit"
+              ],
+              [
+                4,
+                "B",
+                3,
+                "ok"
+              ],
+              [
+                5,
+                "C",
+                4,
+                "ok"
+              ],
+              [
+                6,
+                "E",
+                7,
+                "after_commit"
+              ],
+              [
+                7,
+                "E",
+                7,
+                "after_commit"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "373",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 373,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 364,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 380,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 362,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948508,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 295. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                5,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                19,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                5,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                4,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                19,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                4,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                5,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "267",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 267,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 267,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 267,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 243,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948508,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 212. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "B",
+                8,
+                "after_commit"
+              ],
+              [
+                2,
+                "B",
+                8,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                2,
+                "ok"
+              ],
+              [
+                4,
+                "D",
+                15,
+                "before_commit"
+              ],
+              [
+                5,
+                "F",
+                12,
+                "before_commit"
+              ],
+              [
+                6,
+                "A",
+                2,
+                "ok"
+              ],
+              [
+                7,
+                "F",
+                12,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "190",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 190,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 175,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 198,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 180,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948509,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 370. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                18,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                20,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                18,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                6,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                20,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                6,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                18,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "326",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 326,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 326,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 326,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 288,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948509,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 270. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "G",
+                3,
+                "ok"
+              ],
+              [
+                2,
+                "G",
+                3,
+                "ok"
+              ],
+              [
+                3,
+                "F",
+                19,
+                "after_commit"
+              ],
+              [
+                4,
+                "F",
+                19,
+                "after_commit"
+              ],
+              [
+                5,
+                "H",
+                17,
+                "before_commit"
+              ],
+              [
+                6,
+                "C",
+                15,
+                "before_commit"
+              ],
+              [
+                7,
+                "H",
+                17,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "231",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 231,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 216,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 250,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 209,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948510,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 349. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                17,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                20,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                17,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                4,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                20,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                4,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                17,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "308",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 308,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 308,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 308,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 271,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948510,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 263. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "E",
+                2,
+                "ok"
+              ],
+              [
+                2,
+                "F",
+                6,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                20,
+                "before_commit"
+              ],
+              [
+                4,
+                "F",
+                6,
+                "after_commit"
+              ],
+              [
+                5,
+                "A",
+                20,
+                "ok"
+              ],
+              [
+                6,
+                "E",
+                2,
+                "ok"
+              ],
+              [
+                7,
+                "C",
+                7,
+                "before_commit"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "235",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 235,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 228,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 241,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 227,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948511,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 265. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                19,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                18,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                19,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                8,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                18,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                8,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                19,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "220",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 220,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 220,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 220,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 183,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948511,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 269. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "D",
+                5,
+                "before_commit"
+              ],
+              [
+                2,
+                "C",
+                12,
+                "after_commit"
+              ],
+              [
+                3,
+                "C",
+                12,
+                "after_commit"
+              ],
+              [
+                4,
+                "B",
+                18,
+                "before_commit"
+              ],
+              [
+                5,
+                "A",
+                16,
+                "ok"
+              ],
+              [
+                6,
+                "D",
+                5,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                16,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "236",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 236,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 218,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 248,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 208,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948512,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 328. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                9,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                16,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                9,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                9,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                16,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                9,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                9,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "294",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 294,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 294,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 294,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 269,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948512,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 241. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "E",
+                20,
+                "after_commit"
+              ],
+              [
+                2,
+                "G",
+                16,
+                "before_commit"
+              ],
+              [
+                3,
+                "E",
+                20,
+                "after_commit"
+              ],
+              [
+                4,
+                "H",
+                7,
+                "ok"
+              ],
+              [
+                5,
+                "H",
+                7,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                8,
+                "before_commit"
+              ],
+              [
+                7,
+                "C",
+                8,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "206",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 206,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 190,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 226,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 179,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948513,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 235. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                2,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                9,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                2,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                3,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                9,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                3,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                2,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "221",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 221,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 221,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 221,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 210,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948513,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 310. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                17,
+                "before_commit"
+              ],
+              [
+                2,
+                "H",
+                19,
+                "before_commit"
+              ],
+              [
+                3,
+                "D",
+                2,
+                "after_commit"
+              ],
+              [
+                4,
+                "D",
+                2,
+                "after_commit"
+              ],
+              [
+                5,
+                "H",
+                19,
+                "ok"
+              ],
+              [
+                6,
+                "B",
+                3,
+                "ok"
+              ],
+              [
+                7,
+                "B",
+                3,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "286",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 286,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 269,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 288,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 281,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948514,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 307. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                2,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                19,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                2,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                11,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                19,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                11,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                2,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "275",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 275,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 275,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 275,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 254,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948514,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 336. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "F",
+                7,
+                "before_commit"
+              ],
+              [
+                2,
+                "G",
+                19,
+                "after_commit"
+              ],
+              [
+                3,
+                "C",
+                3,
+                "ok"
+              ],
+              [
+                4,
+                "G",
+                19,
+                "after_commit"
+              ],
+              [
+                5,
+                "B",
+                20,
+                "before_commit"
+              ],
+              [
+                6,
+                "F",
+                7,
+                "ok"
+              ],
+              [
+                7,
+                "C",
+                3,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "307",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 307,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 287,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 326,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 285,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948515,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 271. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                9,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                11,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                9,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                13,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                11,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                13,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                9,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "238",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 238,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 238,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 238,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 218,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948515,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 314. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                14,
+                "before_commit"
+              ],
+              [
+                2,
+                "D",
+                13,
+                "after_commit"
+              ],
+              [
+                3,
+                "D",
+                13,
+                "after_commit"
+              ],
+              [
+                4,
+                "B",
+                15,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                15,
+                "ok"
+              ],
+              [
+                6,
+                "F",
+                18,
+                "ok"
+              ],
+              [
+                7,
+                "F",
+                18,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "268",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 268,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 254,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 281,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 237,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948516,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 386. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                12,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                17,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                12,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                10,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                17,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                10,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                12,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "347",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 347,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 347,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 347,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 318,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948516,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 245. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "C",
+                7,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                8,
+                "ok"
+              ],
+              [
+                3,
+                "E",
+                15,
+                "before_commit"
+              ],
+              [
+                4,
+                "B",
+                8,
+                "ok"
+              ],
+              [
+                5,
+                "E",
+                15,
+                "ok"
+              ],
+              [
+                6,
+                "D",
+                4,
+                "after_commit"
+              ],
+              [
+                7,
+                "D",
+                4,
+                "after_commit"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "218",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 218,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 211,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 222,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 206,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948517,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 334. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                2,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                7,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                2,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                2,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                7,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                2,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                2,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "323",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 323,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 323,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 323,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 314,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948517,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 240. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "B",
+                15,
+                "ok"
+              ],
+              [
+                2,
+                "C",
+                10,
+                "before_commit"
+              ],
+              [
+                3,
+                "D",
+                20,
+                "after_commit"
+              ],
+              [
+                4,
+                "C",
+                10,
+                "ok"
+              ],
+              [
+                5,
+                "G",
+                5,
+                "before_commit"
+              ],
+              [
+                6,
+                "D",
+                20,
+                "after_commit"
+              ],
+              [
+                7,
+                "B",
+                15,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "195",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 195,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 190,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 215,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 160,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948518,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 309. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                20,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                12,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                20,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                9,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                12,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                9,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                20,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "268",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 268,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 268,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 268,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 236,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948518,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 275. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "F",
+                16,
+                "before_commit"
+              ],
+              [
+                2,
+                "F",
+                16,
+                "ok"
+              ],
+              [
+                3,
+                "A",
+                6,
+                "before_commit"
+              ],
+              [
+                4,
+                "E",
+                5,
+                "after_commit"
+              ],
+              [
+                5,
+                "C",
+                17,
+                "ok"
+              ],
+              [
+                6,
+                "E",
+                5,
+                "after_commit"
+              ],
+              [
+                7,
+                "C",
+                17,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "237",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 237,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 231,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 242,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 215,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948519,
+      "version": "v2",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 377. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "A",
+                20,
+                "before_commit"
+              ],
+              [
+                2,
+                "B",
+                9,
+                "after_commit"
+              ],
+              [
+                3,
+                "A",
+                20,
+                "ok"
+              ],
+              [
+                4,
+                "C",
+                2,
+                "before_commit"
+              ],
+              [
+                5,
+                "B",
+                9,
+                "ok"
+              ],
+              [
+                6,
+                "C",
+                2,
+                "ok"
+              ],
+              [
+                7,
+                "A",
+                20,
+                "ok"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "346",
+          "writes": "3"
+        },
+        "_explanation": "Откат до commit не сохраняет ключ. Потеря ответа после commit не отменяет изменение; повтор с тем же ключом возвращает уже полученный результат."
+      },
+      "sql_reference": {
+        "stock": 346,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 346,
+          "writes": 3
+        },
+        "lost_response_rolls_back": {
+          "stock": 346,
+          "writes": 3
+        },
+        "no_deduplication": {
+          "stock": 317,
+          "writes": 5
+        }
+      }
+    },
+    {
+      "seed": 948519,
+      "version": "v3",
+      "task": {
+        "id": "api_retry_ledger",
+        "family": "api_retry_ledger",
+        "skill": "API",
+        "title": "Повтор после сбоя",
+        "prompt": "Начальный запас: 285. Запросы идут по seq. Ключ операции и уменьшение запаса фиксируются атомарно. Повтор уже зафиксированного key не меняет запас. before_commit — транзакция откатилась; after_commit — фиксация прошла, но ответ потерян; ok — обычный успех. Отрицательного запаса здесь не возникает. Каковы итоговый запас и число зафиксированных операций?",
+        "code": "",
+        "tables": [
+          {
+            "name": "requests",
+            "columns": [
+              "seq",
+              "key",
+              "amount",
+              "stage"
+            ],
+            "rows": [
+              [
+                1,
+                "G",
+                20,
+                "before_commit"
+              ],
+              [
+                2,
+                "H",
+                16,
+                "ok"
+              ],
+              [
+                3,
+                "H",
+                16,
+                "ok"
+              ],
+              [
+                4,
+                "D",
+                11,
+                "before_commit"
+              ],
+              [
+                5,
+                "G",
+                20,
+                "ok"
+              ],
+              [
+                6,
+                "A",
+                17,
+                "after_commit"
+              ],
+              [
+                7,
+                "A",
+                17,
+                "after_commit"
+              ]
+            ]
+          }
+        ],
+        "answer_type": "fields",
+        "fields": [
+          {
+            "name": "stock",
+            "label": "Итоговый запас",
+            "places": 0
+          },
+          {
+            "name": "writes",
+            "label": "Зафиксировано операций",
+            "places": 0
+          }
+        ],
+        "choices": [],
+        "_correct": {
+          "stock": "232",
+          "writes": "3"
+        },
+        "_explanation": "Откат не сохраняет ключ и списание. Если последующей фиксации для этого ключа нет, операция не учитывается. Потеря ответа после commit сохраняет изменение даже без последующего ok. Повтор зафиксированного ключа не списывает запас ещё раз."
+      },
+      "sql_reference": {
+        "stock": 232,
+        "writes": 3
+      },
+      "wrong_rules": {
+        "ignore_stage": {
+          "stock": 221,
+          "writes": 4
+        },
+        "lost_response_rolls_back": {
+          "stock": 249,
+          "writes": 2
+        },
+        "no_deduplication": {
+          "stock": 199,
+          "writes": 5
+        }
+      }
+    }
+  ]
+}

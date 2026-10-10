@@ -1,0 +1,8 @@
+{
+  "random_reduction_at_least_10pct": true,
+  "random_upper_interval_negative": true,
+  "mean_no_worse_than_bald": true,
+  "mean_no_worse_than_qeubo": true,
+  "status": "PASS",
+  "meaning": "Eligible for considering experimental integration only; no real hiring validation or winning guarantee."
+}

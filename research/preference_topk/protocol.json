@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-07",
+  "hashes": {
+    "core.py": "b3aad5b4ba1dba51226c460c5d38e5e23964e04c44a37f565c3412003e0a6344",
+    "benchmark.py": "ade23013633c5684162bd65d61212337e7cac8fd5061f9dc83b1061b39ff315b",
+    "test_core.py": "b87e897c589a8b5a2f5f37e30f9d26351474af9480247b81d3065a19a23b869e",
+    "PROOFS.md": "bc8616cb4cfc85811b8459d8c502201455cf949e0a8e9ea0525e55b5e61791bd",
+    "requirements.txt": "15f52ad800df06de43b7ad67eefe0f97db46762d32cbffdc1013aa9e77319d21"
+  },
+  "n": 18,
+  "d": 3,
+  "k": 5,
+  "max_budget": 3,
+  "prior": "Dirichlet(1), symmetrized Sobol",
+  "base_sobol_m": 9,
+  "posterior_particles": 3072,
+  "response_model": {
+    "temperature": 0.04,
+    "lapse": 0.02
+  },
+  "dev_seeds": [
+    61000,
+    61019
+  ],
+  "heldout_seeds": [
+    73000,
+    73199
+  ],
+  "scenarios": [
+    "matched_linear",
+    "bounded_evidence",
+    "correlated_profiles",
+    "polarized_weights",
+    "noisy_answers",
+    "nonlinear_bottleneck",
+    "nonlinear_geometric",
+    "refusals"
+  ],
+  "primary_scenarios": [
+    "matched_linear",
+    "bounded_evidence",
+    "correlated_profiles"
+  ],
+  "policies": [
+    "random",
+    "uncertainty",
+    "bald",
+    "qeubo",
+    "decision_evoi"
+  ],
+  "primary_endpoint": "Mean regret per candidate at budget=3, equal weight of three primary scenarios",
+  "gate": "At least 10% aggregate reduction vs random with paired upper 95% endpoint <0; no worse aggregate mean than BALD or qEUBO. This gate allows only consideration of experimental integration, not a hiring quality or winning claim.",
+  "failure_policy": "Publish all negative/OOD results, do not retune on heldout; report primary and every scenario. Bootstrap descriptive, no multiple-comparison guarantee.",
+  "scope": "Synthetic model validation; no humans, no calibrated skill intervals, no novelty claim."
+}

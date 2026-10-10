@@ -1,0 +1,124 @@
+{
+  "stage": "PRESPECIFIED_DESCRIPTIVE_STRESS",
+  "utc": "2026-10-08T21:16:05.985253+00:00",
+  "methods": [
+    "mixed_kg_finer_quadrature",
+    "P15_easy",
+    "linear_evoi_3",
+    "gp_topk_guard",
+    "pabbo_rl",
+    "equal"
+  ],
+  "families": [
+    "linear",
+    "interaction",
+    "threshold",
+    "correlated_quantized"
+  ],
+  "arms": [
+    {
+      "name": "utility_square",
+      "variant": "utility_square",
+      "n": 18,
+      "d": 3,
+      "seed_start": 202610087000,
+      "seeds": 16
+    },
+    {
+      "name": "utility_sqrt",
+      "variant": "utility_sqrt",
+      "n": 18,
+      "d": 3,
+      "seed_start": 202610087016,
+      "seeds": 16
+    },
+    {
+      "name": "probit_noise",
+      "variant": "probit_noise",
+      "n": 18,
+      "d": 3,
+      "seed_start": 202610087032,
+      "seeds": 16
+    },
+    {
+      "name": "heavy_noise",
+      "variant": "heavy_noise",
+      "n": 18,
+      "d": 3,
+      "seed_start": 202610087048,
+      "seeds": 16
+    },
+    {
+      "name": "many_skips",
+      "variant": "many_skips",
+      "n": 18,
+      "d": 3,
+      "seed_start": 202610087064,
+      "seeds": 16
+    },
+    {
+      "name": "query_coupling",
+      "variant": "query_coupling",
+      "n": 18,
+      "d": 3,
+      "seed_start": 202610087080,
+      "seeds": 16
+    },
+    {
+      "name": "measurement_error",
+      "variant": "measurement_error",
+      "n": 18,
+      "d": 3,
+      "seed_start": 202610087096,
+      "seeds": 16
+    },
+    {
+      "name": "nonmonotone",
+      "variant": "nonmonotone",
+      "n": 18,
+      "d": 3,
+      "seed_start": 202610087112,
+      "seeds": 16
+    },
+    {
+      "name": "n18-d1",
+      "variant": "base",
+      "n": 18,
+      "d": 1,
+      "seed_start": 202610087128,
+      "seeds": 8
+    },
+    {
+      "name": "n18-d2",
+      "variant": "base",
+      "n": 18,
+      "d": 2,
+      "seed_start": 202610087136,
+      "seeds": 8
+    },
+    {
+      "name": "n50-d3",
+      "variant": "base",
+      "n": 50,
+      "d": 3,
+      "seed_start": 202610087144,
+      "seeds": 8
+    },
+    {
+      "name": "n100-d3",
+      "variant": "base",
+      "n": 100,
+      "d": 3,
+      "seed_start": 202610087152,
+      "seeds": 8
+    }
+  ],
+  "purpose": "Known violations and scaling, not unknown OOD or confirmatory winner selection",
+  "no_optional_arm_deletion": true,
+  "quality_review_before_this_freeze": false,
+  "latency_scope": "Concurrent noisy; separate N100 audit remains primary engineering check",
+  "seed_ranges": [
+    202610087000,
+    202610087159
+  ]
+}

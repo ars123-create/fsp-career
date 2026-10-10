@@ -1,0 +1,370 @@
+{
+  "date": "2026-10-08",
+  "version": "0.4.5-dev",
+  "status": "PASS within main browser workflow; PDF transfer PARTIAL",
+  "source_sha256": "6dbccbb0f36e55edcd217cdc584f32aa7775b25655ffee059f5ebd1e0a89c18d",
+  "source_files": 87,
+  "url": "http://127.0.0.1:8022",
+  "database": "data/e2e-0.4.5-host/e2e.sqlite",
+  "browser": "Codex in-app browser / Chromium",
+  "workflow_mutations": "visible UI only; no API calls, database edits, grade overrides or closed answer keys to complete workflow",
+  "identities": "one new fictional candidate and two new fictional employers; only local demo mail",
+  "rubric": "2026-10-v3",
+  "candidate_code": "DAD9C1",
+  "main_workflow": "PASS",
+  "human_validation": "NOT RUN",
+  "external_smtp": "NOT RUN",
+  "other_browsers": "NOT RUN",
+  "pdf_browser_transfer": "PARTIAL: click performed; 10s download event timeout; saved file not verified",
+  "docker_host_port": "PARTIAL: 8021 connection reset; container running and internal health200; existing8019 health200; no network/service changes; E2E ran from same verified source on fresh host8022 instead",
+  "events": [
+    {
+      "step": "start",
+      "at": "2026-10-07T22:13:24.132Z",
+      "url": "http://127.0.0.1:8022",
+      "version": "0.4.5-dev"
+    },
+    {
+      "step": "email-validation",
+      "at": "2026-10-07T22:13:40.869Z",
+      "result": "reserved .test domain rejected by email validator; local-demo-only example.org used instead"
+    },
+    {
+      "step": "candidate-registered-verified",
+      "at": "2026-10-07T22:14:22.204Z",
+      "result": "confirmed through local demo letter; no external mail sent"
+    },
+    {
+      "step": "profile",
+      "at": "2026-10-07T22:15:21.476Z",
+      "result": "published separately; requested backend/Middle; remote; RUB 180000–240000; no FSP; grade not yet confirmed"
+    },
+    {
+      "step": "question-1",
+      "at": "2026-10-07T22:15:48.732Z",
+      "answer": [
+        3,
+        210
+      ],
+      "reason": "paid totals by customer are 70, 40, 100; all meet >=40"
+    },
+    {
+      "step": "reload-resume",
+      "at": "2026-10-07T22:16:13.462Z",
+      "result": "same active v3 attempt; saved values 3 and 210 restored; timer continued"
+    },
+    {
+      "step": "question-2",
+      "answer": "A: 4",
+      "reason": "NULL excluded; distinct non-NULL values 80,29,42,71"
+    },
+    {
+      "step": "question-3",
+      "answer": "D: 109",
+      "reason": "shallow copy shares inner rows; 38+29+42=109"
+    },
+    {
+      "step": "question-4",
+      "answer": "A: 3",
+      "reason": "only first atomic conditional UPDATE sees version=7; 5-2=3"
+    },
+    {
+      "step": "question-5",
+      "answer": "D: 7",
+      "reason": "six order rows plus one unmatched user"
+    },
+    {
+      "step": "question-6",
+      "answer": "A: 9",
+      "reason": "last indices are 42→4, 38→3, 29→2; sum=9"
+    },
+    {
+      "step": "question-7",
+      "answer": [
+        19,
+        275
+      ],
+      "reason": "prefix=8+11; remaining odd squares=25+81+169"
+    },
+    {
+      "step": "question-8",
+      "answer": [
+        4,
+        2
+      ],
+      "reason": "strictly below cursor (5,8), DESC gives (5,4),(5,2); new (6,99) excluded"
+    },
+    {
+      "step": "question-9",
+      "answer": [
+        10,
+        21
+      ],
+      "reason": "first yield=10; close triggers finally appending21"
+    },
+    {
+      "step": "question-10",
+      "answer": [
+        203,
+        3
+      ],
+      "reason": "E rolls back only; F commits4 despite lost response; G commits19 once; C commits20 on retry; 246-4-19-20=203; three keys committed"
+    },
+    {
+      "step": "question-11",
+      "answer": "D: 7100",
+      "reason": "same idempotency key, one debit only:10100-3000"
+    },
+    {
+      "step": "question-12",
+      "answer": [
+        1,
+        7
+      ],
+      "reason": "latest entity1 is id7 active value7; latest entity2/3 are deleted"
+    },
+    {
+      "step": "assessment-completed",
+      "at": "2026-10-07T22:18:19.975Z",
+      "result": "12/12 correct; all three skill and practical scores100%; Middle awarded; solved only visible statements"
+    },
+    {
+      "step": "employer-a",
+      "at": "2026-10-07T22:19:42.630Z",
+      "result": "new employer registered and verified; company saved; own jobs page says no vacancies"
+    },
+    {
+      "step": "preference-answer",
+      "at": "2026-10-07T22:20:10.566Z",
+      "result": "selected A: SQL100/Python50 versus SQL50/Python100; weights Python18 SQL49 API33; one question then stop; replaced profiles0",
+      "before": [
+        "PyPython backendMiddleКандидат 10EDC1 · демоМосква · Удалённо · 4 г. опытаSQLAPIPythonФСП · демо100баллов",
+        "PyPython backendMiddleКандидат 680032 · демоМосква · Удалённо · 5 г. опытаAPIPythonSQLФСП · демо100баллов",
+        "PyPython backendMiddleКандидат BD9045 · демоКазань · Удалённо · 3 г. опытаAPIPythonSQL100баллов",
+        "PyPython backend · тестовый профиль 0.4.5MiddleКандидат DAD9C1 Москва · Удалённо · 3 г. опытаAPIPythonSQL100баллов",
+        "PyPython backendMiddleКандидат 212B3C · демоСанкт-Петербург · Удалённо · 2 г. опытаPythonSQLAPI83.3баллов"
+      ],
+      "after": [
+        "PyPython backendMiddleКандидат 10EDC1 · демоМосква · Удалённо · 4 г. опытаSQLAPIPythonФСП · демо100баллов",
+        "PyPython backendMiddleКандидат 680032 · демоМосква · Удалённо · 5 г. опытаAPIPythonSQLФСП · демо100баллов",
+        "PyPython backendMiddleКандидат BD9045 · демоКазань · Удалённо · 3 г. опытаAPIPythonSQL100баллов",
+        "PyPython backend · тестовый профиль 0.4.5MiddleКандидат DAD9C1 Москва · Удалённо · 3 г. опытаAPIPythonSQL100баллов",
+        "PyPython backendMiddleКандидат 212B3C · демоСанкт-Петербург · Удалённо · 2 г. опытаPythonSQLAPI91.1баллов"
+      ]
+    },
+    {
+      "step": "before-consent",
+      "at": "2026-10-07T22:20:24.156Z",
+      "candidate": "DAD9C1",
+      "result": "name and email absent from entire DOM; 4 families per skill; contacts protected"
+    },
+    {
+      "step": "pdf-ui-attempt",
+      "at": "2026-10-07T22:21:37.057Z",
+      "status": "PARTIAL",
+      "result": "clicked download profile PDF; browser download observation timed out after10s, no new tab or console error; saved file not verified"
+    },
+    {
+      "step": "saved-search-restored",
+      "at": "2026-10-07T22:22:09.283Z",
+      "result": "same five candidate IDs restored after reload",
+      "ids": [
+        "10EDC1",
+        "680032",
+        "BD9045",
+        "DAD9C1",
+        "212B3C"
+      ]
+    },
+    {
+      "step": "saved-search-recalculated",
+      "at": "2026-10-07T22:22:16.878Z",
+      "result": "one previous answer and weights18/49/33 restored; same five profiles"
+    },
+    {
+      "step": "invitation-sent",
+      "at": "2026-10-07T22:23:02.455Z",
+      "result": "sent to DAD9C1 without vacancy; RUB180000–240000; candidate contacts remain protected"
+    },
+    {
+      "step": "candidate-accepted",
+      "at": "2026-10-07T22:23:45.905Z",
+      "result": "salary, company description and employer email shown before acceptance; viewed then accepted; contact permission granted to company Alpha"
+    },
+    {
+      "step": "employer-a-contact",
+      "at": "2026-10-07T22:24:17.551Z",
+      "result": "accepted status; exact candidate name and email visible only after consent"
+    },
+    {
+      "step": "employer-b-isolation",
+      "at": "2026-10-07T22:25:07.627Z",
+      "result": "new verified employerB sees sameDAD9C1 without candidate name/email in entire DOM; contacts protected"
+    }
+  ],
+  "console_error_warning_records": [],
+  "files": [
+    {
+      "path": "output/screenshots/e2e-0.4.5/01-profile.png",
+      "bytes": 133014,
+      "sha256": "b9c4198567e3e416fe30b977e6c7878e7bc345ef370f75de90cab8afa0d80da9"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/02-resumed.png",
+      "bytes": 167493,
+      "sha256": "56ef4066713b973dc94c2460ad25b4829921dedd68c2078791d8fc44c6da938b"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/03-retry-task.png",
+      "bytes": 233837,
+      "sha256": "d879cd1278f4e2067fc22caaa5ed5f2fe855c9af83eaf3963681c9904b79f7b3"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/04-assessment-result.png",
+      "bytes": 148384,
+      "sha256": "d49320097d389cca901ad183bbf75c2d802bd6b2bc5efaa49b96624fec74be73"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/05-empty-jobs.png",
+      "bytes": 77163,
+      "sha256": "0c4bebd0e989e9a2dcfbb27c0af396bca5a0d712278ad8951951007e3454e6e3"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/06-before-consent.png",
+      "bytes": 395681,
+      "sha256": "965fc983c6af001d53a28034a5a8f3f60d6928bac9d22122eb7f4b21b53884aa"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/06-before-consent.txt",
+      "bytes": 11258,
+      "sha256": "25692e08148060eae374da2b260bb5e7c2f9ac296466d69e871424ac1ae8a5e6"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/07-invitation-form.png",
+      "bytes": 162757,
+      "sha256": "79c09845a3d9b1d75144c0259e830b4028fce9085e85ae6fb9674ce66c564ef4"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/08-candidate-offer.png",
+      "bytes": 109688,
+      "sha256": "01edccdcad6b8a6dbf4dd29d5e7eedaaf21d9455653523e5a9cf34b637223a27"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/09-accepted.png",
+      "bytes": 105828,
+      "sha256": "7b75b794517b76ade565488039db8571a19e25198f951aa53841826ebcad1bf5"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/10-employer-contact.png",
+      "bytes": 96621,
+      "sha256": "c34d9f5e35adfef4d8f84238d7a4ef853dd4bbee1d9f3879ec03a07b21a63e95"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/10-employer-contact.txt",
+      "bytes": 3183,
+      "sha256": "ca435c44fd1a0dbb17e64b8f0f68d4baf99e438a5c6d6059022059869f5374de"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/11-other-employer-protected.png",
+      "bytes": 428341,
+      "sha256": "808208e99d7e907705a36ef7b6ed2874e02c1907c28b653f43f63e0ff57270ae"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/11-other-employer-protected.txt",
+      "bytes": 12332,
+      "sha256": "17449ccead5678967a81d4f9f5414ab2e482ce0cae71853d7b13f9f748068c70"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/12-other-employer-visible.png",
+      "bytes": 164524,
+      "sha256": "e8b476528b8b95a2dcb2037d6e649fe2838ef464ad3df1e4d20f9212e62a24d6"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/assessment-result.txt",
+      "bytes": 4686,
+      "sha256": "200d168008f0addbc092117ee017d0bdf236c182d0075501f9aa840a5a0920bd"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/candidate-offer.txt",
+      "bytes": 3638,
+      "sha256": "f03fbf84ac57b1ae7e31bc59a6b1ac06c62660d46d09031f9bc9a771e7d696cb"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/question-01.txt",
+      "bytes": 6442,
+      "sha256": "aca0b646c539f89f175d3e5d7887113981320551e3e4cc9bd19a2adcb41c9457"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/question-02.txt",
+      "bytes": 4368,
+      "sha256": "0f1999a392a8ba4103684a1c148f16978f0459d61c91b5fc73d2e34b4e5c19b0"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/question-03.txt",
+      "bytes": 4308,
+      "sha256": "b95764a41c00568236b011b6422d56c3ec0d94fa8820746ff4b006459c728b47"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/question-04.txt",
+      "bytes": 4584,
+      "sha256": "79b95626b9459d3ddbddbd306fc6d89fbd0e2a04e0001818216b812130fd3e32"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/question-05.txt",
+      "bytes": 4569,
+      "sha256": "64d43a4dc9aab27a81fc836173793fc949a40c0cf9df94f2443b3bd8ea506a4b"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/question-06.txt",
+      "bytes": 4336,
+      "sha256": "3116b9feb5008a9ae9c9932730ce5068b8a58595d1b2eca04975520280f57c30"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/question-07.txt",
+      "bytes": 4899,
+      "sha256": "6e4b239e71bb7e83fec2847e7f4496971b8f052c95158314f7711874485ee85f"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/question-08.txt",
+      "bytes": 5917,
+      "sha256": "9a1219de933e998487ffe25cb22e07744b670facfa9884fa22a80b0b3b69c2da"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/question-09.txt",
+      "bytes": 4780,
+      "sha256": "fa2c3e4af98a81ab93e5c996eea0284cd6eaecf143d5e56e9b16e2069adf70df"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/question-10.txt",
+      "bytes": 6382,
+      "sha256": "a428a0361fd30574c25b4ff77b6a7b3664c6ab313c1baae6f53a0be6ee8909ea"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/question-11.txt",
+      "bytes": 4563,
+      "sha256": "d8f4d96de558b5576733933725cbcb18e3e3e6315c6a4da8ad052b15dcf8acc8"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/question-12.txt",
+      "bytes": 6571,
+      "sha256": "6897df4341cd7dd48dc0cd4c24d8b80f505a2df88f9b353a3d485c963856d82f"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/restored-search.txt",
+      "bytes": 9836,
+      "sha256": "e7aab718b1279d6a49115f1617a9f10c82e783259181c9afd38a30c5ed8f14c4"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4.5/search-before-answer.txt",
+      "bytes": 12162,
+      "sha256": "681a1deb27658eb3b3b81d9df148ba1a87e39a07c6ba82636c38c86dd59d2ad5"
+    }
+  ],
+  "limits": [
+    "Agent solving visible tasks is not a human pilot or grade calibration.",
+    "No improvement in real hiring inferred from perfect task score.",
+    "The single preference answer changed weights but replaced zero profiles.",
+    "API/PDF privacy covered separately by backend tests; browser PDF file not verified.",
+    "Source tree unchanged; this does not verify an independently installed copy."
+  ]
+}

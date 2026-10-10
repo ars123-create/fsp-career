@@ -1,0 +1,30 @@
+{
+  "robust_topk": {
+    "frozen_files": {
+      "core.py": true,
+      "benchmark.py": true,
+      "test_core.py": true,
+      "PROOFS.md": true,
+      "requirements.txt": true
+    },
+    "application_engine_byte_equal": true
+  },
+  "preference_topk": {
+    "frozen_files": {
+      "core.py": true,
+      "benchmark.py": true,
+      "test_core.py": true,
+      "PROOFS.md": true,
+      "requirements.txt": true
+    },
+    "application_engine_byte_equal": true
+  },
+  "practical_bank": {
+    "prototype_byte_equal": true,
+    "sha256": "83e7637089ecfc8ba63b93950bf187eb893530b58c8afbaeb84b345694a807cc"
+  },
+  "runtime": {
+    "python": "3.14.7",
+    "sqlite": "3.53.4"
+  }
+}

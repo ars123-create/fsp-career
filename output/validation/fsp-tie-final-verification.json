@@ -1,0 +1,241 @@
+{
+  "date": "2026-10-07T19:15:39.313033+00:00",
+  "status": "PASS",
+  "scope": "Technical confirmation of the FSP tie-break and existing fictional demonstration. No independent hiring-quality or win-probability claim.",
+  "version": {
+    "version": "0.4.2-dev",
+    "date": "2026-10-07",
+    "application_source_sha256": "23f9afa76128a5aa31434698e7b97475d9d7879d2feddbf4aeb06a1703b9b423",
+    "source_files": 72,
+    "identifier": "SHA256 of sorted relative UTF-8 path + NUL + file bytes + NUL; path list in output/validation/source-v0.4.2-dev.json; no git commit published",
+    "submission_archive_version": "0.4.0-dev (unchanged; predates acceleration and FSP tie-break)",
+    "submission_directory": "output/submission-0.4.0-dev"
+  },
+  "tests": {
+    "prototype": {
+      "status": "PASS",
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "file": "output/validation/fsp-tie-prototype.xml"
+    },
+    "focused_integration": {
+      "status": "PASS",
+      "tests": 28,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "file": "output/validation/fsp-tie-integration.xml"
+    },
+    "sqlite": {
+      "status": "PASS",
+      "tests": 109,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "file": "output/validation/fsp-tie-backend-sqlite.xml"
+    },
+    "postgresql": {
+      "status": "PASS",
+      "tests": 109,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "file": "output/validation/fsp-tie-backend-postgresql.xml"
+    },
+    "docker": {
+      "status": "PASS",
+      "tests": 109,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "file": "output/validation/fsp-tie-backend-docker.xml"
+    }
+  },
+  "prototype_equals_integrated_module": true,
+  "frozen_files_verified": {
+    "preference_topk": 5,
+    "robust_topk": 5
+  },
+  "research_engines_unchanged": true,
+  "load": {
+    "paired_requests_without_achievements": 492,
+    "response_mismatches": 0,
+    "compared_fields": [
+      "status",
+      "selected_ids",
+      "question",
+      "answered",
+      "skipped",
+      "violations"
+    ],
+    "question_field_means": "presence only; question values covered by separate adapter checks",
+    "all_http_200": true,
+    "checked_violations": 0,
+    "summary": {
+      "bank-v2": [
+        {
+          "clients": 1,
+          "requests": 6,
+          "http_statuses": {
+            "200": 6
+          },
+          "violations": 0,
+          "p50_ms": 24.466709000989795,
+          "p95_ms": 24.953125044703484,
+          "max_ms": 24.953125044703484,
+          "status": "PASS"
+        },
+        {
+          "clients": 10,
+          "requests": 60,
+          "http_statuses": {
+            "200": 60
+          },
+          "violations": 0,
+          "p50_ms": 368.0858330335468,
+          "p95_ms": 430.5151669541374,
+          "max_ms": 436.6389159113169,
+          "status": "PASS"
+        },
+        {
+          "clients": 30,
+          "requests": 180,
+          "http_statuses": {
+            "200": 180
+          },
+          "violations": 0,
+          "p50_ms": 1181.9864999270067,
+          "p95_ms": 1269.7624169522896,
+          "max_ms": 1716.6690829908475,
+          "status": "PASS"
+        }
+      ],
+      "varied": [
+        {
+          "clients": 1,
+          "requests": 6,
+          "http_statuses": {
+            "200": 6
+          },
+          "violations": 0,
+          "p50_ms": 97.52758301328868,
+          "p95_ms": 126.02145806886256,
+          "max_ms": 126.02145806886256,
+          "status": "PASS"
+        },
+        {
+          "clients": 10,
+          "requests": 60,
+          "http_statuses": {
+            "200": 60
+          },
+          "violations": 0,
+          "p50_ms": 507.38670805003494,
+          "p95_ms": 530.2484999410808,
+          "max_ms": 543.1009999010712,
+          "status": "PASS"
+        },
+        {
+          "clients": 30,
+          "requests": 180,
+          "http_statuses": {
+            "200": 180
+          },
+          "violations": 0,
+          "p50_ms": 1587.1131250169128,
+          "p95_ms": 1704.7229170566425,
+          "max_ms": 3238.234749995172,
+          "status": "PASS"
+        }
+      ]
+    }
+  },
+  "browser": {
+    "file": "output/validation/fsp-tie-ui.json",
+    "two_answer_branches_verified": true,
+    "undo_and_skip_verified": true,
+    "console_error_warn": 0,
+    "evidence": [
+      {
+        "path": "output/screenshots/fsp-tie-0.4.2/01-root.jpg",
+        "sha256": "4b6b0d487f94fe55534a2c0d16d68cc03306b7553dd78893ac8ed96bb6f23b3b",
+        "bytes": 267954
+      },
+      {
+        "path": "output/screenshots/fsp-tie-0.4.2/01-root.txt",
+        "sha256": "b75b831658a4c5dbcd3c3fedddaf7dc3dd18ff86b4e31259822d31e1719018f4",
+        "bytes": 8026
+      },
+      {
+        "path": "output/screenshots/fsp-tie-0.4.2/02-answer-a.jpg",
+        "sha256": "9f47ebed6ec27cd30c1faa78b6ace0968b1c5ae4a363e0e63ffd6bcf96bd33eb",
+        "bytes": 244978
+      },
+      {
+        "path": "output/screenshots/fsp-tie-0.4.2/02-answer-a.txt",
+        "sha256": "8a2e327ac96924aa36b3905e1304a81e8455829e0914b2db482fb8578d9b5561",
+        "bytes": 6944
+      },
+      {
+        "path": "output/screenshots/fsp-tie-0.4.2/03-undo.txt",
+        "sha256": "b75b831658a4c5dbcd3c3fedddaf7dc3dd18ff86b4e31259822d31e1719018f4",
+        "bytes": 8026
+      },
+      {
+        "path": "output/screenshots/fsp-tie-0.4.2/04-answer-b.jpg",
+        "sha256": "7593504829353067e298373e53642291aff5d14d7a2da37547878b07532eb928",
+        "bytes": 245195
+      },
+      {
+        "path": "output/screenshots/fsp-tie-0.4.2/04-answer-b.txt",
+        "sha256": "72911d7f8ac40dc2b2de684581e8a8f7745aed8e5ab2685563ca56652138505a",
+        "bytes": 6944
+      },
+      {
+        "path": "output/screenshots/fsp-tie-0.4.2/05-reset.txt",
+        "sha256": "b75b831658a4c5dbcd3c3fedddaf7dc3dd18ff86b4e31259822d31e1719018f4",
+        "bytes": 8026
+      },
+      {
+        "path": "output/screenshots/fsp-tie-0.4.2/06-skip.txt",
+        "sha256": "8555cadbf5cd9af06d54eae8dc1aa72adca920a9f811c0499a4df34363ed6c51",
+        "bytes": 6946
+      },
+      {
+        "path": "output/screenshots/fsp-tie-0.4.2/07-demo-preview.jpg",
+        "sha256": "d25cd3baa26df4a5366606ed2b57ee6ebe1b4e3e4347f522668f24af254c84fe",
+        "bytes": 115134
+      },
+      {
+        "path": "output/screenshots/fsp-tie-0.4.2/08-demo-compact.jpg",
+        "sha256": "a2a9905051d437d3b7be37da7325acd97e3024f1904d6958e5a39df6b5918648",
+        "bytes": 67374
+      }
+    ]
+  },
+  "runtime": {
+    "port": 8018,
+    "version": "0.4.2-dev",
+    "logical_database_unchanged_after_restart_and_ui": true
+  },
+  "docker": {
+    "image": "fsp-career:0.4.2-dev",
+    "id": "sha256:040b5bd45e278cb865f72ea6bbc0b5cf445997378f2d93143dce67cf096ad312",
+    "working_container_replaced": false
+  },
+  "openapi_operations": 45,
+  "preserved_release": {
+    "version": "0.4.0-dev",
+    "sha256": "8e34cb43d0767b95977c61cc382ae39dd469fddb9b05c5156a573f6e5840a54d"
+  },
+  "organizer_template_unchanged": true,
+  "not_run": [
+    "Independent human relevance evaluation",
+    "Human grade/task calibration",
+    "Official FSP API",
+    "Full submission package 0.4.2-dev",
+    "External publication and platform submission"
+  ]
+}

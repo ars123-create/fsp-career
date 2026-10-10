@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "archive_sha256": "f47895985644862684a656302551316f480e9e2dbff835d87fc8faf99f97c5ff",
+  "unpacked_directory": "/var/folders/4d/6ryhpyhd06j6tf73jd_947gh0000gn/T/fsp-elicitation-audit-0wzsll7b",
+  "tests": 18,
+  "tasks": 1200,
+  "equal_fields": [
+    "cases",
+    "summary",
+    "hashes",
+    "versions",
+    "protocol_sha256"
+  ],
+  "excluded_nondeterministic_field": "elapsed_seconds",
+  "application_source_files_unchanged": 72,
+  "dependency_environment": "existing local Python 3.14.7 venv; source loaded only from fresh unpack; no fresh install claimed"
+}

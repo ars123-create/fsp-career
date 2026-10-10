@@ -1,0 +1,64 @@
+{
+  "version": "0.4.2-dev",
+  "date": "2026-10-07",
+  "status": "PASS",
+  "scope": "Agent-operated UI demonstration on fictional local profiles; not a human relevance evaluation",
+  "filters": {
+    "specialization": "backend",
+    "grade": "Middle",
+    "work_format": "remote",
+    "ranking": "preference"
+  },
+  "eligible": 7,
+  "selected": 5,
+  "root": [
+    "Открыть Кандидат 46547F",
+    "Открыть Кандидат 4CDF68",
+    "Открыть Кандидат 021FD1",
+    "Открыть Тестовый кандидат · демо",
+    "Открыть Кандидат 1A726C"
+  ],
+  "answer_a": {
+    "choice": "SQL 100 / API 50",
+    "weights": {
+      "Python": 33,
+      "SQL": 49,
+      "API": 18
+    },
+    "selected": [
+      "Открыть Кандидат 46547F",
+      "Открыть Кандидат 4CDF68",
+      "Открыть Кандидат 021FD1",
+      "Открыть Тестовый кандидат · демо",
+      "Открыть Кандидат 1A726C"
+    ],
+    "replaced": 0
+  },
+  "answer_b": {
+    "choice": "SQL 50 / API 100",
+    "weights": {
+      "Python": 33,
+      "SQL": 18,
+      "API": 49
+    },
+    "selected": [
+      "Открыть Кандидат 46547F",
+      "Открыть Кандидат 4CDF68",
+      "Открыть Кандидат 021FD1",
+      "Открыть Тестовый кандидат · демо",
+      "Открыть Кандидат 2E9351"
+    ],
+    "replaced": 1
+  },
+  "undo_restores_original_order": true,
+  "skip_preserves_original_order": true,
+  "fsp_tied_100_point_profiles_first": [
+    "Кандидат 46547F",
+    "Кандидат 4CDF68"
+  ],
+  "input_data_modified": false,
+  "grade_modified": false,
+  "console": [],
+  "evidence_directory": "output/screenshots/fsp-tie-0.4.2",
+  "final_preview": "output/screenshots/fsp-tie-0.4.2/08-demo-compact.jpg"
+}

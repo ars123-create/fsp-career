@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-08",
+  "status": "PASS",
+  "scope": "No-cache build and technical smoke from an extracted candidate on the existing Docker host",
+  "candidate": {
+    "status": "PASS",
+    "zip": "/Users/arsenij/Documents/ChatGPT/hakaton2/tmp/release-0.4.5/candidate/FSP_Career_Submission_0.4.5_candidate.zip",
+    "files": 604,
+    "bytes": 80314055,
+    "sha256": "c8d5b1d75449ec0a6c1240b0ee7fad3d1c36cf6ef258814555c3dacaf22f0a5f",
+    "application_files_verified": 87,
+    "secrets_and_runtime_state": "excluded",
+    "human_validation": "NOT RUN"
+  },
+  "image_id": "sha256:4e3fcffacf024195b534aee66c2204d755b8b5761d181a6e1482101fc4573b41",
+  "build": {
+    "status": "PASS",
+    "no_cache": true,
+    "context": "tmp/release-0.4.5/unpacked/fsp-career",
+    "frontend": "npm ci + TypeScript/Vite build",
+    "backend": "pip from lock",
+    "log": "output/validation/release-0.4.5-build-console.txt",
+    "warnings": [
+      "legacy Docker builder deprecation",
+      "npm allowScripts notice for esbuild",
+      "JS chunk over 500 KB"
+    ]
+  },
+  "isolation": {
+    "network": "none",
+    "root_filesystem": "read-only",
+    "database": "new SQLite in /tmp tmpfs",
+    "working_database_mounted": false,
+    "existing_services_replaced": false
+  },
+  "smoke": {
+    "status": "PASS",
+    "version": "0.4.5-dev",
+    "migration": "upgrade/check PASS",
+    "fresh_database": true,
+    "new_rubric": "2026-10-v3",
+    "old_history": "v1 retained",
+    "wrong_transaction_rule_rejected": true,
+    "prior_grade_and_skills_retained": true,
+    "openapi_exact_match": true,
+    "human_validation": "NOT RUN"
+  },
+  "backend_tests": {
+    "tests": 181,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 10.956,
+    "report": "output/validation/release-0.4.5-backend-clean.xml",
+    "sha256": "36efaed8fe550efac3a344cfae7869e9a3aec70fe904b229ebbb18d11a85a1d6",
+    "warning": "Starlette TestClient httpx deprecation"
+  },
+  "application_files_equal_to_extracted_candidate": 87,
+  "application_source_sha256": "6dbccbb0f36e55edcd217cdc584f32aa7775b25655ffee059f5ebd1e0a89c18d",
+  "protected_prior_files_unchanged": 46,
+  "full_browser_flow": "PASS separately on host8022 from same application source; not from archive container",
+  "pdf_browser_transfer": "PARTIAL",
+  "human_validation": "NOT RUN",
+  "independent_machine": "NOT RUN",
+  "public_submission": "NOT RUN"
+}

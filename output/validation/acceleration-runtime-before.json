@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "backup": "data/backups/pre-acceleration-0.4.1.sqlite",
+  "backup_sha256": "6925e410b365d1221b8ebfe434cbd8a8a75a586bda33d77ddede0a62cd5bbb56",
+  "row_counts_before": {
+    "user": 28,
+    "candidate": 25,
+    "attempt": 27,
+    "evidence": 174,
+    "invitation": 2,
+    "need": 3
+  },
+  "live_version_before": "0.4.0-dev"
+}

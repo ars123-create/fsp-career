@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-10-10T17:22:57.188686+00:00",
+  "version": "0.5.1",
+  "media_revision": "product-film-2",
+  "file": "FSP_Career_Overview_0.5.1.mp4",
+  "sha256": "a77e9e84fd4b9526841ab01876d9a641719aee53c1b971f4afcc778412f05b61",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "pix_fmt": "yuvj420p",
+        "r_frame_rate": "30/1",
+        "nb_frames": "2214",
+        "side_data_list": [
+          {}
+        ]
+      }
+    ],
+    "format": {
+      "duration": "73.800000",
+      "size": "11978746"
+    }
+  },
+  "typescript": "PASS",
+  "full_decode": "PASS",
+  "visual_review": "All 9 scenes and separate result/consent states sampled; final MP4 contact sheet and detail frames reviewed. Not a human audience study.",
+  "cursor": "none",
+  "audio_streams": 0,
+  "runtime_files_unchanged": 107,
+  "remotion": "4.0.534",
+  "scenes_start_frames": [
+    0,
+    198,
+    456,
+    714,
+    972,
+    1260,
+    1458,
+    1716,
+    2004
+  ],
+  "source_assets": [
+    {
+      "path": "public/fonts/manrope-cyrillic-400-normal.woff2",
+      "sha256": "5a987d1484070f1ea54de7c10ebfa4057a18e379361dbe5fd5c4fa4c2d95ef39"
+    },
+    {
+      "path": "public/fonts/manrope-cyrillic-600-normal.woff2",
+      "sha256": "80b86efbef1c9fb66557cc4cc7b6db42db2fd631f1a9b8735f3bbefbb5128799"
+    },
+    {
+      "path": "public/fonts/manrope-cyrillic-700-normal.woff2",
+      "sha256": "2ad647b9159d27d27f4999b30598f92e60449fb20d80803bc7b85afafbb446d5"
+    },
+    {
+      "path": "public/fonts/manrope-cyrillic-800-normal.woff2",
+      "sha256": "e76a69e66b624abdb84cdda1e96b04417afbfb1f3cb684488a867b29bcb3870c"
+    },
+    {
+      "path": "public/fonts/manrope-latin-400-normal.woff2",
+      "sha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3"
+    },
+    {
+      "path": "public/fonts/manrope-latin-600-normal.woff2",
+      "sha256": "f7ac6258da20ab7541939b59851155753d1d24f1b30cbcb949077a3faa3d1593"
+    },
+    {
+      "path": "public/fonts/manrope-latin-700-normal.woff2",
+      "sha256": "d2a12c85a831e4b5db341767d0347fa3d1361d22a1fcb3e361a16b6c90080f71"
+    },
+    {
+      "path": "public/fonts/manrope-latin-800-normal.woff2",
+      "sha256": "74c161dbcbce7c3590803cc72dc1f63313c360e13367aba5075a7b7b3818ea49"
+    },
+    {
+      "path": "public/screens/assessment.png",
+      "sha256": "12070b6fd2d395346484c44eae731b091b9e7d30870b9954cf3708cac369ad2e"
+    },
+    {
+      "path": "public/screens/candidate-accepted.png",
+      "sha256": "996f4a1f3639aa83108dfea1fb8f16bf1efc861ecf49c490474836a7fab1b999"
+    },
+    {
+      "path": "public/screens/candidate-offer.png",
+      "sha256": "d4915022af2577f3b1e755311d122876d1bfbbe17a75ba12d19b1261485a7f2b"
+    },
+    {
+      "path": "public/screens/contact-card.png",
+      "sha256": "0a7354d9be071ab86def654fc99263aff77ad2e3cc46501dedea035c99b3bf13"
+    },
+    {
+      "path": "public/screens/dashboard.png",
+      "sha256": "6d7a22f65fe097f70980bc6db4f0e57c72e03ca815a93104e5d2e9f7aa7dbcac"
+    },
+    {
+      "path": "public/screens/invite-after.png",
+      "sha256": "43f5a3a9a3a43d9cd2d7dafe5bd0d1e545898de457d63a2f745b66faec5ab367"
+    },
+    {
+      "path": "public/screens/invite-before.png",
+      "sha256": "eeb17dbd4bc24ef1effc1377fd8c6fb20f66a05f39d264db79f6925cf3af5269"
+    },
+    {
+      "path": "public/screens/landing.png",
+      "sha256": "3827971d1e009f324045e041340f99c4b61170d45caa77ccf4aa4c8a55cf2aa4"
+    },
+    {
+      "path": "public/screens/matched.png",
+      "sha256": "8c42cfebc067914b023b870054367d2f0f6d62cc709da582601698bf80bc48fe"
+    },
+    {
+      "path": "public/screens/offer-card.png",
+      "sha256": "17fb281e7534e678c7bdd6d8b5d86785f9ae513b0115e7059c8f8bfa19b1d20b"
+    },
+    {
+      "path": "public/screens/profile.png",
+      "sha256": "40b737e96a1417424199b750d95d1f14e7fa3f1b15ec9c0616596732d3b3cf5d"
+    },
+    {
+      "path": "public/screens/question.png",
+      "sha256": "53494596e161a447e6f5cd8d735e30b823762df1644e5eca6ffa2ea709671f56"
+    },
+    {
+      "path": "public/screens/result.png",
+      "sha256": "4e664e178c83c74d5677b3bcacb7430ca7f00efad69012582e22e67036399863"
+    },
+    {
+      "path": "public/screens/search.png",
+      "sha256": "f8bfa7543849c3842093b5c04c22b8f82ecc2061f06dedd24a13f784a0c406b4"
+    },
+    {
+      "path": "public/screens/task.png",
+      "sha256": "bce30deeeb472c5681fca1f9ef4daa36039fb379694368f2374a93c42257b07e"
+    }
+  ],
+  "boundary": "Montage of actual demo screens, not a continuous E2E recording. Saved result explicitly labelled; Middle search and Junior invitation are different examples."
+}

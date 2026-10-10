@@ -1,0 +1,62 @@
+{
+  "contact-card.png": {
+    "w": 2296,
+    "h": 806
+  },
+  "dashboard.png": {
+    "w": 2880,
+    "h": 2000
+  },
+  "invite-after.png": {
+    "w": 2880,
+    "h": 2000
+  },
+  "question.png": {
+    "w": 2296,
+    "h": 1034
+  },
+  "invite-before.png": {
+    "w": 2880,
+    "h": 2000
+  },
+  "result.png": {
+    "w": 2880,
+    "h": 2000
+  },
+  "task.png": {
+    "w": 2880,
+    "h": 2000
+  },
+  "search.png": {
+    "w": 2880,
+    "h": 2000
+  },
+  "assessment.png": {
+    "w": 2880,
+    "h": 2000
+  },
+  "candidate-offer.png": {
+    "w": 2296,
+    "h": 760
+  },
+  "offer-card.png": {
+    "w": 2296,
+    "h": 760
+  },
+  "matched.png": {
+    "w": 2880,
+    "h": 2000
+  },
+  "landing.png": {
+    "w": 2880,
+    "h": 2000
+  },
+  "profile.png": {
+    "w": 2880,
+    "h": 2000
+  },
+  "candidate-accepted.png": {
+    "w": 2296,
+    "h": 760
+  }
+}

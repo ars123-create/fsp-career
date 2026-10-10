@@ -1,0 +1,15 @@
+{
+  "version": "2026-10-v3",
+  "files": [
+    {
+      "application": "backend/app/practical_bank_v2.py",
+      "prototype": "validation/assessment_v3/legacy_practical_bank.py",
+      "sha256": "83e7637089ecfc8ba63b93950bf187eb893530b58c8afbaeb84b345694a807cc"
+    },
+    {
+      "application": "backend/app/retry_item.py",
+      "prototype": "validation/assessment_v3/retry_item.py",
+      "sha256": "10d82bc40b2bbb14851724c39627a15de4970f3070d5a69b9856ece7664525c8"
+    }
+  ]
+}

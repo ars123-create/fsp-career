@@ -1,0 +1,9 @@
+{
+  "component": "pydantic",
+  "version": "2.13.5",
+  "official_strict_example": "PASS",
+  "nullable_strict_forbid_probe": "PASS",
+  "source_read": "BaseModel.model_validate",
+  "license": "MIT",
+  "before_adapter": true
+}

@@ -1,0 +1,133 @@
+{
+  "version": "0.5.1",
+  "source": "Actual recorded browser interactions; idle periods trimmed; captions; no audio",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Вход в личный кабинет",
+      "raw_seconds": 32.48,
+      "removed_idle_intervals": [
+        [
+          2.3200000000000003,
+          17.56
+        ],
+        [
+          20.8,
+          30.879999999999995
+        ]
+      ],
+      "retained_seconds": 7.160000000000004,
+      "output_seconds": 22.0,
+      "audio": false
+    },
+    {
+      "chapter": 2,
+      "title": "Профиль и подтверждённые навыки",
+      "raw_seconds": 38.44,
+      "removed_idle_intervals": [
+        [
+          2.56,
+          3.52
+        ],
+        [
+          6.76,
+          8.64
+        ],
+        [
+          11.879999999999999,
+          13.84
+        ],
+        [
+          22.080000000000002,
+          35.04
+        ]
+      ],
+      "retained_seconds": 20.68,
+      "output_seconds": 26.0,
+      "audio": false
+    },
+    {
+      "chapter": 3,
+      "title": "Подбор под потребности команды",
+      "raw_seconds": 37.84,
+      "removed_idle_intervals": [
+        [
+          6.76,
+          8.64
+        ],
+        [
+          11.879999999999999,
+          13.76
+        ],
+        [
+          17.240000000000002,
+          18.16
+        ],
+        [
+          23.400000000000002,
+          34.76
+        ]
+      ],
+      "retained_seconds": 21.800000000000008,
+      "output_seconds": 27.0,
+      "audio": false
+    },
+    {
+      "chapter": 4,
+      "title": "Адресное приглашение",
+      "raw_seconds": 105.36,
+      "removed_idle_intervals": [
+        [
+          2.48,
+          3.52
+        ],
+        [
+          6.76,
+          8.64
+        ],
+        [
+          11.879999999999999,
+          13.76
+        ],
+        [
+          17.240000000000002,
+          18.88
+        ],
+        [
+          22.720000000000002,
+          24.0
+        ],
+        [
+          27.48,
+          76.36
+        ],
+        [
+          81.28,
+          102.64
+        ]
+      ],
+      "retained_seconds": 27.400000000000006,
+      "output_seconds": 25.0,
+      "audio": false
+    },
+    {
+      "chapter": 5,
+      "title": "Решение кандидата",
+      "raw_seconds": 3.68,
+      "removed_idle_intervals": [],
+      "retained_seconds": 3.68,
+      "output_seconds": 13.0,
+      "audio": false
+    },
+    {
+      "chapter": 6,
+      "title": "Контакты и PDF-профиль",
+      "raw_seconds": 3.96,
+      "removed_idle_intervals": [],
+      "retained_seconds": 3.96,
+      "output_seconds": 15.0,
+      "audio": false
+    }
+  ],
+  "duration": 128.0
+}

@@ -1,0 +1,10 @@
+{
+  "health": {
+    "status": "ok",
+    "version": "0.4.4-dev",
+    "demo_mode": true,
+    "mail_transport": "local_demo"
+  },
+  "openapi_version": "0.4.4-dev",
+  "operations": 45
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "python": "3.14.7",
+  "component": "built-in sorted / composite tuple keys and stable ties",
+  "source": "https://docs.python.org/3.14/howto/sorting.html",
+  "scope": "Official sorting examples, before domain adaptation"
+}

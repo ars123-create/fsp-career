@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-10T12:00:44.574839+00:00",
+  "scenario": "bank_v2",
+  "status": "PASS",
+  "smoke_only": true,
+  "fixture": {
+    "seed": 934001,
+    "profiles": 100,
+    "unique_vectors": 16,
+    "scores_sha256": "411e2e9fceec801192d6455a036a0b2a882aa0efb4056f84c73ec0237975d4ee"
+  },
+  "sessions": 30,
+  "steps_per_client": 1,
+  "health": {
+    "status": "ok",
+    "version": "0.5.0",
+    "demo_mode": false,
+    "mail_transport": "unconfigured"
+  },
+  "app_version": {
+    "version": "0.5.0",
+    "date": "2026-10-10",
+    "application_source_sha256": null,
+    "source_files": 87,
+    "identifier": "SHA256 of sorted relative UTF-8 path + NUL + file bytes + NUL; path list in output/validation/source-v0.4.5-dev.json; no git commit published",
+    "submission_archive_version": "0.4.5-dev",
+    "submission_directory": "output/submission-0.4.5-dev",
+    "release_status": "IN_PROGRESS",
+    "algorithm": "mixed-kg-v1",
+    "base_release": "0.4.5-dev"
+  },
+  "actual_backend_source": {
+    "sha256": "6a70259d131aacfe44f001b715000c5e558d6853896f15db4972771de6235286",
+    "files": {
+      "backend/app/__init__.py": "f5b054bbc32a5f2bae7840b02d84c7e7327810e294e7358e2a169b8cd8dacfd1",
+      "backend/app/api/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "backend/app/api/assessments.py": "780d56923c30c1f8eb390362baaa1a96c278af2e0317460d1052a6270fc3b401",
+      "backend/app/api/auth.py": "eaad7a0b443edf1b256a7f2de5bcd83963bed323396f23eff2d35681596c154c",
+      "backend/app/api/hiring.py": "648a9d4355dafa75a8fc8219c0832d715b8c37d66038c9a71e2fa77f52cd2a4a",
+      "backend/app/api/profiles.py": "d09e529f99cd658feb28a755bc0bc4415eab4ca4290439683206d92aa3507af6",
+      "backend/app/api/search.py": "6ed68fe287a90a60cbbb4e00cf8a5bc136a413c3c66722a9063b2f9a11de6d4a",
+      "backend/app/assessment_bank.py": "88bacac108f9ad62e6a5920bd5d1961c3a6cf2654bb3622ec1b17fb62239d257",
+      "backend/app/core/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "backend/app/core/config.py": "5c127617598eaec6d11c8033f0955d75fefc052e02a5d6470a89735f247861c8",
+      "backend/app/core/db.py": "189366c2c88f7a98019f912d0f474185836a616937b9c84bd0c35914451cb49c",
+      "backend/app/core/mail.py": "946545d652543eb812a9c3a47afb05194e1c6fc6e44da44dfa8528f4262c631b",
+      "backend/app/core/rate_limit.py": "3f7efc3e26f03f2256ed52da5172826720ee35b8e7cf1c38aff7de00b85668e6",
+      "backend/app/core/security.py": "1c8ee65f5f035cd2e037f3dcf1c7d37bc4f4c51740712f96a258b26a3ee67f3e",
+      "backend/app/evidence_portfolio.py": "c813204145393b37da3f3af068b46d3699f2892c573f62db3570bf8954ceb805",
+      "backend/app/main.py": "e8f85a0898662f63d4a59dc32b95dacb629b2aeb9d7f9669388e1ce0e03cdd8d",
+      "backend/app/matching.py": "7ffadd3cda14f504bc273ecde9aec02a45c6d1cb56d4a6af6edbc77f1d80aa1f",
+      "backend/app/mixed_engine/__init__.py": "93f1cbb2a6a6fcaa64f8b09ade3dfabf8db906b7b234a2d741ffce91d80cdc36",
+      "backend/app/mixed_engine/adapter.py": "abb699db5127560099be352e9a782c7566d3b5f7b365ba7ad0c2bc39fbe23692",
+      "backend/app/mixed_engine/constraints.py": "1bbd23c4cd1be21bf1fe289c915fb8475c04a91dce803459aed9b8ccc87941ad",
+      "backend/app/mixed_engine/core.py": "b3aad5b4ba1dba51226c460c5d38e5e23964e04c44a37f565c3412003e0a6344",
+      "backend/app/mixed_engine/finite.py": "7b5bfe3f6a3cce38d124da13aaf4d77715672e3a71379248a9ec8e22ae762067",
+      "backend/app/mixed_engine/models.py": "a0d48d969b9a34929b129cd51389040b15fc190b9128d3dfff746be5b757f343",
+      "backend/app/mixed_engine/policies.py": "39759e42ed50d0b889ea0ec7de2114c569e747523f716d2fd91321a0fdfd5b9c",
+      "backend/app/mixed_matching.py": "ffbc035dda31efaac7ad035e8453edb6ac57d25551e0526ac4d5c2400c26e291",
+      "backend/app/models.py": "c21ffbb88d589856178cb79806cbc10d7fac2e3fbf33eef2bedeb9e90005db8b",
+      "backend/app/pdf_profile.py": "534f5ab5a4dc7787b705a6cba950c5ad49442eca6af5bde5d02eb06d5467d600",
+      "backend/app/practical_bank.py": "df72bc22921878d579f8856bd8d03edb32e6117a52e4d19b62848d1493327c9f",
+      "backend/app/practical_bank_v2.py": "83e7637089ecfc8ba63b93950bf187eb893530b58c8afbaeb84b345694a807cc",
+      "backend/app/preference_acceleration.py": "85bc336f092f97109ab4b2f8ac0e10629d37246c2fb61bf26199a7048c0808a7",
+      "backend/app/preference_engine.py": "b3aad5b4ba1dba51226c460c5d38e5e23964e04c44a37f565c3412003e0a6344",
+      "backend/app/preference_matching.py": "4bad645bffc1054fd388db2d06f34c81face7fdbb46b9e2495276d3e698f8f35",
+      "backend/app/ranking_ties.py": "1ef03774aaa238624c71204535e0acdf9a24d96c3fa9683a0f389e40f4c1c969",
+      "backend/app/responses.py": "a197f4dfe07ceacd23a7bf5c2c79b1091074c5d72c0786588b47563ee62174cd",
+      "backend/app/retry_item.py": "10d82bc40b2bbb14851724c39627a15de4970f3070d5a69b9856ece7664525c8",
+      "backend/app/robust_engine.py": "dfc90f10e208ef2b65a7dbac817e739c7f29e739d8904d0aa2b433db4d03ecf8",
+      "backend/app/robust_matching.py": "d25e6081d924830edab0cb0b0d610d295746517608f13b246e443f9ffc26346a",
+      "backend/app/schemas.py": "e3d939281ac2e16fec4df0c56838dc720b839c6a60b165a6e4c3255606023237",
+      "backend/app/seed.py": "3a344b4937b54c2f53d1ec47fc3b34929848c360ecff38b605869d75ce664e21",
+      "backend/app/skill_projection.py": "16644c1a56c61069fac8d6e844afc34fcb314d90e5155acba9c265e9b4f9bb4c",
+      "backend/app/visibility.py": "a5f983f85088e290b310dc58e7d695ae84c31e9ee934452afd7acaf53d6586be",
+      "backend/app/weighted_matching.py": "0a2cf270d2f64ef681aa7af80a63826cddd3ac5ec175c4a5da497f33a223237e",
+      "backend/app/weighted_scoring.py": "f26934c80f6bcb415b58ffa24af7f9c0905a6841f44642bfc69b5d676e741dbe",
+      "backend/requirements.lock.txt": "92c7158b50dde7dab91ab4039675bebdd31e80052bf92204ca0b7a1530bf258a"
+    }
+  },
+  "protocol_sha256": "62a7425fdfa23a34606429293be27b37cc54ebe1094018d15414b5722375bd4e",
+  "script_sha256": "78555fd453664aec018e726987635a56c6b509ff0ceb93ac092121c3dc3b47cd",
+  "platform": {
+    "os": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "cpu_count": 12,
+    "python": "3.14.7",
+    "blas_threads": 1,
+    "uvicorn_workers": 1,
+    "database": "temporary SQLite"
+  },
+  "versions": {
+    "httpx": "0.28.1",
+    "httpcore": "1.0.9",
+    "anyio": "4.15.1",
+    "starlette": "1.7.0",
+    "uvicorn": "0.54.0",
+    "numpy": "2.4.4",
+    "scipy": "1.18.1",
+    "sqlmodel": "0.0.48"
+  },
+  "elapsed_s": 1.4573756250320002,
+  "summary": [
+    {
+      "clients": 1,
+      "requests": 1,
+      "http_statuses": {
+        "200": 1
+      },
+      "violations": 0,
+      "p50_ms": 9.27812501322478,
+      "p95_ms": 9.27812501322478,
+      "max_ms": 9.27812501322478,
+      "status": "PASS"
+    }
+  ],
+  "rows": [
+    {
+      "concurrency": 1,
+      "client": 0,
+      "step": 0,
+      "choice": null,
+      "milliseconds": 9.27812501322478,
+      "status": 200,
+      "question": true,
+      "answered": 0,
+      "skipped": 0,
+      "selected_ids": [
+        "27da1b162423319f0c6c25ae78363f80",
+        "3caaf83aa53ff661b049805869e2e1fa",
+        "694cbd8a891b1f483f4c7fe16db7418a",
+        "6e442fffa390115bd0c9383b8d3bf599",
+        "81c0ab181e848539396e5ba3bb93f2bb"
+      ],
+      "violations": []
+    }
+  ],
+  "own_server_stopped": true,
+  "limitations": "Local macOS capacity-development run. Synthetic fixture scores, no actual exams or human relevance labels. No production SLA, PostgreSQL capacity or independent hardware claim.",
+  "temporary_database_removed": true,
+  "backend_unchanged_during_run": true
+}

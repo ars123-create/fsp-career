@@ -1,0 +1,19 @@
+{
+  "backup": "data/backups/pre-evidence-portfolio-0.4.4.sqlite",
+  "counts": {
+    "user": 28,
+    "auditevent": 13,
+    "localmail": 2,
+    "actiontoken": 2,
+    "candidate": 25,
+    "company": 3,
+    "attempt": 27,
+    "need": 4,
+    "job": 2,
+    "evidence": 174,
+    "gradeaward": 25,
+    "invitation": 2,
+    "application": 0,
+    "alembic_version": 1
+  }
+}

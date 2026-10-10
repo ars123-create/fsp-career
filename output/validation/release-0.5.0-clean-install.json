@@ -1,0 +1,27 @@
+{
+  "status": "PASS_IN_STATED_SCOPES",
+  "archive_sha256": "777af71059bfb246f4658367186ceac4c2245135b0ecdb60bb0138d529f15781",
+  "application_source_sha256": "5286880de07da4dd5acb4a2f772ade91e87a4fadd408a5cd3d369145905883f4",
+  "runtime_files_verified": 106,
+  "backend_tests_linux": 188,
+  "adapter_tests_macos": 15,
+  "image": "fsp-career:0.5.0-archive",
+  "image_id_prefix": "a87db417d1de",
+  "smoke": {
+    "status": "PASS",
+    "backend_files_match_image": 71,
+    "openapi_exact_match": true,
+    "frontend_routes": 3,
+    "health_version": "0.5.0",
+    "mixed_search": true,
+    "contacts_hidden": true,
+    "answered_question": true,
+    "scope": "Archive-built image, new tmpfs SQLite, TestClient lifespan; not a browser test"
+  },
+  "build": "Archive frontend rebuilt; npm/Python dependency layers reused. Same Docker host, not independent machine.",
+  "negative_results": [
+    "First two archive builds exited 137 on busy 2GB VM. Third passed after temporary FSP preview containers stopped; source unchanged.",
+    "Combined backend+adapter Docker run exited 137. Backend 188 passed separately in Docker; all adapter 15 passed from archive on macOS. No combined Docker PASS claimed."
+  ],
+  "scope": "No external network in test/smoke containers; new tmpfs SQLite. Existing application databases untouched."
+}

@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-07",
+  "version": "0.4.3-dev",
+  "browser": "Codex IAB",
+  "viewport_css": {
+    "width": 638,
+    "height": 1706
+  },
+  "horizontal_overflow": false,
+  "console_warn_error_count": 0,
+  "scenario": "existing fictional employer; only a new demo Need saved via UI",
+  "checks": {
+    "equal_weights": "PASS",
+    "all_zero_rejected": "PASS",
+    "weights_10_10_80": "PASS",
+    "boundary_replaced_1A726C_by_2E9351": "PASS",
+    "save_reload_restore_recalculate": "PASS",
+    "new_questions_clear_manual_weights": "PASS",
+    "answer_A_proposes_33_33_48_82_17_85": "PASS",
+    "cancel_does_not_apply_edits": "PASS",
+    "manual_apply_after_answer": "PASS"
+  },
+  "screenshots_and_dom": [
+    {
+      "path": "output/screenshots/direct-weights-0.4.3/01-equal.txt",
+      "sha256": "d1cfa10df70e358fd3654b7b2f3a6f172d10403447d88e936d98587f1026226b"
+    },
+    {
+      "path": "output/screenshots/direct-weights-0.4.3/02-zero-rejected.txt",
+      "sha256": "7f6c331251b7a65734d5c9e1813449cc280c5d7dc8af4e4418ae3bf3b411b6b4"
+    },
+    {
+      "path": "output/screenshots/direct-weights-0.4.3/03-editor.jpg",
+      "sha256": "887cf9cd494e02efb3466a729718c8f1474407faad5d48d5d325863ae091383f"
+    },
+    {
+      "path": "output/screenshots/direct-weights-0.4.3/03-editor.txt",
+      "sha256": "cd753df46ebebbbe203da70047a5e9a47ad3915269b7677d13a16cd3271e577d"
+    },
+    {
+      "path": "output/screenshots/direct-weights-0.4.3/04-applied.txt",
+      "sha256": "54403e4d5334736e9c195e259dc153833494d08bcefcbe04fedd0c71c2f36ad1"
+    },
+    {
+      "path": "output/screenshots/direct-weights-0.4.3/05-saved.txt",
+      "sha256": "5c30f3fe78773e228b6ff3eba88463e02904f4849880849b3f2201e4a8a619c7"
+    },
+    {
+      "path": "output/screenshots/direct-weights-0.4.3/06-restored.txt",
+      "sha256": "d09c0ebe25d767022a23ceee4d8276b2ace2cb1e1a03c4be8205604b7531004a"
+    },
+    {
+      "path": "output/screenshots/direct-weights-0.4.3/07-refreshed.txt",
+      "sha256": "1d475b2715ec5f0934a89897fabfdc20be6c23f8263cc593d190e57988f9e4f0"
+    },
+    {
+      "path": "output/screenshots/direct-weights-0.4.3/08-questions.txt",
+      "sha256": "cba3c838e2e7fe1fb0f462639c4ae0743c37bf4651370958b9c6d336c6ddbc8a"
+    },
+    {
+      "path": "output/screenshots/direct-weights-0.4.3/09-answered.txt",
+      "sha256": "6a69f585fa29c96d4107ba397a4a585c11f4bf06452efc540cae378f46075b25"
+    },
+    {
+      "path": "output/screenshots/direct-weights-0.4.3/10-proposed.txt",
+      "sha256": "2fb8d34ae36a642d1bf4433b12ee84856dd76e33462ae77aa4f251ad9b690d12"
+    },
+    {
+      "path": "output/screenshots/direct-weights-0.4.3/11-cancel.txt",
+      "sha256": "6a69f585fa29c96d4107ba397a4a585c11f4bf06452efc540cae378f46075b25"
+    },
+    {
+      "path": "output/screenshots/direct-weights-0.4.3/12-final.jpg",
+      "sha256": "c8b75a397c1c5a1ca2135cee864559a14fe21afb3913a140d07053c6691917eb"
+    },
+    {
+      "path": "output/screenshots/direct-weights-0.4.3/12-final.txt",
+      "sha256": "1d475b2715ec5f0934a89897fabfdc20be6c23f8263cc593d190e57988f9e4f0"
+    },
+    {
+      "path": "output/screenshots/direct-weights-0.4.3/console.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  ],
+  "human_validation": "NOT RUN",
+  "other_viewports": "NOT RUN in this pass"
+}

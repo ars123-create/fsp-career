@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-10T02:00:35.590497+00:00",
+  "quality": {
+    "rows": 548352,
+    "rows_sha256": "2ff5500350581c08eead8cf4abe064b7b5a592657e2e5219d7b0d5ac7f854ec6",
+    "protocol_sha256": "8250603cb3f7db0be882020e7c7a8f5ef2307b49b6e24ef3dbdf47b04ea425b8",
+    "failures": 0
+  },
+  "timing": {
+    "rows": 2688,
+    "rows_sha256": "9d15eeb03b8fcce9d8448956ed982582f6db7b8ebdbec95dfb64e7cf81f5cf0c",
+    "protocol_sha256": "ce7251f68927007324d663a23f5195029f0f786b0f870bad05e59a3e110711c4",
+    "failures": 0
+  },
+  "scope": "ROOT_SECOND_IMPLEMENTATION_NOT_INDEPENDENT_AGENT_REVIEW",
+  "study_scope": "SEPARATE_FIXED_SYNTHETIC_DOMAIN_STUDY",
+  "metric_triples": 18,
+  "intervals": 85,
+  "bootstrap_scalar_values_checked": 120,
+  "timing_p95_checks": 4,
+  "decision": "SOLE_CONFIGURATION_PASSING_DECLARED_RULE",
+  "selected": "mixed_kg_finer_quadrature",
+  "report_sha256": "eab45e5f50b60f62456a6eedc4efd5ffa6fab8622e23d968e2dd5065e2191939",
+  "audit_source_sha256": "713fd86d38c29d8d108a1dc0b004f51ae0d82482f3030065b13213e4be3b7d64",
+  "reused_auditor_sha256": "c34592c9c6059ab0c5e865c5c39002dba6531f779899ec133309b39e6b7bb6d1",
+  "limitations": [
+    "Shared SciPy t and NumPy RNG primitives",
+    "Fixed bootstrap index panel for full run, all draws only in small smoke",
+    "No human evaluation, new worlds, optimizer rerun or proof of Python refinement",
+    "No new independent-agent review; previous scalar auditor reused by root"
+  ]
+}

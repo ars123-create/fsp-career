@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.4.4",
+    "scipy": "1.18.1",
+    "torch": "2.11.0",
+    "botorch": "0.18.1",
+    "gpytorch": "1.15.2",
+    "platform": "Darwin",
+    "machine": "arm64",
+    "python_abi": "cpython-312-darwin"
+  },
+  "methods": {
+    "P15_easy": {
+      "component": "particle",
+      "config": {
+        "prior": "mixed",
+        "policy": "easy",
+        "m": 4,
+        "seed": 2026100802,
+        "temperature": 0.04,
+        "lapse": 0.02,
+        "skip_probability": 0.15,
+        "horizon": 1,
+        "beam": 4,
+        "eta": 0.5,
+        "epsilon_per_candidate": 0.001
+      }
+    },
+    "equal_boundary_guard": {
+      "component": "domain_boundary_guard_v1",
+      "base_method": "equal",
+      "base_description": {
+        "component": "frozen_legacy",
+        "method": "equal",
+        "source": "components/legacy_controls/verification.json"
+      },
+      "terminal_rule": "preserve valid frozen slate; otherwise priority-topological repair",
+      "ranking": "unchanged frozen full rounded-score order",
+      "query_rule": "unchanged",
+      "strict_dominance_tolerance": 0,
+      "claim": "observed-feature contract repair, not a quality improvement claim"
+    },
+    "gp_topk_guard": {
+      "component": "frozen_legacy",
+      "method": "gp_topk_guard",
+      "source": "components/legacy_controls/verification.json"
+    },
+    "linear_evoi_3_boundary_guard": {
+      "component": "domain_boundary_guard_v1",
+      "base_method": "linear_evoi_3",
+      "base_description": {
+        "component": "frozen_legacy",
+        "method": "linear_evoi_3",
+        "source": "components/legacy_controls/verification.json"
+      },
+      "terminal_rule": "preserve valid frozen slate; otherwise priority-topological repair",
+      "ranking": "unchanged frozen full rounded-score order",
+      "query_rule": "unchanged",
+      "strict_dominance_tolerance": 0,
+      "claim": "observed-feature contract repair, not a quality improvement claim"
+    },
+    "mixed_kg_finer_quadrature": {
+      "component": "particle",
+      "config": {
+        "prior": "mixed",
+        "policy": "kg",
+        "m": 6,
+        "seed": 2026100802,
+        "temperature": 0.04,
+        "lapse": 0.02,
+        "skip_probability": 0.15,
+        "horizon": 1,
+        "beam": 4,
+        "eta": 0.5,
+        "epsilon_per_candidate": 0.001
+      }
+    },
+    "pabbo_rl": {
+      "component": "frozen_legacy",
+      "method": "pabbo_rl",
+      "source": "components/legacy_controls/verification.json"
+    }
+  },
+  "source_files_verified": 123,
+  "worlds_generated": 0,
+  "workspace": "/Users/arsenij/Documents/ChatGPT/hakaton2/research/frontier_2026/evidence/domain-quality-v1/snapshot"
+}

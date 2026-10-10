@@ -1,0 +1,27 @@
+{
+  "tag": "fsp-career:0.4.0-dev",
+  "image": "sha256:7f8fddd9448ddcd08ffca4083066baa8a0e6416b133e23bc41b51f54ecd7560d",
+  "network": "none",
+  "rootfs_readonly": true,
+  "working_database_mounted": false,
+  "tests": 62,
+  "failures": 0,
+  "errors": 0,
+  "clean_start": {
+    "status": "PASS",
+    "version": "0.4.0-dev",
+    "python": "3.14.8",
+    "sqlite": "3.46.1",
+    "migration": "upgrade and check PASS",
+    "seed": "v1 history PASS",
+    "new_attempt": "v2, 12 tasks / 6 practical PASS",
+    "frontend": "index HTTP 200; no browser run inside image"
+  },
+  "frontend_build": "TypeScript and Vite PASS; Prettier PASS",
+  "frontend_js_kb": 601.49,
+  "frontend_js_gzip_kb": 186.4,
+  "known_warnings": [
+    "Vite single JS chunk exceeds 500 kB",
+    "Starlette TestClient deprecates httpx integration; tests pass"
+  ]
+}

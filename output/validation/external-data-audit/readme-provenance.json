@@ -1,0 +1,20 @@
+[
+  {
+    "repo": "coral-lab-asu/job-hunt-AI",
+    "commit": "08447341c46b10716d3fe36c5a3ca1c7c1f90eb3",
+    "readme_url": "https://raw.githubusercontent.com/coral-lab-asu/job-hunt-AI/08447341c46b10716d3fe36c5a3ca1c7c1f90eb3/README.md",
+    "readme_sha256": "c83b180958f65a4a1057b5d01b1d1c3d8f997460cfe934aee79bbde4ff3612e1"
+  },
+  {
+    "repo": "jasonyux/ConFit",
+    "commit": "1187bf4273aa27f2c562a43ec4bb5316876b7198",
+    "readme_url": "https://raw.githubusercontent.com/jasonyux/ConFit/1187bf4273aa27f2c562a43ec4bb5316876b7198/README.md",
+    "readme_sha256": "5aa72280e79279b1b32745505066ead8b3e75829309a50278c6e655a75c1e274"
+  },
+  {
+    "repo": "megagonlabs/rjdb",
+    "commit": "5a8e7069f7dfc1f26ded969340ab4a1648fb0c7f",
+    "readme_url": "https://raw.githubusercontent.com/megagonlabs/rjdb/5a8e7069f7dfc1f26ded969340ab4a1648fb0c7f/README.md",
+    "readme_sha256": "32e706c1b04dd09236bbee4fd8c59957bd555fbe6dd79f07d18dfd5fbfbab8fe"
+  }
+]

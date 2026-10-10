@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-08",
+  "application_version": "0.4.5-dev",
+  "new_rubric": "2026-10-v3",
+  "status": "PASS within technical scope",
+  "source_sha256": "6dbccbb0f36e55edcd217cdc584f32aa7775b25655ffee059f5ebd1e0a89c18d",
+  "source_files": 87,
+  "prototype_tests": {
+    "passed": 4,
+    "in_order_interleavings": 630
+  },
+  "heldout": {
+    "split": "heldout",
+    "cases_per_version": 200,
+    "oracle_agreement": "PASS",
+    "wrong_rules_accepted": {
+      "v2": {
+        "ignore_stage": 200,
+        "lost_response_rolls_back": 200,
+        "no_deduplication": 0
+      },
+      "v3": {
+        "ignore_stage": 0,
+        "lost_response_rolls_back": 0,
+        "no_deduplication": 0
+      }
+    },
+    "human_discrimination": "NOT RUN",
+    "grade_calibration": "NOT RUN",
+    "python": "3.14.7",
+    "sqlite": "3.53.4"
+  },
+  "heldout_sha256": "eba3506c6a30cf33200d250c47594981f74fbf0f18240616c26547053c8fead3",
+  "backend_tests": {
+    "sqlite": {
+      "counts": {
+        "tests": 181,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "path": "output/validation/assessment-v3-backend-sqlite.xml",
+      "sha256": "dc1bc061edde023b93efe975a165a3b0feee8e2a19cb1713f2df1e3199a69e75"
+    },
+    "postgresql-pass": {
+      "counts": {
+        "tests": 181,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "path": "output/validation/assessment-v3-backend-postgresql-pass.xml",
+      "sha256": "593da05963e574ba5497e09cd2cf3f911dffbd4dc36e428d222ecb043d0a2e11"
+    },
+    "docker": {
+      "counts": {
+        "tests": 181,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "path": "output/validation/assessment-v3-backend-docker.xml",
+      "sha256": "ddf878dd0c8b3bf2a39b96b2b09acff8472f826c48f86e5759cb83807369e29a"
+    }
+  },
+  "docker_image": "sha256:1b5d11bd5dd408f69b6e345424ca0ca9ef2e2cb1e179f0aa84c8af852238885f",
+  "clean_start": {
+    "status": "PASS",
+    "version": "0.4.5-dev",
+    "migration": "upgrade/check PASS",
+    "fresh_database": true,
+    "new_rubric": "2026-10-v3",
+    "old_history": "v1 retained",
+    "wrong_transaction_rule_rejected": true,
+    "prior_grade_and_skills_retained": true,
+    "openapi_exact_match": true,
+    "human_validation": "NOT RUN"
+  },
+  "frontend": {
+    "build": "PASS",
+    "components_changed": false,
+    "js_bytes": 607941,
+    "known_warning": "chunk over 500 KB"
+  },
+  "running": {
+    "status": "PASS",
+    "version": "0.4.5-dev",
+    "rubric": "2026-10-v3",
+    "tables_preserved": 14,
+    "rows_preserved": 308,
+    "all_old_rows_columns_and_values_preserved": true,
+    "backup": "data/backups/pre-assessment-v3-20261008-005645.sqlite",
+    "openapi_exact_match": true,
+    "url": "http://127.0.0.1:8018",
+    "fresh_browser_flow": "NOT RUN"
+  },
+  "unchanged_research_materials_old_deliverables_and_expert_packet_files": 104,
+  "preserved_release_0_4_4_sha256": "97fce2adf8b1d1d10203c2ee100987ade4109ce7276248103290137d92fc8b77",
+  "prior_failures": [
+    "Prototype relative import fixed by package __init__.py; original XML preserved",
+    "Cross-rubric pending claim overwrote newer evidence; regression reproduced before fixing",
+    "PostgreSQL initially denied by sandbox; repeated with local network access and passed"
+  ],
+  "human_validation": "NOT RUN",
+  "grade_calibration": "NOT RUN",
+  "new_full_browser_flow": "NOT RUN",
+  "public_submission": "NOT RUN",
+  "full_submission_bundle_version": "0.4.4-dev, preserved and predating this code update"
+}

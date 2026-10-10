@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-07T18:45:31.072197+00:00",
+  "status": "PASS",
+  "scope": "Technical integrity and recorded checks for 0.4.1-dev, not hiring quality, a full new submission package or a production SLA.",
+  "version": {
+    "version": "0.4.1-dev",
+    "date": "2026-10-07",
+    "application_source_sha256": "05bf39feef299a6e9dc99581501bff76f30d4c887b77325dbbceb42df64a39e8",
+    "source_files": 70,
+    "identifier": "SHA256 of sorted relative UTF-8 path + NUL + file bytes + NUL; path list in output/validation/source-v0.4.1-dev.json; no git commit published",
+    "submission_archive_version": "0.4.0-dev (unchanged; predates acceleration)",
+    "submission_directory": "output/submission-0.4.0-dev"
+  },
+  "changed_files_in_source_manifest_since_capacity_run": [
+    "Dockerfile"
+  ],
+  "startup_script_outside_source_manifest": {
+    "file": "scripts/start.sh",
+    "sha256": "75629d67d9f7309bb2a751286f04bfe1c845cd36f9c9de9405caf1bd96b863ed",
+    "shell_syntax": "PASS"
+  },
+  "frozen_research": {
+    "preference_topk": {
+      "files_verified": 5,
+      "protocol_sha256": "f5ef49b4656b56c4de7c2622ba6ae2e24cf18d1d9aa0f36eec878df6c62b38c0"
+    },
+    "robust_topk": {
+      "files_verified": 5,
+      "protocol_sha256": "f1e73256606ed4e0828d6ea08403217fba117aea931075ab41f395e84da588bb"
+    }
+  },
+  "validated_prototype_equals_app_module": true,
+  "tests": {
+    "prototype": {
+      "status": "PASS",
+      "tests": 28,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "file": "output/validation/preference-acceleration-prototype-v2.xml",
+      "sha256": "d3e132137aa75a2d2a7d5de1be4744574a683a7f7d74c02bb13e3d35e4f2223d"
+    },
+    "sqlite": {
+      "status": "PASS",
+      "tests": 94,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "file": "output/validation/acceleration-backend-sqlite.xml",
+      "sha256": "cd0e78bf1440644c6a854a3b9647f7d35a74f973a4d51d9d36472efac3f0ada8"
+    },
+    "postgresql": {
+      "status": "PASS",
+      "tests": 94,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "file": "output/validation/acceleration-backend-postgresql.xml",
+      "sha256": "3887002e914ba48935f1120b7c2ad5a8fd3e61e3ba5a2baab3663831d2de021a"
+    },
+    "docker_final": {
+      "status": "PASS",
+      "tests": 94,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "file": "output/validation/acceleration-backend-docker-final.xml",
+      "sha256": "a383f0c854171d6ac9beec545296eecba1447e075d4e5234624f6c440290576c"
+    }
+  },
+  "api_capacity": {
+    "paired_requests": 492,
+    "http_200_after": 492,
+    "checked_violations_after": 0,
+    "response_mismatches": 0,
+    "compared_fields": [
+      "status",
+      "selected_ids",
+      "question",
+      "answered",
+      "skipped",
+      "violations"
+    ],
+    "question_field_means": "presence only; pair contents are covered by unit tests, not load rows",
+    "report": "output/validation/acceleration-comparison.json"
+  },
+  "docker": {
+    "image": "fsp-career:0.4.1-dev",
+    "id": "sha256:7e75ca5d97520cb20742a8ccce78bf688d59b3792eeefb3892546e0f3b6acad7",
+    "tested_default_blas_omp_threads": 1,
+    "network": "none",
+    "working_database_used": false
+  },
+  "runtime": {
+    "local_port": 8018,
+    "version": "0.4.1-dev",
+    "logical_database_unchanged": true
+  },
+  "openapi_operations": 45,
+  "preserved_submission": {
+    "file": "output/submission-0.4.0-dev/FSP_Career_Submission_0.4.zip",
+    "sha256": "8e34cb43d0767b95977c61cc382ae39dd469fddb9b05c5156a573f6e5840a54d",
+    "version": "0.4.0-dev"
+  },
+  "not_run": [
+    "Independent human relevance evaluation",
+    "Human task/grade calibration",
+    "Full submission package 0.4.1-dev",
+    "New browser walkthrough after acceleration",
+    "External deployment and platform submission"
+  ]
+}

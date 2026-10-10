@@ -1,0 +1,10 @@
+{
+  "tag": "fsp-career:0.4.4-dev",
+  "image_id": "sha256:5e7b41a52c8a2a1a1c159d4acf9f2521dbcbfbfe50d841d0f4987133b26784d5",
+  "architecture": "arm64",
+  "os": "linux",
+  "test_exit_code": 0,
+  "network": "none",
+  "root_read_only": true,
+  "working_stack_replaced": false
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "frozen_files": 11,
+  "tasks": 1200,
+  "selection_and_metric_checks": 9600,
+  "historical_frozen_files_unchanged": 10,
+  "raw_result_sha256": "340d1f62283970d6cf1d9690dc8f40dc4dc643170df35c81b78ceeccc6ffd355",
+  "document_files_checked": 7,
+  "local_links_checked": 67,
+  "archive_files": 47,
+  "archive_sha256": "f47895985644862684a656302551316f480e9e2dbff835d87fc8faf99f97c5ff",
+  "archive_has_no_database_or_env": true,
+  "application_changed": false,
+  "independent_human_validation": "NOT RUN",
+  "direct_input_application_integration": "NOT RUN"
+}

@@ -1,0 +1,549 @@
+{
+  "stage": "HARNESS_SMOKE",
+  "study_role": "QUALITY",
+  "workers": 2,
+  "arms": [
+    {
+      "name": "main_n18_d2",
+      "role": "MAIN",
+      "stratum": "d2_n6_25",
+      "n": 18,
+      "d": 2,
+      "variant": "base",
+      "seeds": [
+        202610199001
+      ],
+      "families": [
+        "linear",
+        "correlated_quantized"
+      ],
+      "methods": [
+        "mixed_kg_finer_quadrature",
+        "P15_easy",
+        "linear_evoi_3_boundary_guard",
+        "gp_topk_guard",
+        "pabbo_rl",
+        "equal_boundary_guard"
+      ]
+    },
+    {
+      "name": "main_n19_d2",
+      "role": "MAIN",
+      "stratum": "d2_n6_25",
+      "n": 19,
+      "d": 2,
+      "variant": "base",
+      "seeds": [
+        202610199000
+      ],
+      "families": [
+        "linear",
+        "correlated_quantized"
+      ],
+      "methods": [
+        "mixed_kg_finer_quadrature",
+        "P15_easy",
+        "linear_evoi_3_boundary_guard",
+        "gp_topk_guard",
+        "pabbo_rl",
+        "equal_boundary_guard"
+      ]
+    },
+    {
+      "name": "main_n43_d2",
+      "role": "MAIN",
+      "stratum": "d2_n26_60",
+      "n": 43,
+      "d": 2,
+      "variant": "base",
+      "seeds": [
+        202610199002
+      ],
+      "families": [
+        "linear",
+        "correlated_quantized"
+      ],
+      "methods": [
+        "mixed_kg_finer_quadrature",
+        "P15_easy",
+        "linear_evoi_3_boundary_guard",
+        "gp_topk_guard",
+        "pabbo_rl",
+        "equal_boundary_guard"
+      ]
+    },
+    {
+      "name": "main_n55_d2",
+      "role": "MAIN",
+      "stratum": "d2_n26_60",
+      "n": 55,
+      "d": 2,
+      "variant": "base",
+      "seeds": [
+        202610199003
+      ],
+      "families": [
+        "linear",
+        "correlated_quantized"
+      ],
+      "methods": [
+        "mixed_kg_finer_quadrature",
+        "P15_easy",
+        "linear_evoi_3_boundary_guard",
+        "gp_topk_guard",
+        "pabbo_rl",
+        "equal_boundary_guard"
+      ]
+    },
+    {
+      "name": "main_n85_d2",
+      "role": "MAIN",
+      "stratum": "d2_n61_100",
+      "n": 85,
+      "d": 2,
+      "variant": "base",
+      "seeds": [
+        202610199005
+      ],
+      "families": [
+        "linear",
+        "correlated_quantized"
+      ],
+      "methods": [
+        "mixed_kg_finer_quadrature",
+        "P15_easy",
+        "linear_evoi_3_boundary_guard",
+        "gp_topk_guard",
+        "pabbo_rl",
+        "equal_boundary_guard"
+      ]
+    },
+    {
+      "name": "main_n100_d2",
+      "role": "MAIN",
+      "stratum": "d2_n61_100",
+      "n": 100,
+      "d": 2,
+      "variant": "base",
+      "seeds": [
+        202610199004
+      ],
+      "families": [
+        "linear",
+        "correlated_quantized"
+      ],
+      "methods": [
+        "mixed_kg_finer_quadrature",
+        "P15_easy",
+        "linear_evoi_3_boundary_guard",
+        "gp_topk_guard",
+        "pabbo_rl",
+        "equal_boundary_guard"
+      ]
+    },
+    {
+      "name": "main_n11_d3",
+      "role": "MAIN",
+      "stratum": "d3_n6_25",
+      "n": 11,
+      "d": 3,
+      "variant": "base",
+      "seeds": [
+        202610199006
+      ],
+      "families": [
+        "linear",
+        "correlated_quantized"
+      ],
+      "methods": [
+        "mixed_kg_finer_quadrature",
+        "P15_easy",
+        "linear_evoi_3_boundary_guard",
+        "gp_topk_guard",
+        "pabbo_rl",
+        "equal_boundary_guard"
+      ]
+    },
+    {
+      "name": "main_n17_d3",
+      "role": "MAIN",
+      "stratum": "d3_n6_25",
+      "n": 17,
+      "d": 3,
+      "variant": "base",
+      "seeds": [
+        202610199007
+      ],
+      "families": [
+        "linear",
+        "correlated_quantized"
+      ],
+      "methods": [
+        "mixed_kg_finer_quadrature",
+        "P15_easy",
+        "linear_evoi_3_boundary_guard",
+        "gp_topk_guard",
+        "pabbo_rl",
+        "equal_boundary_guard"
+      ]
+    },
+    {
+      "name": "main_n29_d3",
+      "role": "MAIN",
+      "stratum": "d3_n26_60",
+      "n": 29,
+      "d": 3,
+      "variant": "base",
+      "seeds": [
+        202610199008
+      ],
+      "families": [
+        "linear",
+        "correlated_quantized"
+      ],
+      "methods": [
+        "mixed_kg_finer_quadrature",
+        "P15_easy",
+        "linear_evoi_3_boundary_guard",
+        "gp_topk_guard",
+        "pabbo_rl",
+        "equal_boundary_guard"
+      ]
+    },
+    {
+      "name": "main_n51_d3",
+      "role": "MAIN",
+      "stratum": "d3_n26_60",
+      "n": 51,
+      "d": 3,
+      "variant": "base",
+      "seeds": [
+        202610199009
+      ],
+      "families": [
+        "linear",
+        "correlated_quantized"
+      ],
+      "methods": [
+        "mixed_kg_finer_quadrature",
+        "P15_easy",
+        "linear_evoi_3_boundary_guard",
+        "gp_topk_guard",
+        "pabbo_rl",
+        "equal_boundary_guard"
+      ]
+    },
+    {
+      "name": "main_n83_d3",
+      "role": "MAIN",
+      "stratum": "d3_n61_100",
+      "n": 83,
+      "d": 3,
+      "variant": "base",
+      "seeds": [
+        202610199010
+      ],
+      "families": [
+        "linear",
+        "correlated_quantized"
+      ],
+      "methods": [
+        "mixed_kg_finer_quadrature",
+        "P15_easy",
+        "linear_evoi_3_boundary_guard",
+        "gp_topk_guard",
+        "pabbo_rl",
+        "equal_boundary_guard"
+      ]
+    },
+    {
+      "name": "main_n84_d3",
+      "role": "MAIN",
+      "stratum": "d3_n61_100",
+      "n": 84,
+      "d": 3,
+      "variant": "base",
+      "seeds": [
+        202610199011
+      ],
+      "families": [
+        "linear",
+        "correlated_quantized"
+      ],
+      "methods": [
+        "mixed_kg_finer_quadrature",
+        "P15_easy",
+        "linear_evoi_3_boundary_guard",
+        "gp_topk_guard",
+        "pabbo_rl",
+        "equal_boundary_guard"
+      ]
+    },
+    {
+      "name": "landmark_n18_d2",
+      "role": "LANDMARK",
+      "n": 18,
+      "d": 2,
+      "variant": "base",
+      "seeds": [
+        202610199020,
+        202610199021
+      ],
+      "families": [
+        "linear",
+        "correlated_quantized"
+      ],
+      "methods": [
+        "mixed_kg_finer_quadrature",
+        "P15_easy",
+        "linear_evoi_3_boundary_guard",
+        "gp_topk_guard",
+        "pabbo_rl",
+        "equal_boundary_guard"
+      ]
+    },
+    {
+      "name": "landmark_n18_d3",
+      "role": "LANDMARK",
+      "n": 18,
+      "d": 3,
+      "variant": "base",
+      "seeds": [
+        202610199022,
+        202610199023
+      ],
+      "families": [
+        "linear",
+        "correlated_quantized"
+      ],
+      "methods": [
+        "mixed_kg_finer_quadrature",
+        "P15_easy",
+        "linear_evoi_3_boundary_guard",
+        "gp_topk_guard",
+        "pabbo_rl",
+        "equal_boundary_guard"
+      ]
+    },
+    {
+      "name": "landmark_n50_d2",
+      "role": "LANDMARK",
+      "n": 50,
+      "d": 2,
+      "variant": "base",
+      "seeds": [
+        202610199024,
+        202610199025
+      ],
+      "families": [
+        "linear",
+        "correlated_quantized"
+      ],
+      "methods": [
+        "mixed_kg_finer_quadrature",
+        "P15_easy",
+        "linear_evoi_3_boundary_guard",
+        "gp_topk_guard",
+        "pabbo_rl",
+        "equal_boundary_guard"
+      ]
+    },
+    {
+      "name": "landmark_n50_d3",
+      "role": "LANDMARK",
+      "n": 50,
+      "d": 3,
+      "variant": "base",
+      "seeds": [
+        202610199026,
+        202610199027
+      ],
+      "families": [
+        "linear",
+        "correlated_quantized"
+      ],
+      "methods": [
+        "mixed_kg_finer_quadrature",
+        "P15_easy",
+        "linear_evoi_3_boundary_guard",
+        "gp_topk_guard",
+        "pabbo_rl",
+        "equal_boundary_guard"
+      ]
+    },
+    {
+      "name": "landmark_n100_d2",
+      "role": "LANDMARK",
+      "n": 100,
+      "d": 2,
+      "variant": "base",
+      "seeds": [
+        202610199028,
+        202610199029
+      ],
+      "families": [
+        "linear",
+        "correlated_quantized"
+      ],
+      "methods": [
+        "mixed_kg_finer_quadrature",
+        "P15_easy",
+        "linear_evoi_3_boundary_guard",
+        "gp_topk_guard",
+        "pabbo_rl",
+        "equal_boundary_guard"
+      ]
+    },
+    {
+      "name": "landmark_n100_d3",
+      "role": "LANDMARK",
+      "n": 100,
+      "d": 3,
+      "variant": "base",
+      "seeds": [
+        202610199030,
+        202610199031
+      ],
+      "families": [
+        "linear",
+        "correlated_quantized"
+      ],
+      "methods": [
+        "mixed_kg_finer_quadrature",
+        "P15_easy",
+        "linear_evoi_3_boundary_guard",
+        "gp_topk_guard",
+        "pabbo_rl",
+        "equal_boundary_guard"
+      ]
+    }
+  ],
+  "analysis_contract": {
+    "schema": "fsp-domain-analysis-v1",
+    "alpha": 0.05,
+    "hypotheses": 41,
+    "target": "N uniform integers6..100; d uniform2/3; family uniform14; base variant",
+    "strata": [
+      {
+        "name": "d2_n6_25",
+        "d": 2,
+        "low": 6,
+        "high": 25,
+        "weight_numerator": 20,
+        "weight_denominator": 190,
+        "seeds": [
+          202610199000,
+          202610199001
+        ]
+      },
+      {
+        "name": "d2_n26_60",
+        "d": 2,
+        "low": 26,
+        "high": 60,
+        "weight_numerator": 35,
+        "weight_denominator": 190,
+        "seeds": [
+          202610199002,
+          202610199003
+        ]
+      },
+      {
+        "name": "d2_n61_100",
+        "d": 2,
+        "low": 61,
+        "high": 100,
+        "weight_numerator": 40,
+        "weight_denominator": 190,
+        "seeds": [
+          202610199004,
+          202610199005
+        ]
+      },
+      {
+        "name": "d3_n6_25",
+        "d": 3,
+        "low": 6,
+        "high": 25,
+        "weight_numerator": 20,
+        "weight_denominator": 190,
+        "seeds": [
+          202610199006,
+          202610199007
+        ]
+      },
+      {
+        "name": "d3_n26_60",
+        "d": 3,
+        "low": 26,
+        "high": 60,
+        "weight_numerator": 35,
+        "weight_denominator": 190,
+        "seeds": [
+          202610199008,
+          202610199009
+        ]
+      },
+      {
+        "name": "d3_n61_100",
+        "d": 3,
+        "low": 61,
+        "high": 100,
+        "weight_numerator": 40,
+        "weight_denominator": 190,
+        "seeds": [
+          202610199010,
+          202610199011
+        ]
+      }
+    ],
+    "families": [
+      "linear",
+      "correlated_quantized"
+    ],
+    "methods": [
+      "mixed_kg_finer_quadrature",
+      "P15_easy",
+      "linear_evoi_3_boundary_guard",
+      "gp_topk_guard",
+      "pabbo_rl",
+      "equal_boundary_guard"
+    ],
+    "candidates": [
+      "mixed_kg_finer_quadrature",
+      "P15_easy"
+    ],
+    "baselines": [
+      "linear_evoi_3_boundary_guard",
+      "gp_topk_guard"
+    ],
+    "descriptive_controls": [
+      "pabbo_rl",
+      "equal_boundary_guard"
+    ],
+    "mean_upper_strict_bound": -0.001,
+    "family_and_stratum_upper_strict_bound": 0.005,
+    "cvar_upper_strict_bound": 0.005,
+    "cvar_alpha": 0.95,
+    "bootstrap_resamples": 199,
+    "bootstrap_seed": 202610199091,
+    "bootstrap_batch": 64,
+    "bootstrap_prefix_fraction": 0.125,
+    "bootstrap_rule": "independent multinomial root counts within each stratum; same counts across methods/families; exact fractional weighted tail; basic upper bound",
+    "mean_interval": "paired stratum means; weighted Welch-Satterthwaite; zero variance gives degenerate point interval",
+    "contrast": "mixed_kg_finer_quadrature minus P15_easy; adjusted two-sided interval; practical margin .001",
+    "latency_step_p95_strict_bound": 0.25,
+    "timing_dimensions": [
+      2,
+      3
+    ],
+    "decision": "zero eligible => no supported domain replacement; one => sole passing configuration; two => contrast margin or unresolved pair",
+    "failures": "retain every case; any execution/contract/fallback/restricted/calibration failure makes method ineligible; do not impute or drop failed outcomes",
+    "no_optional_stopping": true,
+    "no_post_outcome_tuning": true,
+    "global_alpha_across_previous_studies_claimed": false,
+    "human_quality": "NOT_RUN"
+  },
+  "materialization_seed": 202610199090,
+  "worlds_generated_during_design": 0
+}

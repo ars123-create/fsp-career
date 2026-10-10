@@ -1,0 +1,75 @@
+{
+  "all_old_columns_and_rows_preserved": true,
+  "tables": {
+    "user": true,
+    "auditevent": true,
+    "localmail": true,
+    "actiontoken": true,
+    "candidate": true,
+    "company": true,
+    "attempt": true,
+    "need": true,
+    "job": true,
+    "evidence": true,
+    "gradeaward": true,
+    "invitation": true,
+    "application": true
+  },
+  "counts": {
+    "user": {
+      "before": 28,
+      "after": 28
+    },
+    "auditevent": {
+      "before": 13,
+      "after": 13
+    },
+    "localmail": {
+      "before": 2,
+      "after": 2
+    },
+    "actiontoken": {
+      "before": 2,
+      "after": 2
+    },
+    "candidate": {
+      "before": 25,
+      "after": 25
+    },
+    "company": {
+      "before": 3,
+      "after": 3
+    },
+    "attempt": {
+      "before": 27,
+      "after": 27
+    },
+    "need": {
+      "before": 4,
+      "after": 4
+    },
+    "job": {
+      "before": 2,
+      "after": 2
+    },
+    "evidence": {
+      "before": 174,
+      "after": 174
+    },
+    "gradeaward": {
+      "before": 25,
+      "after": 25
+    },
+    "invitation": {
+      "before": 2,
+      "after": 2
+    },
+    "application": {
+      "before": 0,
+      "after": 0
+    }
+  },
+  "new_column_empty_for_all": true,
+  "revision": "20261007_03",
+  "alembic_check": "PASS"
+}

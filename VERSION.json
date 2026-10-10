@@ -1,0 +1,14 @@
+{
+  "version": "0.5.1",
+  "date": "2026-10-10",
+  "algorithm": "mixed-kg-v1",
+  "application_source_sha256": "788d9b88049df3c137a27b708c6b69fceee7865d7df2f3e8a5f02cde9173b082",
+  "source_files": 107,
+  "identifier": "SHA256 of sorted relative UTF-8 path + NUL + bytes + NUL; paths in output/validation/source-v0.5.1.json; excludes VERSION.json itself",
+  "submission_archive_version": "0.5.1",
+  "submission_directory": "output/submission-0.5.1-ready",
+  "release_status": "CODE_VIDEO_DOCS_VERIFIED_CONTEST_NOT_SUBMITTED",
+  "base_release": "0.5.0",
+  "repository_url": "https://github.com/ars123-create/fsp-career",
+  "release_url": "https://github.com/ars123-create/fsp-career/releases/tag/v0.5.1"
+}

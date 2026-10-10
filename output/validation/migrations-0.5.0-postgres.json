@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "isolated_database_removed": true,
+  "commands": [
+    {
+      "command": "alembic upgrade head",
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "command": "alembic check",
+      "exit": 0,
+      "output": "No new upgrade operations detected.\n"
+    },
+    {
+      "command": "alembic current",
+      "exit": 0,
+      "output": "20261007_03 (head)\n"
+    }
+  ]
+}

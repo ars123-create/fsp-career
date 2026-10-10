@@ -1,0 +1,28 @@
+{
+  "source": "research/frontier_2026/evidence/domain-quality-v1/analysis_domain_v1/analysis.json",
+  "methods": [
+    "equal_boundary_guard",
+    "pabbo_rl",
+    "linear_evoi_3_boundary_guard",
+    "gp_topk_guard",
+    "P15_easy",
+    "mixed_kg_finer_quadrature"
+  ],
+  "meanLoss": [
+    2.313419098704985,
+    2.0766767894181535,
+    1.4254723029598595,
+    1.158262613258421,
+    1.0540814904540188,
+    0.9557791256714493
+  ],
+  "chartLoss": [
+    2.3134,
+    2.0767,
+    1.4255,
+    1.1583,
+    1.0541,
+    0.9558
+  ],
+  "interpretation": "Synthetic regret, not human hiring quality"
+}

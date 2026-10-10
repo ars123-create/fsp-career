@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-10-07T21:46:25.808529+00:00",
+  "scope": "Technical construct audit for three explicit wrong rules; not human discrimination",
+  "hashes": {
+    "DESIGN.md": "190145335bd7e3b1a2401cbda5857a5a60d10bbdf51dcafe18c088d81216a166",
+    "retry_item.py": "10d82bc40b2bbb14851724c39627a15de4970f3070d5a69b9856ece7664525c8",
+    "evaluate.py": "05f3590f1bf9173361875c65ec41a94bd580ec64ae29788b4ec4a976fb91407c",
+    "legacy_practical_bank.py": "83e7637089ecfc8ba63b93950bf187eb893530b58c8afbaeb84b345694a807cc",
+    "test_retry_item.py": "717b4602140b8e281ec0fcf46e3ba403e21a0f9b8c06794c08ad15e56581fb03"
+  },
+  "development_seeds": [
+    948500,
+    948519
+  ],
+  "heldout_seeds": [
+    949000,
+    949199
+  ],
+  "cases_per_version": 200,
+  "versions": [
+    "v2",
+    "v3"
+  ],
+  "wrong_rules": [
+    "ignore_stage",
+    "lost_response_rolls_back",
+    "no_deduplication"
+  ],
+  "gate": "SQL agreement and rejection of the three specified wrong rules; human grade calibration remains NOT RUN",
+  "failure_policy": "Preserve negative results; no changes to this protocol or its hashed sources after reading heldout"
+}

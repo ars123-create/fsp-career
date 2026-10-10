@@ -1,0 +1,88 @@
+{
+  "status": "PASS_UNCHANGED_REUSE_SMOKE",
+  "scipy": "1.18.1",
+  "numpy": "2.4.4",
+  "documentation": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.qmc.Sobol.html",
+  "scope": "Official Sobol minimal example plus unchanged m6 four-state path; no product integration yet",
+  "license": "Project MIT; SciPy BSD-3-Clause notices retained",
+  "source_sha256": {
+    "research/preference_topk/core.py": "b3aad5b4ba1dba51226c460c5d38e5e23964e04c44a37f565c3412003e0a6344",
+    "research/frontier_2026/models.py": "7c431e5c5a9c8f3f0a171407a71f8cfc619ad8ca26528dd300c335023eab535d",
+    "research/frontier_2026/finite.py": "7c5945508371fa095e7c55b3e5d119b37e6813a95874682efc41d6c78277154e",
+    "research/frontier_2026/constraints.py": "1bbd23c4cd1be21bf1fe289c915fb8475c04a91dce803459aed9b8ccc87941ad",
+    "research/frontier_2026/policies.py": "7e6ed609f6c610ec48acd550bfd6dda2fd80625847168a513ac02cd41ea0037f"
+  },
+  "trace": [
+    {
+      "history": [],
+      "selected": [
+        1,
+        6,
+        2,
+        8,
+        0
+      ],
+      "query": 22
+    },
+    {
+      "history": [
+        [
+          22,
+          0
+        ]
+      ],
+      "selected": [
+        1,
+        6,
+        2,
+        5,
+        3
+      ],
+      "query": 18
+    },
+    {
+      "history": [
+        [
+          22,
+          0
+        ],
+        [
+          18,
+          2
+        ]
+      ],
+      "selected": [
+        1,
+        6,
+        2,
+        5,
+        3
+      ],
+      "query": 12
+    },
+    {
+      "history": [
+        [
+          22,
+          0
+        ],
+        [
+          18,
+          2
+        ],
+        [
+          12,
+          1
+        ]
+      ],
+      "selected": [
+        1,
+        6,
+        2,
+        5,
+        8
+      ],
+      "query": null
+    }
+  ]
+}

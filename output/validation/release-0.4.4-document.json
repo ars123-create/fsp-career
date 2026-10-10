@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "pages": 7,
+  "all_page_images_reviewed": true,
+  "repair": "Removed inherited blue Title rule; fixed duplicate section number; rendered and rechecked seven final pages.",
+  "docx": {
+    "path": "output/submission-0.4.4-dev/FSP_Career_Documentation_0.4.4.docx",
+    "sha256": "2a2c9f21bb1741ad422d1eee4fecbf8b7b5facda98275cdaabb79d87fe33fe24"
+  },
+  "pdf": {
+    "path": "output/submission-0.4.4-dev/FSP_Career_Documentation.pdf",
+    "sha256": "ac357fa9ff2245a11e3eb06d292e77397bcef204c2ebe835248879aa243686d7"
+  },
+  "native_Microsoft_Word": "NOT RUN",
+  "human_validation": "NOT RUN"
+}

@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "pages": 15,
+  "scope": "Image-based fixed-layout PDF; PPTX retains editable text/chart/tables. Native LibreOffice export replaced because it substituted fonts. Each PDF image RGB equals reviewed artifact render.",
+  "checks": [
+    {
+      "slide": "slide-01.png",
+      "pixels_sha256": "cab5d36c75de8d4b1d584687feb35e1f8798ffa04d8d4a1b5a7a17cc5e52a592",
+      "match": true
+    },
+    {
+      "slide": "slide-02.png",
+      "pixels_sha256": "e0cad57cc81b209f75fafd1696a77eeabfe639e3558c0417023e4ee47f00a26c",
+      "match": true
+    },
+    {
+      "slide": "slide-03.png",
+      "pixels_sha256": "66f6341f4dc82171f3ae8588eb56fd677a6f1481fc3e322d631c251cc0ba7af8",
+      "match": true
+    },
+    {
+      "slide": "slide-04.png",
+      "pixels_sha256": "618c5e50d217a7f78fc5c6605ef4ee40f32dfb5fe72985a0294eece3fd570229",
+      "match": true
+    },
+    {
+      "slide": "slide-05.png",
+      "pixels_sha256": "fbcd14168db94de6d3b4a7bc2f4e93ce43ad1ff78d88764fcb52b4b52b8df440",
+      "match": true
+    },
+    {
+      "slide": "slide-06.png",
+      "pixels_sha256": "c467d39109d132cee09dfa37e65f6175aeaca9cdfa6552e0a26f2305cdd1fd94",
+      "match": true
+    },
+    {
+      "slide": "slide-07.png",
+      "pixels_sha256": "b16e532e58366f6dcff3fae6840e53b8889024b30fa00ce325d031a9f6d6c687",
+      "match": true
+    },
+    {
+      "slide": "slide-08.png",
+      "pixels_sha256": "1dba38e5cbcbbc602614a598f6acc35b611cbefc2e2b7ff4bf5c9aa2e053c6c2",
+      "match": true
+    },
+    {
+      "slide": "slide-09.png",
+      "pixels_sha256": "e0441a8c8360ea5d596fee46fbdb8614437e6ea012934e54c984d7b1a8df0083",
+      "match": true
+    },
+    {
+      "slide": "slide-10.png",
+      "pixels_sha256": "83ea45d45dd491c7d164dae9648d1b46f6347bb48136e587fac59c45b976a78a",
+      "match": true
+    },
+    {
+      "slide": "slide-11.png",
+      "pixels_sha256": "d659771cc31736b5dbec143422eb854ce9cbd3c59bdd8861f1f7b3ce1cf07b34",
+      "match": true
+    },
+    {
+      "slide": "slide-12.png",
+      "pixels_sha256": "393bf3b5d342410f5fd8beb1a7b9af40726b24dbc654f3e8cb63f1666c2866ce",
+      "match": true
+    },
+    {
+      "slide": "slide-13.png",
+      "pixels_sha256": "62e2493ec753b62f4f2d1be076bdf9495519859403327b9bf423102676f96d46",
+      "match": true
+    },
+    {
+      "slide": "slide-14.png",
+      "pixels_sha256": "c0f9312c2c9c2fa6274427cea4654fa9f1643c6a3d506eb77a1b49a2ad6639e5",
+      "match": true
+    },
+    {
+      "slide": "slide-15.png",
+      "pixels_sha256": "6f28608084109efd456c3184ca2d28e7b5d2626999d4ec84c5b4889c5132ebd3",
+      "match": true
+    }
+  ]
+}

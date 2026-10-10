@@ -1,0 +1,19 @@
+{
+  "scope": "TRANSPORT_RELOCATION_ONLY",
+  "source": "/Users/arsenij/Documents/ChatGPT/hakaton2/delivery/0.5.0/fsp-career/research/frontier_2026/evidence/domain-timing-v1",
+  "protocol_sha256": "ce7251f68927007324d663a23f5195029f0f786b0f870bad05e59a3e110711c4",
+  "workers": [
+    {
+      "worker": 0,
+      "original_workspace": "/Users/arsenij/Documents/ChatGPT/hakaton2/research/frontier_2026/evidence/domain-timing-v1/snapshot",
+      "original_sha256": "fe91568b335828c6007429ede2a93591ae8e56324723918035025124ff58a8a9",
+      "relocated_sha256": "de43117ff380f9a9bc47d315edd9b18ca72f86841dd46ddbe1770e09389607e8",
+      "rows_sha256": "9d15eeb03b8fcce9d8448956ed982582f6db7b8ebdbec95dfb64e7cf81f5cf0c"
+    }
+  ],
+  "status": "PASS",
+  "rows": 2688,
+  "bytes": 10919104,
+  "rows_sha256": "9d15eeb03b8fcce9d8448956ed982582f6db7b8ebdbec95dfb64e7cf81f5cf0c",
+  "source_files": 123
+}

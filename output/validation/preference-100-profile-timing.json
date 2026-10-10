@@ -1,0 +1,129 @@
+{
+  "scenario": "20 serial calls of the full application adapter, 100 synthetic eligible profiles, 3 skills, uniform observed scores 50..100; no API/database/concurrency; warmed QMC cache; default numerical thread settings",
+  "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+  "version": "0.3.0-dev",
+  "p95_ms": 188.9205080253305,
+  "max_ms": 196.24358299188316,
+  "rows": [
+    {
+      "seed": 92000,
+      "seconds": 0.17291191697586328,
+      "selected": 5,
+      "question": true
+    },
+    {
+      "seed": 92001,
+      "seconds": 0.16628804203355685,
+      "selected": 5,
+      "question": true
+    },
+    {
+      "seed": 92002,
+      "seconds": 0.1641318749752827,
+      "selected": 5,
+      "question": true
+    },
+    {
+      "seed": 92003,
+      "seconds": 0.17683845799183473,
+      "selected": 5,
+      "question": true
+    },
+    {
+      "seed": 92004,
+      "seconds": 0.16095345799112692,
+      "selected": 5,
+      "question": true
+    },
+    {
+      "seed": 92005,
+      "seconds": 0.17371912498492748,
+      "selected": 5,
+      "question": true
+    },
+    {
+      "seed": 92006,
+      "seconds": 0.17171208298532292,
+      "selected": 5,
+      "question": true
+    },
+    {
+      "seed": 92007,
+      "seconds": 0.16565333300968632,
+      "selected": 5,
+      "question": true
+    },
+    {
+      "seed": 92008,
+      "seconds": 0.16749483300372958,
+      "selected": 5,
+      "question": true
+    },
+    {
+      "seed": 92009,
+      "seconds": 0.16677233297377825,
+      "selected": 5,
+      "question": true
+    },
+    {
+      "seed": 92010,
+      "seconds": 0.16451804200187325,
+      "selected": 5,
+      "question": true
+    },
+    {
+      "seed": 92011,
+      "seconds": 0.16316858300706372,
+      "selected": 5,
+      "question": true
+    },
+    {
+      "seed": 92012,
+      "seconds": 0.17925787495914847,
+      "selected": 5,
+      "question": true
+    },
+    {
+      "seed": 92013,
+      "seconds": 0.15449758298927918,
+      "selected": 5,
+      "question": true
+    },
+    {
+      "seed": 92014,
+      "seconds": 0.17925883299903944,
+      "selected": 5,
+      "question": true
+    },
+    {
+      "seed": 92015,
+      "seconds": 0.19624358299188316,
+      "selected": 5,
+      "question": true
+    },
+    {
+      "seed": 92016,
+      "seconds": 0.18041562498547137,
+      "selected": 5,
+      "question": true
+    },
+    {
+      "seed": 92017,
+      "seconds": 0.18853508302709088,
+      "selected": 5,
+      "question": true
+    },
+    {
+      "seed": 92018,
+      "seconds": 0.1601615000399761,
+      "selected": 5,
+      "question": true
+    },
+    {
+      "seed": 92019,
+      "seconds": 0.18144666601438075,
+      "selected": 5,
+      "question": true
+    }
+  ]
+}

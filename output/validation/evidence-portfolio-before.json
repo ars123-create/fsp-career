@@ -1,0 +1,23 @@
+{
+  "version": "0.4.3-dev",
+  "before": {
+    "SQL": {
+      "score": 75.0,
+      "families": 4,
+      "checked_at": 100,
+      "source": "test"
+    }
+  },
+  "after": {
+    "SQL": {
+      "score": 0.0,
+      "families": 1,
+      "checked_at": 200,
+      "source": "challenge"
+    }
+  },
+  "grade_after": "Middle",
+  "scope": "isolated factual reproduction of existing projection, not a whole API assessment",
+  "original_api_sha256": "9ac11cf367cd3035b5f588da2bf20160e2e19a3196cd708bcdcaf9082b299afb",
+  "legacy_function_sha256": "25fb16080415ca587e9e57c2021c91c0f2d6161556f3d66e6da7fec708fe1eb6"
+}

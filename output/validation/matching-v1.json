@@ -1,0 +1,328 @@
+{
+  "dataset_sha256": "5a3a25195d513f1c74f826fa52b74520e1844ddbc992a9896d07cdd17b1b6e0b",
+  "matching_code_sha256": "7ffadd3cda14f504bc273ecde9aec02a45c6d1cb56d4a6af6edbc77f1d80aa1f",
+  "source": "authored synthetic; no human raters",
+  "pairs": 96,
+  "summary": {
+    "keyword": {
+      "precision_at_5": 0.17500000000000002,
+      "ndcg_at_5": 0.36934603476597494,
+      "constraint_violation_rate": 0.825,
+      "returned_total": 40
+    },
+    "structured": {
+      "precision_at_5": 0.25,
+      "ndcg_at_5": 1.0,
+      "constraint_violation_rate": 0.0,
+      "returned_total": 10
+    },
+    "evidence": {
+      "precision_at_5": 0.25,
+      "ndcg_at_5": 0.9491768952476267,
+      "constraint_violation_rate": 0.0,
+      "returned_total": 10
+    }
+  },
+  "rows": [
+    {
+      "query": "q1",
+      "method": "keyword",
+      "ids": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "precision_at_5": 0.4,
+      "ndcg_at_5": 0.7967075809905066,
+      "constraint_violations": 3,
+      "returned": 5
+    },
+    {
+      "query": "q1",
+      "method": "structured",
+      "ids": [
+        "b2",
+        "b1"
+      ],
+      "precision_at_5": 0.4,
+      "ndcg_at_5": 1.0,
+      "constraint_violations": 0,
+      "returned": 2
+    },
+    {
+      "query": "q1",
+      "method": "evidence",
+      "ids": [
+        "b1",
+        "b2"
+      ],
+      "precision_at_5": 0.4,
+      "ndcg_at_5": 0.7967075809905066,
+      "constraint_violations": 0,
+      "returned": 2
+    },
+    {
+      "query": "q2",
+      "method": "keyword",
+      "ids": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "precision_at_5": 0.2,
+      "ndcg_at_5": 0.4306765580733931,
+      "constraint_violations": 4,
+      "returned": 5
+    },
+    {
+      "query": "q2",
+      "method": "structured",
+      "ids": [
+        "b4"
+      ],
+      "precision_at_5": 0.2,
+      "ndcg_at_5": 1.0,
+      "constraint_violations": 0,
+      "returned": 1
+    },
+    {
+      "query": "q2",
+      "method": "evidence",
+      "ids": [
+        "b4"
+      ],
+      "precision_at_5": 0.2,
+      "ndcg_at_5": 1.0,
+      "constraint_violations": 0,
+      "returned": 1
+    },
+    {
+      "query": "q3",
+      "method": "keyword",
+      "ids": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "precision_at_5": 0.2,
+      "ndcg_at_5": 0.5,
+      "constraint_violations": 4,
+      "returned": 5
+    },
+    {
+      "query": "q3",
+      "method": "structured",
+      "ids": [
+        "b3"
+      ],
+      "precision_at_5": 0.2,
+      "ndcg_at_5": 1.0,
+      "constraint_violations": 0,
+      "returned": 1
+    },
+    {
+      "query": "q3",
+      "method": "evidence",
+      "ids": [
+        "b3"
+      ],
+      "precision_at_5": 0.2,
+      "ndcg_at_5": 1.0,
+      "constraint_violations": 0,
+      "returned": 1
+    },
+    {
+      "query": "q4",
+      "method": "keyword",
+      "ids": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "precision_at_5": 0.0,
+      "ndcg_at_5": 0.0,
+      "constraint_violations": 5,
+      "returned": 5
+    },
+    {
+      "query": "q4",
+      "method": "structured",
+      "ids": [
+        "b6"
+      ],
+      "precision_at_5": 0.2,
+      "ndcg_at_5": 1.0,
+      "constraint_violations": 0,
+      "returned": 1
+    },
+    {
+      "query": "q4",
+      "method": "evidence",
+      "ids": [
+        "b6"
+      ],
+      "precision_at_5": 0.2,
+      "ndcg_at_5": 1.0,
+      "constraint_violations": 0,
+      "returned": 1
+    },
+    {
+      "query": "q5",
+      "method": "keyword",
+      "ids": [
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "d5"
+      ],
+      "precision_at_5": 0.4,
+      "ndcg_at_5": 0.7967075809905066,
+      "constraint_violations": 3,
+      "returned": 5
+    },
+    {
+      "query": "q5",
+      "method": "structured",
+      "ids": [
+        "d2",
+        "d1"
+      ],
+      "precision_at_5": 0.4,
+      "ndcg_at_5": 1.0,
+      "constraint_violations": 0,
+      "returned": 2
+    },
+    {
+      "query": "q5",
+      "method": "evidence",
+      "ids": [
+        "d1",
+        "d2"
+      ],
+      "precision_at_5": 0.4,
+      "ndcg_at_5": 0.7967075809905066,
+      "constraint_violations": 0,
+      "returned": 2
+    },
+    {
+      "query": "q6",
+      "method": "keyword",
+      "ids": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ],
+      "precision_at_5": 0.0,
+      "ndcg_at_5": 0.0,
+      "constraint_violations": 5,
+      "returned": 5
+    },
+    {
+      "query": "q6",
+      "method": "structured",
+      "ids": [
+        "d3"
+      ],
+      "precision_at_5": 0.2,
+      "ndcg_at_5": 1.0,
+      "constraint_violations": 0,
+      "returned": 1
+    },
+    {
+      "query": "q6",
+      "method": "evidence",
+      "ids": [
+        "d3"
+      ],
+      "precision_at_5": 0.2,
+      "ndcg_at_5": 1.0,
+      "constraint_violations": 0,
+      "returned": 1
+    },
+    {
+      "query": "q7",
+      "method": "keyword",
+      "ids": [
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "d5"
+      ],
+      "precision_at_5": 0.2,
+      "ndcg_at_5": 0.4306765580733931,
+      "constraint_violations": 4,
+      "returned": 5
+    },
+    {
+      "query": "q7",
+      "method": "structured",
+      "ids": [
+        "d4"
+      ],
+      "precision_at_5": 0.2,
+      "ndcg_at_5": 1.0,
+      "constraint_violations": 0,
+      "returned": 1
+    },
+    {
+      "query": "q7",
+      "method": "evidence",
+      "ids": [
+        "d4"
+      ],
+      "precision_at_5": 0.2,
+      "ndcg_at_5": 1.0,
+      "constraint_violations": 0,
+      "returned": 1
+    },
+    {
+      "query": "q8",
+      "method": "keyword",
+      "ids": [
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "d5"
+      ],
+      "precision_at_5": 0.0,
+      "ndcg_at_5": 0.0,
+      "constraint_violations": 5,
+      "returned": 5
+    },
+    {
+      "query": "q8",
+      "method": "structured",
+      "ids": [
+        "d6"
+      ],
+      "precision_at_5": 0.2,
+      "ndcg_at_5": 1.0,
+      "constraint_violations": 0,
+      "returned": 1
+    },
+    {
+      "query": "q8",
+      "method": "evidence",
+      "ids": [
+        "d6"
+      ],
+      "precision_at_5": 0.2,
+      "ndcg_at_5": 1.0,
+      "constraint_violations": 0,
+      "returned": 1
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+NUM_RESTARTS = 12 
+RAW_SAMPLES = 256
+OPTIONS={"batch_limit": 20,"maxiter": 400}
+
+NUM_Y_INITIAL = 16
+NUM_PAIRS = 10
+

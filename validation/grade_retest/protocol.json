@@ -1,0 +1,33 @@
+{
+  "version": "grade-retest-simulation-v1",
+  "date": "2026-10-10",
+  "scope": "Two independently generated forms of the current v3 bank, fixed simulated ability; no grade cooldown/history used to manufacture agreement",
+  "seed": 202610109400,
+  "specializations": ["backend", "data"],
+  "grades": ["Junior", "Middle"],
+  "abilities": [-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2],
+  "profiles_per_ability": 40,
+  "scenarios": {
+    "independent_forms": {"form_shift_sd": 0.15, "weak_skill_offset": 0},
+    "unequal_form_difficulty": {"form_shift_sd": 0.7, "weak_skill_offset": 0},
+    "one_weak_skill": {"form_shift_sd": 0.15, "weak_skill_offset": -1.5}
+  },
+  "response_model": {
+    "formula": "guess + (0.98 - guess) * expit(a * (theta_skill - b - form_shift))",
+    "guess_mc": "1 / number_of_options",
+    "guess_practical": 0,
+    "a_mc": 1.2,
+    "a_practical": 1.5,
+    "b_junior": 0,
+    "b_middle": 0.7,
+    "b_practical_addition": 0.3,
+    "b_family_offset": "fixed SHA256(family) mapping into [-0.4, 0.4]",
+    "skill_offset_sd": 0.35,
+    "calibrated_from_humans": false
+  },
+  "metrics": ["raw_pass_agreement", "cohen_kappa", "confusion_matrix_A_B", "score_absolute_difference", "pass_rate_by_ability", "per_family_upper_minus_lower_response_rate"],
+  "discrimination_groups": "theta >= 1 versus theta <= -1; determined from simulated latent ability, not the scored total",
+  "invariants": ["both forms contain 12 tasks", "server correctness matches generated response bits", "server pass result matches independent count-based rubric", "task-family coverage preserved"],
+  "decision": "Report all fixed scenarios; no tuning, no human calibration or psychometric validity claim; positive discrimination is partly stipulated by the response model",
+  "sources": ["https://douglasrizzo.com.br/catsim/_modules/catsim/irt.html#icc", "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.cohen_kappa_score.html"]
+}

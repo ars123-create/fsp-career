@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "date": "2026-10-07T19:04:17.101308+00:00",
+  "health_before": {
+    "status": "ok",
+    "version": "0.4.1-dev",
+    "demo_mode": true,
+    "mail_transport": "local_demo"
+  },
+  "row_counts_before": {
+    "user": 28,
+    "candidate": 25,
+    "attempt": 27,
+    "evidence": 174,
+    "invitation": 2,
+    "need": 3
+  },
+  "backup": "data/backups/pre-fsp-tie-0.4.2.sqlite",
+  "backup_sha256": "6925e410b365d1221b8ebfe434cbd8a8a75a586bda33d77ddede0a62cd5bbb56",
+  "logical_sha256_before": "726f2d1ac53ff5c4f0774ef4cda22091947ecdd343c499ec376fa4812d8991aa"
+}

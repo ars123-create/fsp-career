@@ -1,0 +1,50 @@
+{
+  "version": "0.4.1-dev",
+  "scope": "Fresh isolated fictional seed, demonstration branch audit, not relevance evaluation",
+  "eligible": 8,
+  "root_question": {
+    "left": {
+      "Python": 50.0,
+      "SQL": 100.0,
+      "API": 100.0
+    },
+    "right": {
+      "Python": 100.0,
+      "SQL": 50.0,
+      "API": 100.0
+    },
+    "expected_gain_points": 1.5482820354273485
+  },
+  "branches": {
+    "left": {
+      "changed_count": 0,
+      "composition_changed": false,
+      "next_question": false,
+      "weights": {
+        "Python": 0.1785051297905965,
+        "SQL": 0.48816153687607033,
+        "API": 0.33333333333333337
+      }
+    },
+    "right": {
+      "changed_count": 1,
+      "composition_changed": true,
+      "next_question": false,
+      "weights": {
+        "Python": 0.4881615368760703,
+        "SQL": 0.17850512979059643,
+        "API": 0.3333333333333333
+      }
+    },
+    "skip": {
+      "changed_count": 0,
+      "composition_changed": false,
+      "next_question": false,
+      "weights": {
+        "Python": 0.3333333333333333,
+        "SQL": 0.3333333333333333,
+        "API": 0.3333333333333333
+      }
+    }
+  }
+}

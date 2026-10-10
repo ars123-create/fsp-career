@@ -1,0 +1,5 @@
+# Versions used for the preserved experiment. Python: 3.14.7.
+# Research environment only; do not copy blindly into the future web application.
+numpy==2.4.4
+scipy==1.18.1
+matplotlib==3.10.8

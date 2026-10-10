@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-08",
+  "status": "PASS",
+  "scope": "Build and technical smoke from an extracted candidate on the existing Docker host",
+  "candidate": {
+    "status": "PASS",
+    "zip": "/Users/arsenij/Documents/ChatGPT/hakaton2/tmp/release-0.4.4/candidate-2/FSP_Career_Submission_0.4.4_candidate.zip",
+    "files": 525,
+    "bytes": 78457379,
+    "sha256": "350e431aa69ed50c845ac84b53dd6254d20cf66be9e24fdc59b6c942e4cb2ac7",
+    "application_files_verified": 83,
+    "secrets_and_runtime_state": "excluded",
+    "human_validation": "NOT RUN"
+  },
+  "image_id": "sha256:54cae915519b8b4fbfcaedc7f1e8b34cfd529f40fad948c8eb7f60af4d314ae1",
+  "build": {
+    "status": "PASS",
+    "context": "tmp/release-0.4.4/unpacked/fsp-career",
+    "frontend": "npm ci + TypeScript/Vite build",
+    "backend": "pip from lock",
+    "log": "output/validation/release-0.4.4-build-console.txt",
+    "initial_cli_failure": "Unsupported --progress option; rerun without that flag succeeded"
+  },
+  "isolation": {
+    "network": "none",
+    "root_filesystem": "read-only",
+    "database": "new SQLite in /tmp tmpfs",
+    "working_database_mounted": false,
+    "existing_services_replaced": false
+  },
+  "smoke": {
+    "status": "PASS",
+    "version": "0.4.4-dev",
+    "migration": "upgrade and check PASS",
+    "database": "fresh temporary SQLite",
+    "seed_history": "v1 preserved",
+    "full_and_short": "12 correct then 3 wrong; 75% / four families / prior grade retained",
+    "retained_grade": "Junior",
+    "openapi_exact_match": true,
+    "matching": "weighted + preference, save/restore, second employer denied",
+    "frontend": "index HTTP200 and built assets; no browser run",
+    "working_database_mounted": false,
+    "human_validation": "NOT RUN"
+  },
+  "backend_tests": {
+    "tests": 171,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 11.5,
+    "report": "output/validation/release-0.4.4-backend-clean.xml",
+    "warning": "Starlette TestClient httpx deprecation"
+  },
+  "application_files_equal_to_extracted_candidate": 83,
+  "application_source_sha256": "b8827928870c9ad3fed719fa40a61f55254c4eedbf656d341035d7961975dfa5",
+  "full_browser_flow_0_4_4": "NOT RUN",
+  "human_validation": "NOT RUN",
+  "independent_machine": "NOT RUN",
+  "public_submission": "NOT RUN"
+}

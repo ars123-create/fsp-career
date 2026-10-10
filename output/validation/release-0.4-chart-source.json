@@ -1,0 +1,33 @@
+{
+  "source": "research/preference_topk/results/heldout_v3.json",
+  "source_sha256": "5c8d0bbf8b6d1b55116135fc546ad1118a91da2d0334b39adb87e0f9715f6268",
+  "scale": 100,
+  "scenarios": [
+    "matched_linear",
+    "bounded_evidence",
+    "correlated_profiles"
+  ],
+  "policies": [
+    "random",
+    "uncertainty",
+    "bald",
+    "qeubo",
+    "decision_evoi"
+  ],
+  "meanLoss": [
+    0.9321689114387115,
+    0.755209229564823,
+    0.5227894684094737,
+    0.9946026261852813,
+    0.4126583848100696
+  ],
+  "chartLoss": [
+    0.9322,
+    0.7552,
+    0.5228,
+    0.9946,
+    0.4127
+  ],
+  "chart_rounding_decimals": 4,
+  "interpretation": "Synthetic regret, not measured hiring quality"
+}

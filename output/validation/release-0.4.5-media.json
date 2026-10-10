@@ -1,0 +1,63 @@
+{
+  "version": "0.4.5-dev",
+  "format": "silent montage of final slides and actual UI captures",
+  "continuous_screen_recording": false,
+  "audio": false,
+  "duration_seconds": 112,
+  "frames": [
+    {
+      "slide": 6,
+      "seconds": 8,
+      "sha256": "c8eb333b9a4ebdae4471c00296ca18a7b567c219f1b86c0868835a0ddb129bce"
+    },
+    {
+      "slide": 7,
+      "seconds": 12,
+      "sha256": "e962ccfa3738bb5f9759304a9ff0dae1ed9e62cea9e73116fb770ca1edfa2f13"
+    },
+    {
+      "slide": 8,
+      "seconds": 12,
+      "sha256": "570caa30d591e8e5030e28df4ebdc606d0f50ee11699076a0a95e6b014f2cd82"
+    },
+    {
+      "slide": 9,
+      "seconds": 10,
+      "sha256": "caff01057c9c57d6c725cb03782bcab74751f747d9e6bfbeee47109e06f82c84"
+    },
+    {
+      "slide": 10,
+      "seconds": 12,
+      "sha256": "871ea33fb0e55101489efa473a0eb7eb92f395091461c352da1c779debbd48e8"
+    },
+    {
+      "slide": 11,
+      "seconds": 12,
+      "sha256": "363585c230867fc70a064fb90d8df73fd60ef53a1cbec60498072d6270901d25"
+    },
+    {
+      "slide": 12,
+      "seconds": 12,
+      "sha256": "65f008dce77d273bbf297cd563e9a3bf9e9f796622460d10d7bb78aea91db11e"
+    },
+    {
+      "slide": 13,
+      "seconds": 12,
+      "sha256": "1bed0e7717e3b95428c2bdfb863fdf1cfc2282e49370c533be5b83305c2e7f01"
+    },
+    {
+      "slide": 14,
+      "seconds": 10,
+      "sha256": "99527da80c2107825c0d621996ca811f2942f258972d39f04ecc334d05cace8d"
+    },
+    {
+      "slide": 15,
+      "seconds": 12,
+      "sha256": "e5ff8b0c1a612adf9eb76fade06ed692db207149af98729a6cd27db1b464fb1b"
+    }
+  ],
+  "pptx_sha256": "711fc5409e95db32f15a54bd5cc024d5f00c718d182619edb7a140827c7e26e3",
+  "video_sha256": "a46c9e6a85ae5a6e7807eacf24b29503e11ad99f088069e6d5977d634f5ee544",
+  "pdf_sha256": "01a5edbe2c82503c2b738ddc52074afef90141f8280fe3864944cc96e3b8b862",
+  "technical_probe": "PASS"
+}

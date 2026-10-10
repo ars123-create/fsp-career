@@ -1,0 +1,527 @@
+{
+  "version": "0.5.1",
+  "status": "PASS",
+  "video": "FSP_Career_Full_Flow_0.5.1.mp4",
+  "sha256": "20ea41b2dd92633e566f4fe5d7dfce22476161108628b1e920728e04d8e7d82d",
+  "duration_seconds": 187.2,
+  "codec": "H.264",
+  "dimensions": [
+    1440,
+    900
+  ],
+  "fps": 30,
+  "audio_streams": 0,
+  "decode": "PASS",
+  "visual_review": "27/27 scene end samples + full-size key frames; reviewed by same agent",
+  "recording": {
+    "mode": "record",
+    "base": "http://127.0.0.1:8037",
+    "segments": [
+      {
+        "chapter": 1,
+        "role": "candidate",
+        "title": "Новый кандидат: от регистрации до предложения",
+        "start": 0.303,
+        "end": 8.579
+      },
+      {
+        "chapter": 2,
+        "role": "candidate",
+        "title": "Подтверждаем адрес из письма",
+        "start": 8.628,
+        "end": 16.667
+      },
+      {
+        "chapter": 3,
+        "role": "candidate",
+        "title": "Заполняем опыт и пожелания",
+        "start": 16.841,
+        "end": 31.214
+      },
+      {
+        "chapter": 4,
+        "role": "candidate",
+        "title": "Публикация — по отдельному согласию",
+        "start": 31.26,
+        "end": 36.894
+      },
+      {
+        "chapter": 5,
+        "role": "candidate",
+        "title": "Выбираем специализацию и заявленный уровень",
+        "start": 36.993,
+        "end": 40.861
+      },
+      {
+        "chapter": 6,
+        "role": "candidate",
+        "title": "1 / 12 · API: Сбои и согласованность",
+        "start": 40.947,
+        "end": 46.125
+      },
+      {
+        "chapter": 7,
+        "role": "candidate",
+        "title": "2 / 12 · API: Повтор запроса",
+        "start": 46.198,
+        "end": 50.459
+      },
+      {
+        "chapter": 8,
+        "role": "candidate",
+        "title": "3 / 12 · Python: Завершение и finally",
+        "start": 50.579,
+        "end": 58.257
+      },
+      {
+        "chapter": 9,
+        "role": "candidate",
+        "title": "4 / 12 · SQL: Последнее состояние",
+        "start": 58.345,
+        "end": 66.94
+      },
+      {
+        "chapter": 10,
+        "role": "candidate",
+        "title": "5 / 12 · Python: Коллекции и преобразования",
+        "start": 67.023,
+        "end": 72.207
+      },
+      {
+        "chapter": 11,
+        "role": "candidate",
+        "title": "6 / 12 · SQL: Агрегация без сюрпризов",
+        "start": 72.277,
+        "end": 77.44
+      },
+      {
+        "chapter": 12,
+        "role": "candidate",
+        "title": "7 / 12 · Python: Изменяемость и ссылки",
+        "start": 77.521,
+        "end": 82.69
+      },
+      {
+        "chapter": 13,
+        "role": "candidate",
+        "title": "8 / 12 · SQL: Кардинальность соединения",
+        "start": 82.765,
+        "end": 87.957
+      },
+      {
+        "chapter": 14,
+        "role": "candidate",
+        "title": "9 / 12 · Python: Состояние итератора",
+        "start": 88.059,
+        "end": 94.822
+      },
+      {
+        "chapter": 15,
+        "role": "candidate",
+        "title": "10 / 12 · API: Страница по курсору",
+        "start": 94.922,
+        "end": 103.489
+      },
+      {
+        "chapter": 16,
+        "role": "candidate",
+        "title": "11 / 12 · SQL: Отчёт по оплатам",
+        "start": 103.575,
+        "end": 112.189
+      },
+      {
+        "chapter": 17,
+        "role": "candidate",
+        "title": "12 / 12 · API: Повтор после сбоя",
+        "start": 112.296,
+        "end": 120.855
+      },
+      {
+        "chapter": 18,
+        "role": "candidate",
+        "title": "Основной тест завершён — категория присвоена",
+        "start": 120.901,
+        "end": 126.666
+      },
+      {
+        "chapter": 19,
+        "role": "candidate",
+        "title": "В профиле появилась подтверждённая категория",
+        "start": 126.725,
+        "end": 131.588
+      },
+      {
+        "chapter": 20,
+        "role": "employer",
+        "title": "Работодатель ищет подтверждённого Junior",
+        "start": 131.677,
+        "end": 139.368
+      },
+      {
+        "chapter": 21,
+        "role": "employer",
+        "title": "Отправляем конкретное предложение",
+        "start": 139.407,
+        "end": 154.416
+      },
+      {
+        "chapter": 22,
+        "role": "employer",
+        "title": "До ответа контакты скрыты",
+        "start": 154.472,
+        "end": 159.34
+      },
+      {
+        "chapter": 23,
+        "role": "candidate",
+        "title": "Кандидат выбирает, с кем знакомиться",
+        "start": 159.54,
+        "end": 167.636
+      },
+      {
+        "chapter": 24,
+        "role": "employer",
+        "title": "После согласия доступны контакты и PDF",
+        "start": 167.585,
+        "end": 174.299
+      },
+      {
+        "chapter": 25,
+        "role": "candidate",
+        "title": "Кандидат может откликнуться самостоятельно",
+        "start": 174.494,
+        "end": 181.83
+      },
+      {
+        "chapter": 26,
+        "role": "candidate",
+        "title": "Отклик сохранён и доступен в кабинете",
+        "start": 181.89,
+        "end": 185.769
+      },
+      {
+        "chapter": 27,
+        "role": "candidate",
+        "title": "Полный путь работает",
+        "start": 185.816,
+        "end": 189.971
+      }
+    ],
+    "errors": [],
+    "answers": [
+      {
+        "family": "api_concurrency",
+        "values": {
+          "choice": 0,
+          "value": "6"
+        }
+      },
+      {
+        "family": "api_idempotency",
+        "values": {
+          "choice": 0,
+          "value": "12400"
+        }
+      },
+      {
+        "family": "python_exception_flow",
+        "values": {
+          "total": "24",
+          "visited": "3"
+        }
+      },
+      {
+        "family": "sql_latest_records",
+        "values": {
+          "entities": "3",
+          "total": "21"
+        }
+      },
+      {
+        "family": "python_collections",
+        "values": {
+          "choice": 2,
+          "value": "308"
+        }
+      },
+      {
+        "family": "sql_null_distinct",
+        "values": {
+          "choice": 3,
+          "value": "5"
+        }
+      },
+      {
+        "family": "python_mutability",
+        "values": {
+          "choice": 2,
+          "value": "100"
+        }
+      },
+      {
+        "family": "sql_join_cardinality",
+        "values": {
+          "choice": 2,
+          "value": "6"
+        }
+      },
+      {
+        "family": "python_iterator_state",
+        "values": {
+          "prefix": "15",
+          "tail": "26"
+        }
+      },
+      {
+        "family": "api_cursor_page",
+        "values": {
+          "first_id": "8",
+          "last_id": "1"
+        }
+      },
+      {
+        "family": "sql_group_report",
+        "values": {
+          "customers": "2",
+          "revenue": "190"
+        }
+      },
+      {
+        "family": "api_retry_ledger",
+        "values": {
+          "stock": "305",
+          "writes": "3"
+        }
+      }
+    ],
+    "checks": {
+      "overflow_1": true,
+      "overflow_2": true,
+      "overflow_3": true,
+      "overflow_4": true,
+      "overflow_5": true,
+      "overflow_6": true,
+      "overflow_7": true,
+      "overflow_8": true,
+      "overflow_9": true,
+      "overflow_10": true,
+      "overflow_11": true,
+      "overflow_12": true,
+      "overflow_13": true,
+      "overflow_14": true,
+      "overflow_15": true,
+      "overflow_16": true,
+      "overflow_17": true,
+      "result": "РЕЗУЛЬТАТ ПРОВЕРКИ\n\n100% заданий зачтено\n\nПодтверждена категория Junior",
+      "overflow_18": true,
+      "grade_awarded": true,
+      "overflow_19": true,
+      "new_candidate_found": true,
+      "overflow_20": true,
+      "overflow_21": true,
+      "contacts_before": true,
+      "overflow_22": true,
+      "overflow_23": true,
+      "contacts_after": true,
+      "pdf_download": true,
+      "overflow_24": true,
+      "overflow_25": true,
+      "application_submitted": true,
+      "overflow_26": true,
+      "overflow_27": true
+    },
+    "status": "PASS"
+  },
+  "timeline": [
+    {
+      "chapter": 1,
+      "start": 0.0,
+      "duration": 8.266667,
+      "sample": 7.367,
+      "title": "Новый кандидат: от регистрации до предложения"
+    },
+    {
+      "chapter": 2,
+      "start": 8.267,
+      "duration": 8.033333,
+      "sample": 15.4,
+      "title": "Подтверждаем адрес из письма"
+    },
+    {
+      "chapter": 3,
+      "start": 16.3,
+      "duration": 14.366667,
+      "sample": 29.767,
+      "title": "Заполняем опыт и пожелания"
+    },
+    {
+      "chapter": 4,
+      "start": 30.667,
+      "duration": 5.633333,
+      "sample": 35.4,
+      "title": "Публикация — по отдельному согласию"
+    },
+    {
+      "chapter": 5,
+      "start": 36.3,
+      "duration": 3.866667,
+      "sample": 39.267,
+      "title": "Выбираем специализацию и заявленный уровень"
+    },
+    {
+      "chapter": 6,
+      "start": 40.167,
+      "duration": 5.166667,
+      "sample": 44.433,
+      "title": "1 / 12 · API: Сбои и согласованность"
+    },
+    {
+      "chapter": 7,
+      "start": 45.333,
+      "duration": 4.266667,
+      "sample": 48.7,
+      "title": "2 / 12 · API: Повтор запроса"
+    },
+    {
+      "chapter": 8,
+      "start": 49.6,
+      "duration": 7.666667,
+      "sample": 56.367,
+      "title": "3 / 12 · Python: Завершение и finally"
+    },
+    {
+      "chapter": 9,
+      "start": 57.267,
+      "duration": 8.6,
+      "sample": 64.967,
+      "title": "4 / 12 · SQL: Последнее состояние"
+    },
+    {
+      "chapter": 10,
+      "start": 65.867,
+      "duration": 5.166667,
+      "sample": 70.133,
+      "title": "5 / 12 · Python: Коллекции и преобразования"
+    },
+    {
+      "chapter": 11,
+      "start": 71.033,
+      "duration": 5.166667,
+      "sample": 75.3,
+      "title": "6 / 12 · SQL: Агрегация без сюрпризов"
+    },
+    {
+      "chapter": 12,
+      "start": 76.2,
+      "duration": 5.166667,
+      "sample": 80.467,
+      "title": "7 / 12 · Python: Изменяемость и ссылки"
+    },
+    {
+      "chapter": 13,
+      "start": 81.367,
+      "duration": 5.166667,
+      "sample": 85.633,
+      "title": "8 / 12 · SQL: Кардинальность соединения"
+    },
+    {
+      "chapter": 14,
+      "start": 86.533,
+      "duration": 6.733333,
+      "sample": 92.367,
+      "title": "9 / 12 · Python: Состояние итератора"
+    },
+    {
+      "chapter": 15,
+      "start": 93.267,
+      "duration": 8.566667,
+      "sample": 100.933,
+      "title": "10 / 12 · API: Страница по курсору"
+    },
+    {
+      "chapter": 16,
+      "start": 101.833,
+      "duration": 8.6,
+      "sample": 109.533,
+      "title": "11 / 12 · SQL: Отчёт по оплатам"
+    },
+    {
+      "chapter": 17,
+      "start": 110.433,
+      "duration": 8.533333,
+      "sample": 118.067,
+      "title": "12 / 12 · API: Повтор после сбоя"
+    },
+    {
+      "chapter": 18,
+      "start": 118.967,
+      "duration": 5.733333,
+      "sample": 123.8,
+      "title": "Основной тест завершён — категория присвоена"
+    },
+    {
+      "chapter": 19,
+      "start": 124.7,
+      "duration": 4.833333,
+      "sample": 128.633,
+      "title": "В профиле появилась подтверждённая категория"
+    },
+    {
+      "chapter": 20,
+      "start": 129.533,
+      "duration": 7.7,
+      "sample": 136.333,
+      "title": "Работодатель ищет подтверждённого Junior"
+    },
+    {
+      "chapter": 21,
+      "start": 137.233,
+      "duration": 15.0,
+      "sample": 151.333,
+      "title": "Отправляем конкретное предложение"
+    },
+    {
+      "chapter": 22,
+      "start": 152.233,
+      "duration": 4.866667,
+      "sample": 156.2,
+      "title": "До ответа контакты скрыты"
+    },
+    {
+      "chapter": 23,
+      "start": 157.1,
+      "duration": 8.066667,
+      "sample": 164.267,
+      "title": "Кандидат выбирает, с кем знакомиться"
+    },
+    {
+      "chapter": 24,
+      "start": 165.167,
+      "duration": 6.7,
+      "sample": 170.967,
+      "title": "После согласия доступны контакты и PDF"
+    },
+    {
+      "chapter": 25,
+      "start": 171.867,
+      "duration": 7.333333,
+      "sample": 178.3,
+      "title": "Кандидат может откликнуться самостоятельно"
+    },
+    {
+      "chapter": 26,
+      "start": 179.2,
+      "duration": 3.866667,
+      "sample": 182.167,
+      "title": "Отклик сохранён и доступен в кабинете"
+    },
+    {
+      "chapter": 27,
+      "start": 183.067,
+      "duration": 4.133333,
+      "sample": 186.3,
+      "title": "Полный путь работает"
+    }
+  ],
+  "limitations": "Scripted demo answers from public statements; no human assessment, no database patching during recording."
+}

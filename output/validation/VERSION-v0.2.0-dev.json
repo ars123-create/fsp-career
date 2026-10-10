@@ -1,0 +1,8 @@
+{
+  "version": "0.2.0-dev",
+  "date": "2026-10-07",
+  "application_source_sha256": "5152a63409162f055b1c8635c96085797dc38c3bbf5c130071a1b112e3bec0ef",
+  "source_files": 44,
+  "identifier": "SHA-256 of sorted relative source paths followed by bytes; no git commit published",
+  "submission_archive_version": "0.1.0 (unchanged)"
+}

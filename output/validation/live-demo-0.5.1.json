@@ -1,0 +1,370 @@
+{
+  "status": "PASS",
+  "version": "0.5.1",
+  "media_revision": "live-browser-v3",
+  "date_utc": "2026-10-10T17:43:01.864620+00:00",
+  "video_sha256": "4256143fa5d1dcd0e66bfa3c2401c4fb3a89afaad18ba6ca0426c1d71858e38f",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1440,
+        "height": 900,
+        "r_frame_rate": "30/1",
+        "nb_frames": "4215"
+      }
+    ],
+    "format": {
+      "duration": "140.499349",
+      "size": "6441806"
+    }
+  },
+  "full_decode": "PASS",
+  "visual_review": "Final MP4 frames from all 17 scenes inspected; invitation form, click marker, consent and contact details checked at full size.",
+  "audio_streams": 0,
+  "page_errors": [],
+  "checks": {
+    "overflow_1": true,
+    "overflow_2": true,
+    "overflow_3": true,
+    "overflow_4": true,
+    "overflow_5": true,
+    "overflow_6": true,
+    "overflow_7": true,
+    "actual_result": "РЕЗУЛЬТАТ ПРОВЕРКИ\n\n100% заданий зачтено\n\nРезультат сохранён в истории. Для обновления общего профиля навыков нужна основная проверка этой категории и рубрики. Прежние оценки и грейд сохранены.",
+    "overflow_8": true,
+    "overflow_9": true,
+    "overflow_10": true,
+    "overflow_11": true,
+    "overflow_12": true,
+    "overflow_13": true,
+    "contacts_before": true,
+    "overflow_14": true,
+    "overflow_15": true,
+    "contacts_after": true,
+    "pdf_download": true,
+    "overflow_16": true,
+    "overflow_17": true
+  },
+  "source_manifest": {
+    "files": [
+      {
+        "path": "README.md",
+        "sha256": "e07aab3680f2bfc0b91f3afcf605aa1681c5c56d55da83841118e6239a6648cb"
+      },
+      {
+        "path": "encode.py",
+        "sha256": "792362340e8f2fcc78f41e64a240ff13ea2fa6e98659e30c56eecf8ac4267163"
+      },
+      {
+        "path": "licenses/Playwright-APACHE-2.0.txt",
+        "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb"
+      },
+      {
+        "path": "overlay.cjs",
+        "sha256": "0d3c1ac808e6620c8f417cd2cfc2210e0a9decffdd364569f7d208d02066a3fa"
+      },
+      {
+        "path": "package-lock.json",
+        "sha256": "d135d04a24c279a3ee3cb3df2f64abc50e175f4ded7ae43acaee4841a46ffd03"
+      },
+      {
+        "path": "package.json",
+        "sha256": "ab41e913efe872bdf41a1d628ca77b270d326b40420dbedebf2dae4cda772c4d"
+      },
+      {
+        "path": "record.cjs",
+        "sha256": "a5b9785e50be1842a608295d3969135687a0a033648812af077d99d442d091db"
+      },
+      {
+        "path": "smoke-record.cjs",
+        "sha256": "dc3c0c75d96c755865190482bf6498fb4f3f2a63a84c95b1660a379b1821c1e1"
+      },
+      {
+        "path": "solve-visible.py",
+        "sha256": "f5afbe5ef13615067c7354a87c49b5ca136ba051297325cce9395a4a653d461a"
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "chapter": 1,
+      "start": 0,
+      "duration": 4.033333,
+      "title": "ФСП / Карьера"
+    },
+    {
+      "chapter": 2,
+      "start": 4.033,
+      "duration": 9.4,
+      "title": "Входим в кабинет кандидата"
+    },
+    {
+      "chapter": 3,
+      "start": 13.433,
+      "duration": 9.866667,
+      "title": "Профиль объединяет опыт и подтверждения"
+    },
+    {
+      "chapter": 4,
+      "start": 23.3,
+      "duration": 5.666667,
+      "title": "Проверяем навыки на практических задачах"
+    },
+    {
+      "chapter": 5,
+      "start": 28.967,
+      "duration": 9.633333,
+      "title": "API: Страница по курсору"
+    },
+    {
+      "chapter": 6,
+      "start": 38.6,
+      "duration": 9.6,
+      "title": "Python: Состояние итератора"
+    },
+    {
+      "chapter": 7,
+      "start": 48.2,
+      "duration": 10.566667,
+      "title": "SQL: Отчёт по оплатам"
+    },
+    {
+      "chapter": 8,
+      "start": 58.767,
+      "duration": 9.666667,
+      "title": "Результат и разбор сохраняются в истории"
+    },
+    {
+      "chapter": 9,
+      "start": 68.433,
+      "duration": 5.966016,
+      "title": "Работодатель описывает потребность"
+    },
+    {
+      "chapter": 10,
+      "start": 74.399,
+      "duration": 8.5,
+      "title": "Уточняем, что важнее команде"
+    },
+    {
+      "chapter": 11,
+      "start": 82.899,
+      "duration": 8.5,
+      "title": "Видим кандидатов и основания подбора"
+    },
+    {
+      "chapter": 12,
+      "start": 91.399,
+      "duration": 9.8,
+      "title": "Для другой роли ищем Junior в гибридном формате"
+    },
+    {
+      "chapter": 13,
+      "start": 101.199,
+      "duration": 15.033333,
+      "title": "Отправляем конкретное предложение"
+    },
+    {
+      "chapter": 14,
+      "start": 116.233,
+      "duration": 4.833333,
+      "title": "До ответа контакты скрыты"
+    },
+    {
+      "chapter": 15,
+      "start": 121.066,
+      "duration": 8.1,
+      "title": "Кандидат выбирает, с кем знакомиться"
+    },
+    {
+      "chapter": 16,
+      "start": 129.166,
+      "duration": 6.7,
+      "title": "После согласия доступны контакты и PDF"
+    },
+    {
+      "chapter": 17,
+      "start": 135.866,
+      "duration": 4.633333,
+      "title": "ФСП / Карьера"
+    }
+  ],
+  "record": {
+    "mode": "record",
+    "base": "http://127.0.0.1:8035",
+    "segments": [
+      {
+        "chapter": 1,
+        "role": "candidate",
+        "title": "ФСП / Карьера",
+        "start": 0.571,
+        "end": 4.632
+      },
+      {
+        "chapter": 2,
+        "role": "candidate",
+        "title": "Входим в кабинет кандидата",
+        "start": 4.667,
+        "end": 14.063
+      },
+      {
+        "chapter": 3,
+        "role": "candidate",
+        "title": "Профиль объединяет опыт и подтверждения",
+        "start": 14.114,
+        "end": 23.967
+      },
+      {
+        "chapter": 4,
+        "role": "candidate",
+        "title": "Проверяем навыки на практических задачах",
+        "start": 24.055,
+        "end": 29.731
+      },
+      {
+        "chapter": 5,
+        "role": "candidate",
+        "title": "API: Страница по курсору",
+        "start": 29.826,
+        "end": 39.455
+      },
+      {
+        "chapter": 6,
+        "role": "candidate",
+        "title": "Python: Состояние итератора",
+        "start": 39.54,
+        "end": 49.172
+      },
+      {
+        "chapter": 7,
+        "role": "candidate",
+        "title": "SQL: Отчёт по оплатам",
+        "start": 49.257,
+        "end": 59.838
+      },
+      {
+        "chapter": 8,
+        "role": "candidate",
+        "title": "Результат и разбор сохраняются в истории",
+        "start": 59.895,
+        "end": 69.587
+      },
+      {
+        "chapter": 9,
+        "role": "employer",
+        "title": "Работодатель описывает потребность",
+        "start": 69.544,
+        "end": 75.504
+      },
+      {
+        "chapter": 10,
+        "role": "employer",
+        "title": "Уточняем, что важнее команде",
+        "start": 75.559,
+        "end": 84.071
+      },
+      {
+        "chapter": 11,
+        "role": "employer",
+        "title": "Видим кандидатов и основания подбора",
+        "start": 84.129,
+        "end": 92.635
+      },
+      {
+        "chapter": 12,
+        "role": "employer",
+        "title": "Для другой роли ищем Junior в гибридном формате",
+        "start": 92.705,
+        "end": 102.499
+      },
+      {
+        "chapter": 13,
+        "role": "employer",
+        "title": "Отправляем конкретное предложение",
+        "start": 102.564,
+        "end": 117.61
+      },
+      {
+        "chapter": 14,
+        "role": "employer",
+        "title": "До ответа контакты скрыты",
+        "start": 117.663,
+        "end": 122.524
+      },
+      {
+        "chapter": 15,
+        "role": "candidate",
+        "title": "Кандидат выбирает, с кем знакомиться",
+        "start": 122.698,
+        "end": 130.819
+      },
+      {
+        "chapter": 16,
+        "role": "employer",
+        "title": "После согласия доступны контакты и PDF",
+        "start": 130.776,
+        "end": 137.481
+      },
+      {
+        "chapter": 17,
+        "role": "employer",
+        "title": "ФСП / Карьера",
+        "start": 137.528,
+        "end": 142.183
+      }
+    ],
+    "errors": [],
+    "answers": [
+      {
+        "family": "api_cursor_page",
+        "values": {
+          "first_id": "9",
+          "last_id": "4"
+        }
+      },
+      {
+        "family": "python_iterator_state",
+        "values": {
+          "prefix": "3",
+          "tail": "37"
+        }
+      },
+      {
+        "family": "sql_group_report",
+        "values": {
+          "customers": "3",
+          "revenue": "190"
+        }
+      }
+    ],
+    "checks": {
+      "overflow_1": true,
+      "overflow_2": true,
+      "overflow_3": true,
+      "overflow_4": true,
+      "overflow_5": true,
+      "overflow_6": true,
+      "overflow_7": true,
+      "actual_result": "РЕЗУЛЬТАТ ПРОВЕРКИ\n\n100% заданий зачтено\n\nРезультат сохранён в истории. Для обновления общего профиля навыков нужна основная проверка этой категории и рубрики. Прежние оценки и грейд сохранены.",
+      "overflow_8": true,
+      "overflow_9": true,
+      "overflow_10": true,
+      "overflow_11": true,
+      "overflow_12": true,
+      "overflow_13": true,
+      "contacts_before": true,
+      "overflow_14": true,
+      "overflow_15": true,
+      "contacts_after": true,
+      "pdf_download": true,
+      "overflow_16": true,
+      "overflow_17": true
+    },
+    "status": "PASS"
+  },
+  "boundary": "Actual UI actions on two isolated demo sessions; cuts omit waits and switch role. Existing seeded Junior grade; newly completed short assessment remains in history under current-rubric policy. Not evidence of independent grade calibration or human hiring quality."
+}

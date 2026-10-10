@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-07",
+  "hashes": {
+    "core.py": "dfc90f10e208ef2b65a7dbac817e739c7f29e739d8904d0aa2b433db4d03ecf8",
+    "benchmark.py": "931eddd033d1eeb0fce8de7ac9df7296fca96a984d6b2dc48ff7c74d4b31b9a5",
+    "test_core.py": "3bedde3e92cd4b824971a33d0c21cc4eb2fe2f93fe023183de8ebc9e92eaa4f5",
+    "PROOFS.md": "b8c452d860e1bb3811a388c54a227db1cea7ca711d3b671cb54a70bffe1eb3e8",
+    "requirements.txt": "15f52ad800df06de43b7ad67eefe0f97db46762d32cbffdc1013aa9e77319d21"
+  },
+  "dev_seeds": [
+    30000,
+    30019
+  ],
+  "heldout_seeds": [
+    50000,
+    50099
+  ],
+  "scenarios": [
+    "observed_points",
+    "bounded_evidence",
+    "polarized_preferences",
+    "wrong_priority_constraint",
+    "nonlinear_utility"
+  ],
+  "n": 18,
+  "d": 3,
+  "k": 5,
+  "policies": [
+    "mean",
+    "lower_mean",
+    "evidence_v1",
+    "weights_only",
+    "independent_box",
+    "joint",
+    "guarded"
+  ],
+  "guard": "At most 0.01*k nominal SUM loss; same anchored guard in both question branches. Chosen after dev_v2 findings; dev_v2 source archived.",
+  "go_no_go": "No in-model certificate violations; independent exhaustive tests pass. No mandatory improvement of average utility. Publish all scenarios/negative results.",
+  "limitations": "Synthetic utilities. No human labels, calibration, hiring outcome or scientific novelty claim."
+}

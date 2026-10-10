@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "purpose": "Minimal existing SciPy t and local statistics smoke before domain-transfer adaptation; no worlds or quality generated",
+  "python": "3.12.14",
+  "scipy": "1.18.1",
+  "numpy": "2.4.4",
+  "cdf_ppf_error": 4.336808689942018e-19,
+  "one_sided_checked": 0.04393225166255625,
+  "sources": {
+    "research/frontier_2026/statistics.py": "bde1c62668917a855533cda1590ba21c105ce77a9b55ccace9e6432f13b8f236",
+    "research/frontier_2026/extensions/benchmark.py": "ca6aa68a740c8c8771b9aeed5644205d0a3cf1b1cb1980e04c68d789deca2405",
+    "research/frontier_2026/extensions/analyze_supplement.py": "616b99888cd3d9890c74575cda554f4a796f82dcd891821da7630b9731362a90"
+  },
+  "official_docs": [
+    "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.t.html",
+    "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html"
+  ],
+  "scipy_t_ppf_source": "    def _ppf(self, q, df):\n        return sc.stdtrit(df, q)\n",
+  "license": "Existing SciPy/NumPy BSD-3-Clause, project notices retained",
+  "host_utc": "2026-10-09T07:39:35.363115+00:00"
+}

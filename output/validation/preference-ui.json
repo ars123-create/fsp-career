@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-07",
+  "version": "0.3.0-dev",
+  "browser": "Chromium Codex IAB",
+  "checks": {
+    "backend_question_answer_skip_undo_reset": "PASS",
+    "hide_resume_question": "PASS",
+    "save_reload_restore_current": "PASS",
+    "backend_to_data_and_back": "PASS",
+    "data_answer_and_next_question": "PASS",
+    "contacts_hidden_in_candidate_detail": "PASS",
+    "loading_form_prevents_request_overwriting_in_progress_edits": "PASS disabled state observed; no formal concurrency proof",
+    "viewport_480_638_1440_no_horizontal_overflow": "PASS",
+    "viewport_375": "NOT RUN: IAB minimum observed viewport 480",
+    "console_error_warn": "PASS 0"
+  },
+  "screenshots": [
+    "output/screenshots/preference-v3-question.png",
+    "output/screenshots/preference-v3-restored.png"
+  ],
+  "fixed_during_review": [
+    "Tie drift on equal prior",
+    "Dominated comparisons after skip",
+    "Stale scoring formula in candidate details",
+    "Old skills after specialization switch",
+    "Editable form while initial normalization request was pending"
+  ],
+  "external_human_validation": "NOT RUN: user has no available independent evaluator"
+}

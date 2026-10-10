@@ -1,0 +1,19 @@
+{
+  "algorithm": "decision-evoi-v3",
+  "engine_sha256": "b3aad5b4ba1dba51226c460c5d38e5e23964e04c44a37f565c3412003e0a6344",
+  "frozen_protocol_sha256": "f5ef49b4656b56c4de7c2622ba6ae2e24cf18d1d9aa0f36eec878df6c62b38c0",
+  "experiment": "research/preference_topk/results/heldout_v3.json",
+  "application_adaptation": "Raw observed skill scores; ties rounded to 1e-12, then confirmed non-revoked achievement with a non-empty source, then stable ID; hypothetical pair deduplication and trade-offs only; up to three questions; 0.05 model-point stopping threshold. Application policy differs from research benchmark. No calibrated ability or hiring-success claim.",
+  "heldout_sha256": "5c8d0bbf8b6d1b55116135fc546ad1118a91da2d0334b39adb87e0f9715f6268",
+  "acceleration": {
+    "version": "linear-chain-v1",
+    "source": "backend/app/preference_acceleration.py",
+    "sha256": "85bc336f092f97109ab4b2f8ac0e10629d37246c2fb61bf26199a7048c0808a7",
+    "scope": "Same linear decision EVOI; NumPy multi_dot for more than 128 allowed pairs; original reference on small pools, near ties and stop boundaries; no change to preference model."
+  },
+  "tie_break": {
+    "source": "backend/app/ranking_ties.py",
+    "sha256": "1ef03774aaa238624c71204535e0acdf9a24d96c3fa9683a0f389e40f4c1c969",
+    "scope": "Confirmed achievement presence only after an equal rounded skill score. FSP ID alone, pending, revoked and absent source do not qualify; no grade or eligibility change."
+  }
+}

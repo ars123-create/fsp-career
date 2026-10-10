@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-07",
+  "version": "0.4.4-dev",
+  "browser": "Codex IAB",
+  "viewport_css": {
+    "width": 2560,
+    "height": 1440
+  },
+  "console_warn_error_count": 0,
+  "database": "data/portfolio-ui-0.4.4.sqlite",
+  "setup": "Fictional fixture; full v2 assessment completed using server oracles through API; legacy v1 prepared in isolated database. Not a human study or full browser registration flow.",
+  "checks": {
+    "short_v2_wrong_updates_each_skill_to_75_with_four_families": "PASS",
+    "grade_Middle_retained": "PASS",
+    "reload_persists": "PASS",
+    "legacy_v1_short_v2_needs_full_message": "PASS",
+    "legacy_profile_100_two_families_retained": "PASS"
+  },
+  "other_viewports": "NOT RUN in this pass",
+  "human_validation": "NOT RUN",
+  "excluded_artifacts": {
+    "06-family-result-card.jpg": "Blank crop produced by browser capture; not evidence",
+    "08-family-result-card.jpg": "Cropped capture does not show the result; use full screenshot 07-profile-final.jpg"
+  },
+  "screenshots_and_dom": [
+    {
+      "path": "output/screenshots/evidence-portfolio-0.4.4/01-short-result.txt",
+      "sha256": "d3b8a13bac55b996150114949a5da2ceacbcb21241ff70272f33c8b80f9e3038"
+    },
+    {
+      "path": "output/screenshots/evidence-portfolio-0.4.4/02-profile-after-short.jpg",
+      "sha256": "f7ed52c4494d3cd5df2c0bd30ebf3efc1e742042d4b49229c47051131e0efeed"
+    },
+    {
+      "path": "output/screenshots/evidence-portfolio-0.4.4/02-profile-after-short.txt",
+      "sha256": "b7c8e2fc81864da1b10a8b5d690018ac3e354cc3df2d784496d0471d26639e45"
+    },
+    {
+      "path": "output/screenshots/evidence-portfolio-0.4.4/03-profile-reload.txt",
+      "sha256": "03ccdc402a5c992eaca71d6af025aa3204f92cb406491c0645da6915ff65644a"
+    },
+    {
+      "path": "output/screenshots/evidence-portfolio-0.4.4/04-legacy-result.jpg",
+      "sha256": "b0945dd60c6e7b3a67758acf07a3056aa45f184c52ac503e5b78c05830b23caf"
+    },
+    {
+      "path": "output/screenshots/evidence-portfolio-0.4.4/04-legacy-result.txt",
+      "sha256": "4350afd01ac1f19f50a8dac45ef8a02cdd9106ce6c9cccfa84fafc54568ddac2"
+    },
+    {
+      "path": "output/screenshots/evidence-portfolio-0.4.4/05-legacy-profile.txt",
+      "sha256": "b80171e380caf29f017500a2a8840b6e96c18198f818d412b781ecbd45c54aee"
+    },
+    {
+      "path": "output/screenshots/evidence-portfolio-0.4.4/07-profile-final.jpg",
+      "sha256": "8375cc08a2fb9770b2fcfec508c2d37b74c5be63cbccfd0629d9bf4fc83e0fc9"
+    },
+    {
+      "path": "output/screenshots/evidence-portfolio-0.4.4/console.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  ]
+}

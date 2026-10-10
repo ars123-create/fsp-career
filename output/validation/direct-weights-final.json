@@ -1,0 +1,135 @@
+{
+  "version": {
+    "version": "0.4.3-dev",
+    "date": "2026-10-07",
+    "application_source_sha256": "c6e230c3d92c68b40cdd15a37980a3d1539c8a8ce4f7f10d14c37ef2e1f9b487",
+    "source_files": 77,
+    "identifier": "SHA256 of sorted relative UTF-8 path + NUL + file bytes + NUL; path list in output/validation/source-v0.4.3-dev.json; no git commit published",
+    "submission_archive_version": "0.4.0-dev (unchanged; predates acceleration, FSP tie-break and direct weights)",
+    "submission_directory": "output/submission-0.4.0-dev"
+  },
+  "checks": {
+    "sqlite": {
+      "tests": "144",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "7.977"
+    },
+    "postgresql": {
+      "tests": "144",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "13.477"
+    },
+    "docker": {
+      "tests": "144",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "11.034"
+    }
+  },
+  "openapi": {
+    "version": "0.4.3-dev",
+    "operations": 45
+  },
+  "frozen_files": {
+    "robust_topk/core.py": true,
+    "robust_topk/benchmark.py": true,
+    "robust_topk/test_core.py": true,
+    "robust_topk/PROOFS.md": true,
+    "robust_topk/requirements.txt": true,
+    "preference_topk/core.py": true,
+    "preference_topk/benchmark.py": true,
+    "preference_topk/test_core.py": true,
+    "preference_topk/PROOFS.md": true,
+    "preference_topk/requirements.txt": true
+  },
+  "frozen_audit_zip_unchanged": true,
+  "prototype_matches_application": true,
+  "database": {
+    "comparison": "all rows and columns versus pre-update backup; no personal values recorded",
+    "unchanged_tables": {
+      "actiontoken": true,
+      "alembic_version": true,
+      "application": true,
+      "attempt": true,
+      "auditevent": true,
+      "candidate": true,
+      "company": true,
+      "evidence": true,
+      "gradeaward": true,
+      "invitation": true,
+      "job": true,
+      "localmail": true,
+      "need": false,
+      "user": true
+    },
+    "counts": {
+      "actiontoken": {
+        "before": 2,
+        "after": 2
+      },
+      "alembic_version": {
+        "before": 1,
+        "after": 1
+      },
+      "application": {
+        "before": 0,
+        "after": 0
+      },
+      "attempt": {
+        "before": 27,
+        "after": 27
+      },
+      "auditevent": {
+        "before": 13,
+        "after": 13
+      },
+      "candidate": {
+        "before": 25,
+        "after": 25
+      },
+      "company": {
+        "before": 3,
+        "after": 3
+      },
+      "evidence": {
+        "before": 174,
+        "after": 174
+      },
+      "gradeaward": {
+        "before": 25,
+        "after": 25
+      },
+      "invitation": {
+        "before": 2,
+        "after": 2
+      },
+      "job": {
+        "before": 2,
+        "after": 2
+      },
+      "localmail": {
+        "before": 2,
+        "after": 2
+      },
+      "need": {
+        "before": 3,
+        "after": 4
+      },
+      "user": {
+        "before": 28,
+        "after": 28
+      }
+    },
+    "old_needs_preserved": true,
+    "added_demo_needs": 1,
+    "only_expected_change": true
+  },
+  "human_validation": "NOT RUN",
+  "new_mode_load_test": "NOT RUN",
+  "full_submission_0_4_3": "NOT RUN"
+}

@@ -1,0 +1,17 @@
+.git
+.env
+.venv
+.venv-matching
+.venv-research
+frontend/node_modules
+frontend/dist
+frontend/.component-smoke.mjs
+**/__pycache__
+**/.pytest_cache
+.hypothesis
+data
+tmp
+research
+materials
+output
+design

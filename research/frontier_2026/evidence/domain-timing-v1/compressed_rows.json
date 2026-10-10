@@ -1,0 +1,7 @@
+{
+  "source": "rows.jsonl",
+  "sha256_uncompressed": "9d15eeb03b8fcce9d8448956ed982582f6db7b8ebdbec95dfb64e7cf81f5cf0c",
+  "bytes_uncompressed": 10919104,
+  "compression": "gzip level 3; lossless",
+  "bytes_compressed": 1154704
+}

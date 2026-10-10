@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "version": "0.4.5-dev",
+  "rubric": "2026-10-v3",
+  "tables_preserved": 14,
+  "rows_preserved": 308,
+  "all_old_rows_columns_and_values_preserved": true,
+  "backup": "data/backups/pre-assessment-v3-20261008-005645.sqlite",
+  "openapi_exact_match": true,
+  "url": "http://127.0.0.1:8018",
+  "fresh_browser_flow": "NOT RUN"
+}

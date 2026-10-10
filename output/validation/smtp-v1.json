@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "transport": "SMTP -> local Mailpit",
+  "checks": [
+    "register",
+    "unverified_login_rejected",
+    "SMTP_received",
+    "link_origin",
+    "verify_once",
+    "login",
+    "empty_FSP_works"
+  ],
+  "external_delivery": "NOT RUN",
+  "at": "2026-10-07T09:07:15.354042+00:00"
+}

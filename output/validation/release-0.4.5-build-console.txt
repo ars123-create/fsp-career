@@ -1,0 +1,396 @@
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  3.788MB
+Step 1/20 : FROM node:24-alpine AS frontend
+ ---> ebfe2f904627
+Step 2/20 : WORKDIR /build/frontend
+ ---> Running in 3d03d02934a4
+ ---> Removed intermediate container 3d03d02934a4
+ ---> 61aef8b52196
+Step 3/20 : COPY frontend/package.json frontend/package-lock.json ./
+ ---> 46aaf689cdd7
+Step 4/20 : RUN npm ci --no-audit --no-fund
+ ---> Running in beeb0b52fa23
+
+added 141 packages in 13s
+[91mnpm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.25.12 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+[0m[91mnpm notice
+npm notice New major version of npm available! 11.19.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice
+[0m ---> Removed intermediate container beeb0b52fa23
+ ---> 2194929fd946
+Step 5/20 : COPY frontend/ ./
+ ---> 7ee06543b0b4
+Step 6/20 : RUN npm run build
+ ---> Running in b5fadbfe9718
+
+> fsp-career@0.4.5-dev build
+> tsc -b && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 1797 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                             0.59 kB │ gzip:   0.41 kB
+dist/assets/manrope-vietnamese-800-normal-ClPWri-A.woff2    4.16 kB
+dist/assets/manrope-vietnamese-400-normal-DHb3EETF.woff2    4.46 kB
+dist/assets/manrope-vietnamese-600-normal-C1J5PCl_.woff2    4.47 kB
+dist/assets/manrope-vietnamese-700-normal-CUqMx5-1.woff2    4.55 kB
+dist/assets/manrope-greek-800-normal-CDvU698_.woff2         5.18 kB
+dist/assets/manrope-greek-600-normal-BoRV6lzK.woff2         5.23 kB
+dist/assets/manrope-greek-700-normal-CHUG9PD8.woff2         5.24 kB
+dist/assets/manrope-greek-400-normal-CM4qok81.woff2         5.28 kB
+dist/assets/manrope-vietnamese-400-normal-D7E_mLGF.woff     6.11 kB
+dist/assets/manrope-vietnamese-800-normal-bvg7iBCV.woff     6.13 kB
+dist/assets/manrope-vietnamese-600-normal-lA7a_7Ok.woff     6.14 kB
+dist/assets/manrope-vietnamese-700-normal-pt65Fn2Z.woff     6.36 kB
+dist/assets/manrope-greek-800-normal-Bw-67qu9.woff          6.63 kB
+dist/assets/manrope-greek-600-normal-CF2i9ZRY.woff          6.74 kB
+dist/assets/manrope-greek-700-normal-DyfsrCpP.woff          6.74 kB
+dist/assets/manrope-greek-400-normal-DuX9RsAR.woff          6.77 kB
+dist/assets/manrope-cyrillic-800-normal-AvdZ5mAV.woff2      7.59 kB
+dist/assets/manrope-cyrillic-400-normal-BMzJvInZ.woff2      7.84 kB
+dist/assets/manrope-cyrillic-700-normal-Dw_fZAg2.woff2      7.85 kB
+dist/assets/manrope-cyrillic-600-normal-DvRl3Mj-.woff2      7.87 kB
+dist/assets/manrope-latin-ext-800-normal-DdFx7KEb.woff2     8.03 kB
+dist/assets/manrope-latin-ext-700-normal-DYOwVNan.woff2     8.28 kB
+dist/assets/manrope-latin-ext-400-normal-CMDvPJRp.woff2     8.29 kB
+dist/assets/manrope-latin-ext-600-normal-_gBojHdJ.woff2     8.30 kB
+dist/assets/manrope-cyrillic-800-normal-BuEMjQU-.woff       9.78 kB
+dist/assets/manrope-cyrillic-700-normal-7JNVKxyl.woff      10.00 kB
+dist/assets/manrope-cyrillic-400-normal-Dvx59UGC.woff      10.03 kB
+dist/assets/manrope-cyrillic-600-normal-It4mZcQk.woff      10.06 kB
+dist/assets/manrope-latin-ext-800-normal-BQAQsuQc.woff     11.11 kB
+dist/assets/manrope-latin-ext-600-normal-u5Pl7hTU.woff     11.25 kB
+dist/assets/manrope-latin-ext-400-normal-C-X6QNXX.woff     11.32 kB
+dist/assets/manrope-latin-ext-700-normal-eVCcYqtJ.woff     11.35 kB
+dist/assets/manrope-latin-800-normal-BfWYOv1c.woff2        13.65 kB
+dist/assets/manrope-latin-400-normal-PaqtzbVb.woff2        14.11 kB
+dist/assets/manrope-latin-600-normal-4f0koTD-.woff2        14.17 kB
+dist/assets/manrope-latin-700-normal-BZp_XxE4.woff2        14.21 kB
+dist/assets/manrope-latin-800-normal-uHUdIJgA.woff         17.91 kB
+dist/assets/manrope-latin-400-normal-8tf8FM3T.woff         18.29 kB
+dist/assets/manrope-latin-600-normal-BqgrALkZ.woff         18.38 kB
+dist/assets/manrope-latin-700-normal-DGRFkw-m.woff         18.41 kB
+dist/assets/index-BEChFuiJ.css                             86.40 kB │ gzip:  28.20 kB
+dist/assets/index-DO64X-g7.js                             607.94 kB │ gzip: 187.82 kB
+[91m
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[0m✓ built in 2.06s
+ ---> Removed intermediate container b5fadbfe9718
+ ---> 9be003b2705b
+Step 7/20 : FROM python:3.14-slim
+ ---> f85c5697265c
+Step 8/20 : WORKDIR /app
+ ---> Running in 4338a3434986
+ ---> Removed intermediate container 4338a3434986
+ ---> 458c452f5caa
+Step 9/20 : ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PYTHONPATH=/app/backend
+ ---> Running in 95d492aacc4e
+ ---> Removed intermediate container 95d492aacc4e
+ ---> 3a44a37d1396
+Step 10/20 : COPY backend/requirements.lock.txt /app/backend/requirements.lock.txt
+ ---> 3caba9c58ae0
+Step 11/20 : RUN pip install --no-cache-dir -r backend/requirements.lock.txt
+ ---> Running in b5b1f21fbd56
+Collecting agent-detector==2.0.0 (from -r backend/requirements.lock.txt (line 1))
+  Downloading agent_detector-2.0.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting alembic==1.20.0 (from -r backend/requirements.lock.txt (line 2))
+  Downloading alembic-1.20.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting annotated-doc==0.0.5 (from -r backend/requirements.lock.txt (line 3))
+  Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+Collecting annotated-types==0.8.0 (from -r backend/requirements.lock.txt (line 4))
+  Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Collecting anyio==4.15.1 (from -r backend/requirements.lock.txt (line 5))
+  Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting argon2-cffi==25.1.0 (from -r backend/requirements.lock.txt (line 6))
+  Downloading argon2_cffi-25.1.0-py3-none-any.whl.metadata (4.1 kB)
+Collecting argon2-cffi-bindings==26.1.0 (from -r backend/requirements.lock.txt (line 7))
+  Downloading argon2_cffi_bindings-26.1.0-cp310-abi3-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl.metadata (7.5 kB)
+Collecting bcrypt==5.0.0 (from -r backend/requirements.lock.txt (line 8))
+  Downloading bcrypt-5.0.0-cp39-abi3-manylinux_2_34_aarch64.whl.metadata (10 kB)
+Collecting certifi==2026.7.22 (from -r backend/requirements.lock.txt (line 9))
+  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Collecting cffi==2.1.1 (from -r backend/requirements.lock.txt (line 10))
+  Downloading cffi-2.1.1-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.whl.metadata (2.5 kB)
+Collecting charset-normalizer==3.5.2 (from -r backend/requirements.lock.txt (line 11))
+  Downloading charset_normalizer-3.5.2-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (46 kB)
+Collecting click==8.5.0 (from -r backend/requirements.lock.txt (line 12))
+  Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting detect-installer==0.2.1 (from -r backend/requirements.lock.txt (line 13))
+  Downloading detect_installer-0.2.1-py3-none-any.whl.metadata (1.2 kB)
+Collecting dnspython==2.8.0 (from -r backend/requirements.lock.txt (line 14))
+  Downloading dnspython-2.8.0-py3-none-any.whl.metadata (5.7 kB)
+Collecting email-validator==2.3.0 (from -r backend/requirements.lock.txt (line 15))
+  Downloading email_validator-2.3.0-py3-none-any.whl.metadata (26 kB)
+Collecting fastapi==0.142.2 (from -r backend/requirements.lock.txt (line 16))
+  Downloading fastapi-0.142.2-py3-none-any.whl.metadata (27 kB)
+Collecting fastapi-cli==0.0.32 (from -r backend/requirements.lock.txt (line 17))
+  Downloading fastapi_cli-0.0.32-py3-none-any.whl.metadata (6.7 kB)
+Collecting fastapi-cloud-cli==0.26.0 (from -r backend/requirements.lock.txt (line 18))
+  Downloading fastapi_cloud_cli-0.26.0-py3-none-any.whl.metadata (3.1 kB)
+Collecting fastar==0.12.0 (from -r backend/requirements.lock.txt (line 19))
+  Downloading fastar-0.12.0-cp314-cp314-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (4.1 kB)
+Collecting googleapis-common-protos==1.75.5 (from -r backend/requirements.lock.txt (line 20))
+  Downloading googleapis_common_protos-1.75.5-py3-none-any.whl.metadata (8.5 kB)
+Collecting h11==0.16.0 (from -r backend/requirements.lock.txt (line 21))
+  Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting httpcore==1.0.9 (from -r backend/requirements.lock.txt (line 22))
+  Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting httptools==0.8.0 (from -r backend/requirements.lock.txt (line 23))
+  Downloading httptools-0.8.0-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (3.5 kB)
+Collecting httpx==0.28.1 (from -r backend/requirements.lock.txt (line 24))
+  Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting hypothesis==6.168.5 (from -r backend/requirements.lock.txt (line 25))
+  Downloading hypothesis-6.168.5-cp314-cp314-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (5.7 kB)
+Collecting idna==3.20 (from -r backend/requirements.lock.txt (line 26))
+  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting iniconfig==2.3.1 (from -r backend/requirements.lock.txt (line 27))
+  Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting Jinja2==3.1.6 (from -r backend/requirements.lock.txt (line 28))
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting Mako==1.4.3 (from -r backend/requirements.lock.txt (line 29))
+  Downloading mako-1.4.3-py3-none-any.whl.metadata (2.9 kB)
+Collecting numpy==2.4.4 (from -r backend/requirements.lock.txt (line 30))
+  Downloading numpy-2.4.4-cp314-cp314-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (6.6 kB)
+Collecting markdown-it-py==4.2.0 (from -r backend/requirements.lock.txt (line 31))
+  Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting MarkupSafe==3.0.4 (from -r backend/requirements.lock.txt (line 32))
+  Downloading markupsafe-3.0.4-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (2.7 kB)
+Collecting mdurl==0.1.2 (from -r backend/requirements.lock.txt (line 33))
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting opentelemetry-api==1.45.1 (from -r backend/requirements.lock.txt (line 34))
+  Downloading opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)
+Collecting opentelemetry-exporter-http-transport==0.66b1 (from -r backend/requirements.lock.txt (line 35))
+  Downloading opentelemetry_exporter_http_transport-0.66b1-py3-none-any.whl.metadata (2.3 kB)
+Collecting opentelemetry-exporter-otlp-common==0.66b1 (from -r backend/requirements.lock.txt (line 36))
+  Downloading opentelemetry_exporter_otlp_common-0.66b1-py3-none-any.whl.metadata (1.9 kB)
+Collecting opentelemetry-exporter-otlp-proto-common==1.45.1 (from -r backend/requirements.lock.txt (line 37))
+  Downloading opentelemetry_exporter_otlp_proto_common-1.45.1-py3-none-any.whl.metadata (1.8 kB)
+Collecting opentelemetry-exporter-otlp-proto-http==1.45.1 (from -r backend/requirements.lock.txt (line 38))
+  Downloading opentelemetry_exporter_otlp_proto_http-1.45.1-py3-none-any.whl.metadata (3.0 kB)
+Collecting opentelemetry-proto==1.45.1 (from -r backend/requirements.lock.txt (line 39))
+  Downloading opentelemetry_proto-1.45.1-py3-none-any.whl.metadata (2.3 kB)
+Collecting opentelemetry-sdk==1.45.1 (from -r backend/requirements.lock.txt (line 40))
+  Downloading opentelemetry_sdk-1.45.1-py3-none-any.whl.metadata (1.6 kB)
+Collecting opentelemetry-semantic-conventions==0.66b1 (from -r backend/requirements.lock.txt (line 41))
+  Downloading opentelemetry_semantic_conventions-0.66b1-py3-none-any.whl.metadata (2.4 kB)
+Collecting packaging==26.3 (from -r backend/requirements.lock.txt (line 42))
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pillow==12.3.0 (from -r backend/requirements.lock.txt (line 43))
+  Downloading pillow-12.3.0-cp314-cp314-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (9.1 kB)
+Collecting pluggy==1.6.0 (from -r backend/requirements.lock.txt (line 44))
+  Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting protobuf==7.36.2 (from -r backend/requirements.lock.txt (line 45))
+  Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_aarch64.whl.metadata (595 bytes)
+Collecting psycopg==3.3.6 (from -r backend/requirements.lock.txt (line 46))
+  Downloading psycopg-3.3.6-py3-none-any.whl.metadata (4.4 kB)
+Collecting psycopg-binary==3.3.6 (from -r backend/requirements.lock.txt (line 47))
+  Downloading psycopg_binary-3.3.6-cp314-cp314-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (2.7 kB)
+Collecting pwdlib==0.3.1 (from -r backend/requirements.lock.txt (line 48))
+  Downloading pwdlib-0.3.1-py3-none-any.whl.metadata (5.6 kB)
+Collecting pycparser==3.0 (from -r backend/requirements.lock.txt (line 49))
+  Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+Collecting pydantic==2.13.5 (from -r backend/requirements.lock.txt (line 50))
+  Downloading pydantic-2.13.5-py3-none-any.whl.metadata (110 kB)
+Collecting pydantic-extra-types==2.11.1 (from -r backend/requirements.lock.txt (line 51))
+  Downloading pydantic_extra_types-2.11.1-py3-none-any.whl.metadata (4.2 kB)
+Collecting pydantic-settings==2.15.0 (from -r backend/requirements.lock.txt (line 52))
+  Downloading pydantic_settings-2.15.0-py3-none-any.whl.metadata (3.9 kB)
+Collecting pydantic_core==2.46.5 (from -r backend/requirements.lock.txt (line 53))
+  Downloading pydantic_core-2.46.5-cp314-cp314-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.6 kB)
+Collecting Pygments==2.21.0 (from -r backend/requirements.lock.txt (line 54))
+  Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting PyJWT==2.15.1 (from -r backend/requirements.lock.txt (line 55))
+  Downloading pyjwt-2.15.1-py3-none-any.whl.metadata (3.5 kB)
+Collecting pypdf==6.19.0 (from -r backend/requirements.lock.txt (line 56))
+  Downloading pypdf-6.19.0-py3-none-any.whl.metadata (7.5 kB)
+Collecting pytest==9.1.1 (from -r backend/requirements.lock.txt (line 57))
+  Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting python-dotenv==1.2.4 (from -r backend/requirements.lock.txt (line 58))
+  Downloading python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+Collecting python-multipart==0.0.32 (from -r backend/requirements.lock.txt (line 59))
+  Downloading python_multipart-0.0.32-py3-none-any.whl.metadata (2.1 kB)
+Collecting PyYAML==6.0.3 (from -r backend/requirements.lock.txt (line 60))
+  Downloading pyyaml-6.0.3-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (2.4 kB)
+Collecting reportlab==4.5.1 (from -r backend/requirements.lock.txt (line 61))
+  Downloading reportlab-4.5.1-py3-none-any.whl.metadata (1.7 kB)
+Collecting requests==2.34.2 (from -r backend/requirements.lock.txt (line 62))
+  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting rich==15.0.0 (from -r backend/requirements.lock.txt (line 63))
+  Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting rich-toolkit==0.20.5 (from -r backend/requirements.lock.txt (line 64))
+  Downloading rich_toolkit-0.20.5-py3-none-any.whl.metadata (3.0 kB)
+Collecting rignore==0.8.1 (from -r backend/requirements.lock.txt (line 65))
+  Downloading rignore-0.8.1-cp314-cp314-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (4.2 kB)
+Collecting sentry-sdk==2.71.0 (from -r backend/requirements.lock.txt (line 66))
+  Downloading sentry_sdk-2.71.0-py3-none-any.whl.metadata (11 kB)
+Collecting scipy==1.18.1 (from -r backend/requirements.lock.txt (line 67))
+  Downloading scipy-1.18.1-cp314-cp314-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (62 kB)
+Collecting shellingham==1.5.4 (from -r backend/requirements.lock.txt (line 68))
+  Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting sortedcontainers==2.4.0 (from -r backend/requirements.lock.txt (line 69))
+  Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+Collecting SQLAlchemy==2.1.3 (from -r backend/requirements.lock.txt (line 70))
+  Downloading sqlalchemy-2.1.3-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (9.7 kB)
+Collecting sqlmodel==0.0.48 (from -r backend/requirements.lock.txt (line 71))
+  Downloading sqlmodel-0.0.48-py3-none-any.whl.metadata (9.5 kB)
+Collecting starlette==1.7.0 (from -r backend/requirements.lock.txt (line 72))
+  Downloading starlette-1.7.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting typer==0.27.3 (from -r backend/requirements.lock.txt (line 73))
+  Downloading typer-0.27.3-py3-none-any.whl.metadata (16 kB)
+Collecting typing-inspection==0.4.4 (from -r backend/requirements.lock.txt (line 74))
+  Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+Collecting typing_extensions==4.16.0 (from -r backend/requirements.lock.txt (line 75))
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting urllib3==2.8.0 (from -r backend/requirements.lock.txt (line 76))
+  Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting uvicorn==0.54.0 (from -r backend/requirements.lock.txt (line 77))
+  Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting uvloop==0.23.0 (from -r backend/requirements.lock.txt (line 78))
+  Downloading uvloop-0.23.0-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (5.1 kB)
+Collecting watchfiles==1.3.0 (from -r backend/requirements.lock.txt (line 79))
+  Downloading watchfiles-1.3.0-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (4.9 kB)
+Collecting websockets==17.2 (from -r backend/requirements.lock.txt (line 80))
+  Downloading websockets-17.2-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (6.3 kB)
+Downloading agent_detector-2.0.0-py3-none-any.whl (9.4 kB)
+Downloading alembic-1.20.0-py3-none-any.whl (268 kB)
+Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+Downloading argon2_cffi-25.1.0-py3-none-any.whl (14 kB)
+Downloading argon2_cffi_bindings-26.1.0-cp310-abi3-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl (27 kB)
+Downloading bcrypt-5.0.0-cp39-abi3-manylinux_2_34_aarch64.whl (275 kB)
+Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+Downloading cffi-2.1.1-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (222 kB)
+Downloading charset_normalizer-3.5.2-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (247 kB)
+Downloading click-8.5.0-py3-none-any.whl (125 kB)
+Downloading detect_installer-0.2.1-py3-none-any.whl (5.4 kB)
+Downloading dnspython-2.8.0-py3-none-any.whl (331 kB)
+Downloading email_validator-2.3.0-py3-none-any.whl (35 kB)
+Downloading fastapi-0.142.2-py3-none-any.whl (144 kB)
+Downloading fastapi_cli-0.0.32-py3-none-any.whl (14 kB)
+Downloading fastapi_cloud_cli-0.26.0-py3-none-any.whl (108 kB)
+Downloading fastar-0.12.0-cp314-cp314-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (755 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 755.4/755.4 kB 11.7 MB/s  0:00:00
+Downloading googleapis_common_protos-1.75.5-py3-none-any.whl (307 kB)
+Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_aarch64.whl (344 kB)
+Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+Downloading httptools-0.8.0-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (480 kB)
+Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+Downloading hypothesis-6.168.5-cp314-cp314-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (1.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 5.6 MB/s  0:00:00
+Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+Downloading idna-3.20-py3-none-any.whl (69 kB)
+Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading mako-1.4.3-py3-none-any.whl (80 kB)
+Downloading numpy-2.4.4-cp314-cp314-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (15.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.7/15.7 MB 10.8 MB/s  0:00:01
+Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Downloading markupsafe-3.0.4-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (24 kB)
+Downloading opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+Downloading opentelemetry_exporter_http_transport-0.66b1-py3-none-any.whl (12 kB)
+Downloading opentelemetry_exporter_otlp_common-0.66b1-py3-none-any.whl (12 kB)
+Downloading opentelemetry_sdk-1.45.1-py3-none-any.whl (140 kB)
+Downloading opentelemetry_exporter_otlp_proto_common-1.45.1-py3-none-any.whl (15 kB)
+Downloading opentelemetry_exporter_otlp_proto_http-1.45.1-py3-none-any.whl (22 kB)
+Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+Downloading opentelemetry_proto-1.45.1-py3-none-any.whl (72 kB)
+Downloading opentelemetry_semantic_conventions-0.66b1-py3-none-any.whl (206 kB)
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pillow-12.3.0-cp314-cp314-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (6.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 10.8 MB/s  0:00:00
+Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+Downloading psycopg-3.3.6-py3-none-any.whl (215 kB)
+Downloading psycopg_binary-3.3.6-cp314-cp314-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (6.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.8/6.8 MB 12.8 MB/s  0:00:00
+Downloading pwdlib-0.3.1-py3-none-any.whl (9.3 kB)
+Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+Downloading pydantic-2.13.5-py3-none-any.whl (472 kB)
+Downloading pydantic_extra_types-2.11.1-py3-none-any.whl (79 kB)
+Downloading pydantic_settings-2.15.0-py3-none-any.whl (69 kB)
+Downloading pydantic_core-2.46.5-cp314-cp314-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 12.9 MB/s  0:00:00
+Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 5.8 MB/s  0:00:00
+Downloading pyjwt-2.15.1-py3-none-any.whl (33 kB)
+Downloading pypdf-6.19.0-py3-none-any.whl (395 kB)
+Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+Downloading python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+Downloading python_multipart-0.0.32-py3-none-any.whl (30 kB)
+Downloading pyyaml-6.0.3-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (766 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 766.5/766.5 kB 3.2 MB/s  0:00:00
+Downloading reportlab-4.5.1-py3-none-any.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 2.0 MB/s  0:00:00
+Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+Downloading rich_toolkit-0.20.5-py3-none-any.whl (39 kB)
+Downloading rignore-0.8.1-cp314-cp314-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (885 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 885.3/885.3 kB 3.0 MB/s  0:00:00
+Downloading sentry_sdk-2.71.0-py3-none-any.whl (534 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 534.3/534.3 kB 3.8 MB/s  0:00:00
+Downloading scipy-1.18.1-cp314-cp314-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (34.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 34.1/34.1 MB 6.0 MB/s  0:00:05
+Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Downloading sqlalchemy-2.1.3-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (4.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.6/4.6 MB 12.2 MB/s  0:00:00
+Downloading sqlmodel-0.0.48-py3-none-any.whl (31 kB)
+Downloading starlette-1.7.0-py3-none-any.whl (78 kB)
+Downloading typer-0.27.3-py3-none-any.whl (123 kB)
+Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+Downloading uvloop-0.23.0-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (4.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.4/4.4 MB 7.8 MB/s  0:00:00
+Downloading watchfiles-1.3.0-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (454 kB)
+Downloading websockets-17.2-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (226 kB)
+Installing collected packages: sortedcontainers, websockets, uvloop, urllib3, typing_extensions, shellingham, rignore, PyYAML, python-multipart, python-dotenv, pypdf, PyJWT, Pygments, pycparser, pwdlib, psycopg-binary, psycopg, protobuf, pluggy, pillow, packaging, numpy, mdurl, MarkupSafe, iniconfig, idna, hypothesis, httptools, h11, fastar, dnspython, detect-installer, click, charset-normalizer, certifi, bcrypt, annotated-types, annotated-doc, agent-detector, uvicorn, typing-inspection, SQLAlchemy, sentry-sdk, scipy, requests, reportlab, pytest, pydantic_core, opentelemetry-proto, opentelemetry-api, markdown-it-py, Mako, Jinja2, httpcore, googleapis-common-protos, email-validator, cffi, anyio, watchfiles, starlette, rich, pydantic, opentelemetry-semantic-conventions, opentelemetry-exporter-otlp-proto-common, opentelemetry-exporter-http-transport, httpx, argon2-cffi-bindings, alembic, typer, sqlmodel, rich-toolkit, pydantic-settings, pydantic-extra-types, opentelemetry-sdk, fastapi, argon2-cffi, opentelemetry-exporter-otlp-common, fastapi-cloud-cli, fastapi-cli, opentelemetry-exporter-otlp-proto-http
+
+Successfully installed Jinja2-3.1.6 Mako-1.4.3 MarkupSafe-3.0.4 PyJWT-2.15.1 PyYAML-6.0.3 Pygments-2.21.0 SQLAlchemy-2.1.3 agent-detector-2.0.0 alembic-1.20.0 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 argon2-cffi-25.1.0 argon2-cffi-bindings-26.1.0 bcrypt-5.0.0 certifi-2026.7.22 cffi-2.1.1 charset-normalizer-3.5.2 click-8.5.0 detect-installer-0.2.1 dnspython-2.8.0 email-validator-2.3.0 fastapi-0.142.2 fastapi-cli-0.0.32 fastapi-cloud-cli-0.26.0 fastar-0.12.0 googleapis-common-protos-1.75.5 h11-0.16.0 httpcore-1.0.9 httptools-0.8.0 httpx-0.28.1 hypothesis-6.168.5 idna-3.20 iniconfig-2.3.1 markdown-it-py-4.2.0 mdurl-0.1.2 numpy-2.4.4 opentelemetry-api-1.45.1 opentelemetry-exporter-http-transport-0.66b1 opentelemetry-exporter-otlp-common-0.66b1 opentelemetry-exporter-otlp-proto-common-1.45.1 opentelemetry-exporter-otlp-proto-http-1.45.1 opentelemetry-proto-1.45.1 opentelemetry-sdk-1.45.1 opentelemetry-semantic-conventions-0.66b1 packaging-26.3 pillow-12.3.0 pluggy-1.6.0 protobuf-7.36.2 psycopg-3.3.6 psycopg-binary-3.3.6 pwdlib-0.3.1 pycparser-3.0 pydantic-2.13.5 pydantic-extra-types-2.11.1 pydantic-settings-2.15.0 pydantic_core-2.46.5 pypdf-6.19.0 pytest-9.1.1 python-dotenv-1.2.4 python-multipart-0.0.32 reportlab-4.5.1 requests-2.34.2 rich-15.0.0 rich-toolkit-0.20.5 rignore-0.8.1 scipy-1.18.1 sentry-sdk-2.71.0 shellingham-1.5.4 sortedcontainers-2.4.0 sqlmodel-0.0.48 starlette-1.7.0 typer-0.27.3 typing-inspection-0.4.4 typing_extensions-4.16.0 urllib3-2.8.0 uvicorn-0.54.0 uvloop-0.23.0 watchfiles-1.3.0 websockets-17.2
+[91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+[0m ---> Removed intermediate container b5b1f21fbd56
+ ---> f42e05da6aae
+Step 12/20 : COPY backend/ /app/backend/
+ ---> 9af195ff7c4e
+Step 13/20 : COPY alembic.ini /app/alembic.ini
+ ---> d1b13c69aa3e
+Step 14/20 : COPY licenses/ /app/licenses/
+ ---> 82dd1af8b065
+Step 15/20 : COPY --from=frontend /build/frontend/dist /app/frontend/dist
+ ---> 5fd706fff6de
+Step 16/20 : RUN useradd --create-home --uid 10001 fsp && mkdir /app/data && chown -R fsp:fsp /app/data
+ ---> Running in b8469f715699
+ ---> Removed intermediate container b8469f715699
+ ---> ecdd9e84a328
+Step 17/20 : USER fsp
+ ---> Running in e87bd810416e
+ ---> Removed intermediate container e87bd810416e
+ ---> 13799ce84caf
+Step 18/20 : ENV OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
+ ---> Running in d66bfca04649
+ ---> Removed intermediate container d66bfca04649
+ ---> aab6d675131d
+Step 19/20 : EXPOSE 8080
+ ---> Running in 38f410d7453f
+ ---> Removed intermediate container 38f410d7453f
+ ---> 0499e47d37ba
+Step 20/20 : CMD ["sh", "-c", "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8080 --no-access-log"]
+ ---> Running in ccfa108a7101
+ ---> Removed intermediate container ccfa108a7101
+ ---> 4e3fcffacf02
+Successfully built 4e3fcffacf02
+Successfully tagged fsp-career:release-0.4.5-20261008

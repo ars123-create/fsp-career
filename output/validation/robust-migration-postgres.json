@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "isolated_schema": true,
+  "results": [
+    {
+      "command": [
+        "upgrade",
+        "head"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "check"
+      ],
+      "exit_code": 0,
+      "output": "No new upgrade operations detected.\n"
+    }
+  ]
+}

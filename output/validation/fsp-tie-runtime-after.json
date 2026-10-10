@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "date": "2026-10-07T19:06:53.740932+00:00",
+  "health": {
+    "status": "ok",
+    "version": "0.4.2-dev",
+    "demo_mode": true,
+    "mail_transport": "local_demo"
+  },
+  "row_counts_after": {
+    "user": 28,
+    "candidate": 25,
+    "attempt": 27,
+    "evidence": 174,
+    "invitation": 2,
+    "need": 3
+  },
+  "logical_contents_unchanged": true,
+  "logical_sha256_after": "726f2d1ac53ff5c4f0774ef4cda22091947ecdd343c499ec376fa4812d8991aa",
+  "backup_unchanged": true
+}

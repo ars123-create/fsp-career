@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-07",
+  "app_version": "0.4.0-dev",
+  "application_source_sha256": "6876682a6360d031c2342d38c1e89ba259d8f314f3a36830e07fb3ac00866ed1",
+  "requirement": "R26",
+  "status": "PASS",
+  "started_at": "2026-10-07T17:51:28.422Z",
+  "finished_at": "2026-10-07T17:59:12.064Z",
+  "environment": {
+    "url": "http://127.0.0.1:8018",
+    "browser": "Codex in-app browser",
+    "data": "Fictional local accounts; demo company; no external email or real employment action"
+  },
+  "method": "Single sequential browser walkthrough via CUA. Application state changed only through visible UI. No database edits, API shortcuts, or answer-key lookup.",
+  "scope": [
+    "registration and local email confirmation",
+    "candidate publication without FSP ID",
+    "Middle assessment v2 with six practical and six multiple-choice tasks",
+    "reload and resume saved practical answer",
+    "preference search and one answer with early stop",
+    "salary-bearing invitation without creating a job",
+    "candidate views company details and accepts",
+    "contact visible to accepted employer",
+    "contact hidden from newly registered second employer"
+  ],
+  "steps": [
+    {
+      "step": "register_and_verify",
+      "status": "PASS",
+      "at": "2026-10-07T17:51:48.174Z",
+      "evidence": "New fictional account registered; local receipt opened; one-time confirmation shows success. No external email."
+    },
+    {
+      "step": "profile",
+      "status": "PASS",
+      "at": "2026-10-07T17:52:40.131Z",
+      "evidence": "Profile saved; no FSP ID; publication consent and publication explicitly selected; grade still unconfirmed."
+    },
+    {
+      "step": "assessment_resume",
+      "status": "PASS",
+      "at": "2026-10-07T17:53:18.023Z",
+      "evidence": "After reload, continued existing Middle v2 attempt; first=8 and closed=17 remained saved."
+    },
+    {
+      "step": "assessment_complete",
+      "status": "PASS",
+      "at": "2026-10-07T17:55:18.968Z",
+      "evidence": "Twelve questions answered through UI; all 12 accepted; six practical tasks accepted; new Middle category applied without FSP ID. Agent walkthrough, not human calibration."
+    },
+    {
+      "step": "preference_search",
+      "status": "PASS",
+      "at": "2026-10-07T17:56:06.008Z",
+      "evidence": "Natural-language need parsed to Python backend/Middle/remote; 7 eligible, top-5 includes new anonymous profile 657C82. One SQL-priority answer changes weights to Python 33%, SQL 49%, API 18%; early stop; membership unchanged for this answer."
+    },
+    {
+      "step": "before_consent",
+      "status": "PASS",
+      "at": "2026-10-07T17:56:19.911Z",
+      "evidence": "Anonymous candidate 657C82 shows verified skill families and matched conditions; private name/email absent from DOM; Contacts protected visible."
+    },
+    {
+      "step": "invite_pending",
+      "status": "PASS",
+      "at": "2026-10-07T17:56:47.811Z",
+      "evidence": "Employer invitation sent without creating a job. Salary 180000–240000 RUB/month and task description visible. Pending card keeps name/email hidden."
+    },
+    {
+      "step": "candidate_review",
+      "status": "PASS",
+      "at": "2026-10-07T17:57:09.894Z",
+      "evidence": "Candidate sees own invitation, salary, company description and contact before decision; status changes to viewed while contact remains protected."
+    },
+    {
+      "step": "candidate_accepts",
+      "status": "PASS",
+      "at": "2026-10-07T17:57:16.179Z",
+      "evidence": "Accept and disclose contacts clicked in fictional local candidate account; invitation accepted and introduction allowed shown."
+    },
+    {
+      "step": "employer_contact_after_consent",
+      "status": "PASS",
+      "at": "2026-10-07T17:57:43.649Z",
+      "evidence": "Same employer sees accepted invitation, fictional full name and email after candidate acceptance."
+    },
+    {
+      "step": "other_employer_isolation",
+      "status": "PASS",
+      "at": "2026-10-07T17:58:46.586Z",
+      "evidence": "New second employer registered and verified through UI. Same candidate still anonymous, private name/email absent from DOM; Contacts protected. First company consent does not transfer."
+    }
+  ],
+  "assessment_answers": [
+    {
+      "task": 1,
+      "family": "generator_finally",
+      "answer": {
+        "first": 8,
+        "closed": 17
+      },
+      "reason": "next consumes first yield; close executes finally once."
+    },
+    {
+      "task": 2,
+      "family": "dict_last_position",
+      "answer": 12,
+      "reason": "Last positions 4, 5, 3 sum to 12."
+    },
+    {
+      "task": 3,
+      "family": "sql_group_report",
+      "answer": {
+        "customers": 1,
+        "revenue": 60
+      },
+      "reason": "Paid customer 3 totals 20 and fails HAVING; customer 2 totals 60."
+    },
+    {
+      "task": 4,
+      "family": "api_cursor_page",
+      "answer": {
+        "first_id": 7,
+        "last_id": 5
+      },
+      "reason": "Rows strictly below (4,2) begin (3,7), (3,5) in descending tuple order."
+    },
+    {
+      "task": 5,
+      "family": "optimistic_update",
+      "answer": 7,
+      "reason": "Only first atomic update matches version 7; 19 minus 12 is 7."
+    },
+    {
+      "task": 6,
+      "family": "sql_count_distinct",
+      "answer": 3,
+      "reason": "COUNT DISTINCT ignores NULL; values are 88, 58, 66."
+    },
+    {
+      "task": 7,
+      "family": "sql_left_join",
+      "answer": 7,
+      "reason": "Six matched order rows plus one unmatched user."
+    },
+    {
+      "task": 8,
+      "family": "python_iterator_state",
+      "answer": {
+        "prefix": 9,
+        "tail": 195
+      },
+      "reason": "Prefix 4+5; remaining odd squares 25+1+169."
+    },
+    {
+      "task": 9,
+      "family": "shallow_copy",
+      "answer": 154,
+      "reason": "Shallow copy shares inner lists; total is 66+58+30."
+    },
+    {
+      "task": 10,
+      "family": "sql_latest_records",
+      "answer": {
+        "entities": 2,
+        "total": 25
+      },
+      "reason": "Latest entity 1 row 7 has 14; entity 3 row 5 has 11; entity 2 latest is deleted."
+    },
+    {
+      "task": 11,
+      "family": "idempotent_charge",
+      "answer": 11700,
+      "reason": "One committed charge for the shared idempotency key: 14500-2800."
+    },
+    {
+      "task": 12,
+      "family": "api_retry_ledger",
+      "answer": {
+        "stock": 296,
+        "operations": 3
+      },
+      "reason": "B, A, C each commit once: 329-20-6-7=296."
+    }
+  ],
+  "console": {
+    "observed_recent_entries": 0,
+    "levels": []
+  },
+  "limitations": [
+    "Agent technical walkthrough with fabricated people is not human calibration or hiring validation.",
+    "Mail delivered only to local demo inbox.",
+    "DOM and UI contact visibility checked; API/PDF boundary remains supported by separate backend tests, not by this browser run.",
+    "No uninterrupted video was recorded. Screenshots and chronological observations are preserved.",
+    "Public deployment, external links and competition submission not performed."
+  ],
+  "artifacts_directory": "output/screenshots/e2e-0.4",
+  "source_verification": {
+    "status": "PASS",
+    "files_checked": 68,
+    "actual_sha256": "6876682a6360d031c2342d38c1e89ba259d8f314f3a36830e07fb3ac00866ed1",
+    "reference": "output/validation/source-v0.4.0-dev.json"
+  },
+  "artifact_files": [
+    {
+      "path": "output/screenshots/e2e-0.4/01-assessment-practical.jpg",
+      "bytes": 102081,
+      "sha256": "58c583dc50e9a499bab81a341b7f6415545f9d9c7a0d0baddd23d81c3e7601e7"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4/02-assessment-result.jpg",
+      "bytes": 81582,
+      "sha256": "761890f825af66a5c2a5eb71088e3707bf41b217687ad32b0449fc8bead54b8e"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4/02-assessment-result.txt",
+      "bytes": 3282,
+      "sha256": "aad436556cef02e38a10b52ab20a5b5634ea642ecd16775aa125182b368b8b7a"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4/03-search-before-answer.txt",
+      "bytes": 8132,
+      "sha256": "49c9ffc193052d712d5039a515dc7293909bca40f91bd7e3330ed979b0116b2e"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4/04-search-after-answer.jpg",
+      "bytes": 110970,
+      "sha256": "a85505bc80869166ab448bd7fccd8b44b5dd6102468d9442100376d46a131436"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4/04-search-after-answer.txt",
+      "bytes": 7050,
+      "sha256": "412aeec893cd56e69cf3b851cec63baf35c98118a6c3fa064ca6b7878ef1527a"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4/05-contact-protected.jpg",
+      "bytes": 82776,
+      "sha256": "4b617771ebff2cacdc280921850d0c1c2285451de0d885b44aaba6124071dcf0"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4/05-contact-protected.txt",
+      "bytes": 8534,
+      "sha256": "858297535e48d3cdf38eeceecd245c3299c4994e4d7a0c764c2e685b681aa7a9"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4/06-invitation-pending.txt",
+      "bytes": 2953,
+      "sha256": "2ce0cd2c95a79fe784539daacad9e360a1cf637e1b894db50f2f10ce75344cec"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4/07-candidate-offer.jpg",
+      "bytes": 60788,
+      "sha256": "fefc939419ca3add0e7dfaf95641c4d291969a626ab713e91eaa048af2879b39"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4/07-candidate-offer.txt",
+      "bytes": 2254,
+      "sha256": "0883fd69e9c37a732ac35ab68d46aeb097924c8527c1c871bcc2477e4feecfdd"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4/08-candidate-accepted.txt",
+      "bytes": 2039,
+      "sha256": "d5665a58aa99c99ed331c9099ac8205d3cb97b1b79b193b055f36b25bf2122c9"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4/09-employer-contact.jpg",
+      "bytes": 77627,
+      "sha256": "355f95340bc6d84f3a46e01842b9ce30ff7e3d746a747ff16dbb713b451813b1"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4/09-employer-contact.txt",
+      "bytes": 2942,
+      "sha256": "bc9c4e632fea860b48490a3f6bc0ec4f4167905cbdbd69f3a58129527bbf0ddc"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4/10-other-employer-protected.jpg",
+      "bytes": 79261,
+      "sha256": "17cb94424102a18446021d561b292c4d4ff8823d3759f4347738888aff7833e0"
+    },
+    {
+      "path": "output/screenshots/e2e-0.4/10-other-employer-protected.txt",
+      "bytes": 9161,
+      "sha256": "4b979bc15d767562a833fc43b0302a7b12e17dcc29e84feac893ac0a7b1f6393"
+    }
+  ]
+}

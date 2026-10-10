@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-07",
+  "application_version": "0.4.0-dev",
+  "browser": "Codex In-app Browser / Chromium",
+  "account": "fictional seeded candidate; agent QA, not human calibration",
+  "status": "PASS within listed scenarios",
+  "form": {
+    "specialization": "backend",
+    "grade": "Middle",
+    "tasks": 12,
+    "practical_tasks": 6,
+    "rubric": "2026-10-v2",
+    "result_score": 91.7,
+    "correct": 11,
+    "grade_outcome": "cooldown",
+    "confirmed_grade_unchanged": "Junior",
+    "intentional_error": "python_iterator_state: prefix=13 correct, tail=3 incorrect (expected 2), whole case not credited"
+  },
+  "checks": {
+    "format_rejects_exponent_without_oracle": "PASS: 1e2 rejected, no correctness hint",
+    "decimal_comma": "PASS: 11,0 accepted for integral value 11",
+    "save_numeric_answer": "PASS: cursor first=2,last=5",
+    "draft_retained_between_questions": "PASS: edit first=3, next/back restores draft 3",
+    "reload_saved_answer": "PASS: first restored to saved 2, unsaved 3 not claimed persisted",
+    "finish_requires_all_answers": "PASS: disabled before answer 12",
+    "finish_blocks_dirty_answer": "PASS: all saved enabled; edited q1 then q12 disabled with notice; reverting draft restores enabled",
+    "completed_review": "PASS: 91.7%, Python practice 50%, all Python 75%; own input, reference and explanation visible",
+    "completed_result_reload": "PASS",
+    "legacy_result": "PASS: historical six-task v1 keeps 70/50 rubric and 100% result, no practical section",
+    "cooldown_ui": "PASS: future grade application button disabled",
+    "console_error_warn": 0
+  },
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 960,
+      "document_scroll_width": 1440,
+      "assessment_columns": "825px 300px"
+    },
+    {
+      "width": 480,
+      "height": 844,
+      "document_scroll_width": 480,
+      "assessment_columns": "440px",
+      "inputs_inside_viewport": true
+    }
+  ],
+  "viewport_override_reset": true,
+  "not_run": [
+    "375px",
+    "other browsers",
+    "human difficulty calibration",
+    "independent recruiter/developer judgment",
+    "anti-AI evaluation"
+  ],
+  "screenshots": [
+    "output/screenshots/assessment-v2-practical.png",
+    "output/screenshots/assessment-v2-review.png"
+  ],
+  "limitations": [
+    "Only saved numeric fields survive reload; UI explicitly marks unsaved drafts.",
+    "Browser run used synthetic demo data and intentional error; it is not a hiring outcome."
+  ]
+}

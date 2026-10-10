@@ -1,0 +1,49 @@
+{
+  "format": "captioned montage of actual UI screenshots",
+  "frames": [
+    {
+      "frame": "frame-01.png",
+      "source": "search-final.png",
+      "seconds": 10,
+      "title": "Навыки → подбор → знакомство"
+    },
+    {
+      "frame": "frame-02.png",
+      "source": "assessment-detail.png",
+      "seconds": 12,
+      "title": "1. Проверить компетенции"
+    },
+    {
+      "frame": "frame-03.png",
+      "source": "result.png",
+      "seconds": 12,
+      "title": "2. Получить результат и историю"
+    },
+    {
+      "frame": "frame-04.png",
+      "source": "search-final-detail.png",
+      "seconds": 12,
+      "title": "3. Найти подходящие профили"
+    },
+    {
+      "frame": "frame-05.png",
+      "source": "invitation-before.png",
+      "seconds": 10,
+      "title": "4. Сначала увидеть предложение"
+    },
+    {
+      "frame": "frame-06.png",
+      "source": "invitation-after.png",
+      "seconds": 10,
+      "title": "5. Разрешить знакомство"
+    },
+    {
+      "frame": "frame-07.png",
+      "source": "search-final.png",
+      "seconds": 14,
+      "title": "Проверить прототип самостоятельно"
+    }
+  ],
+  "duration_seconds": 80,
+  "audio": false
+}
