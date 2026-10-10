@@ -1,0 +1,67 @@
+{
+  "version": "0.5.1",
+  "status": "PASS",
+  "presentation": {
+    "slides": 15,
+    "required_template_slides": [
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "mapped_to": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "package_integrity": "pass",
+    "template_check": "PASS",
+    "visual_review": "All 15 slides reviewed; template photo placeholders intentionally retained because team photos were not provided.",
+    "native_tables": 3,
+    "native_charts": 1,
+    "font": "Montserrat",
+    "warnings": "Two inherited template geometry warnings, visually checked; no layout findings.",
+    "pdf": "15 raster pages from exact reviewed slide renders; PPTX is editable."
+  },
+  "documentation": {
+    "pages": 5,
+    "render": "bundled LibreOffice",
+    "visual_review": "5/5 pages PASS"
+  },
+  "artifacts": [
+    {
+      "path": "FSP_Career_Documentation_0.5.1.docx",
+      "size": 45890,
+      "sha256": "4c6bfbe5e743011d3ab3a33d38f2c91e4390fb9df91e93ceb6da2c2de7461f4c"
+    },
+    {
+      "path": "FSP_Career_Documentation_0.5.1.pdf",
+      "size": 85138,
+      "sha256": "7b73670144d17961c28ae3cef1c38b045f6c7bf2e624a5950170e636c4f22ee9"
+    },
+    {
+      "path": "FSP_Career_Full_Flow_0.5.1.mp4",
+      "size": 7770696,
+      "sha256": "20ea41b2dd92633e566f4fe5d7dfce22476161108628b1e920728e04d8e7d82d"
+    },
+    {
+      "path": "FSP_Career_Overview_0.5.1.mp4",
+      "size": 6441806,
+      "sha256": "4256143fa5d1dcd0e66bfa3c2401c4fb3a89afaad18ba6ca0426c1d71858e38f"
+    },
+    {
+      "path": "FSP_Career_Pitch_0.5.1.pdf",
+      "size": 3019416,
+      "sha256": "f26a61e4eb8832d0c68034aa8b5cb4916c4a6e65f187918900d3e2f108fa630d"
+    },
+    {
+      "path": "FSP_Career_Pitch_0.5.1.pptx",
+      "size": 25181578,
+      "sha256": "6b996df20366e7e80bc251adfcaaf0ec5f8cee63bd9865acc6438384f6dfdbd3"
+    }
+  ],
+  "limitations": "Visual review by same agent; native Microsoft PowerPoint not tested."
+}
