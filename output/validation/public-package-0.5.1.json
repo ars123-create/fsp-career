@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "version": "0.5.1",
+  "backend_files_identical": 72,
+  "both_normal_logins": true,
+  "openapi_exact_match": true,
+  "frontend_routes": 4,
+  "m6_search_and_answer": true,
+  "contacts_protected": true,
+  "scope": "Public source archive compared with previously built image; isolated tmpfs SQLite and TestClient. Not a clean rebuild or independent machine.",
+  "negative_result": "Initial check found only stale info.version 0.5.0 in docs/openapi.json; regenerated to 0.5.1 and exact comparison passed. No runtime code changed."
+}
